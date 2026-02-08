@@ -1,0 +1,1131 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+% \useoutertheme[subsection=False]{miniframes} 
+% 確保外層主題啟用，才會有上方目錄列
+\usecolortheme{default}
+% \setbeamertemplate{caption}[numbered]% Number float-like environments
+% % Customize the caption
+% \setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+% 每章節開始時自動產生章節頁
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\title{AP Precalculus}
+\subtitle{Chapter 1.2: EXPONENTS AND RADICALS}
+\author{Hsu Chun-Wei}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+% 目錄頁
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+%======================================================================
+% \begin{columns}
+%     \begin{column}{0.5\textwidth}
+        
+%     \end{column}
+%     \begin{column}{0.5\textwidth}
+        
+%     \end{column}
+% \end{columns}
+%======================================================================
+\section{EXPONENTS AND RADICALS}
+
+\begin{frame}{Exponents and Radicals}
+    In this section, we give meaning to expressions such as $a^{m/n}$, where the exponent $m/n$ is a rational number.  
+    To prepare for this, we first recall key ideas about integer exponents, radicals, and $n$th roots.
+\end{frame}
+%======================================================================
+\begin{frame}{Integer Exponents}
+
+\textbf{Integer Exponents}
+
+A product of identical numbers is usually written using exponential notation.  
+For example,
+\[
+5 \cdot 5 \cdot 5 = 5^{3}.
+\]
+In general, we have the following definition.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Exponential Notation}]
+If $a$ is any real number and $n$ is a positive integer, then the $n$th power of $a$ is defined as
+\[
+a^{n} = \underbrace{a \cdot a \cdot \ldots \cdot a}_{n \text{ factors}}.
+\]
+
+\vspace{0.5em}
+The number $a$ is called the \textbf{base}, and $n$ is called the \textbf{exponent}.
+\end{tcolorbox}
+
+\end{frame}
+%======================================================================
+\begin{frame}{Example: Exponential Notation}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Example 1}]
+\begin{itemize}
+  \item[(a)]
+  \[
+  \left(\frac{1}{2}\right)^{5}
+  = \left(\frac{1}{2}\right)\left(\frac{1}{2}\right)\left(\frac{1}{2}\right)\left(\frac{1}{2}\right)\left(\frac{1}{2}\right)
+  = \frac{1}{32}
+  \]
+
+  \item[(b)]
+  \[
+  (-3)^{4}
+  = (-3)(-3)(-3)(-3)
+  = 81
+  \]
+
+  \item[(c)]
+  \[
+  -3^{4}
+  = -(3 \cdot 3 \cdot 3 \cdot 3)
+  = -81
+  \]
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.6em}
+\textbf{Important Note:}  
+\[
+(-3)^4 \neq -3^4
+\]
+The exponent applies only to the base inside the parentheses.
+
+\end{frame}
+
+%======================================================================
+\begin{frame}{Rules for Working with Exponents}
+
+To discover the rule for multiplication, consider the following example:
+\[
+5^{4} \cdot 5^{2}
+= (5 \cdot 5 \cdot 5 \cdot 5)(5 \cdot 5)
+= 5 \cdot 5 \cdot 5 \cdot 5 \cdot 5 \cdot 5
+= 5^{6}
+= 5^{4+2}.
+\]
+
+\vspace{0.8em}
+This suggests the following general rule.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Product Rule for Exponents}]
+For any real number $a$ and positive integers $m$ and $n$,
+\[
+a^{m} \cdot a^{n} = a^{m+n}.
+\]
+\end{tcolorbox}
+
+\vspace{0.5em}
+That is, \textbf{to multiply two powers with the same base, add their exponents}.
+
+\end{frame}
+
+%======================================================================
+\begin{frame}{Zero and Negative Exponents}
+
+We would like the product rule
+\(
+a^{m} \cdot a^{n} = a^{m+n}
+\)
+to remain valid even when exponents are zero or negative.
+
+\vspace{0.6em}
+For example,
+\[
+2^{0} \cdot 2^{3} = 2^{0+3} = 2^{3},
+\]
+which is possible only if $2^{0} = 1$.
+
+Similarly,
+\[
+5^{4} \cdot 5^{-4} = 5^{4+(-4)} = 5^{0} = 1,
+\]
+which implies $5^{-4} = \dfrac{1}{5^{4}}$.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Zero and Negative Exponents}]
+If $a \neq 0$ is any real number and $n$ is a positive integer, then
+\[
+a^{0} = 1
+\qquad \text{and} \qquad
+a^{-n} = \frac{1}{a^{n}}.
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%======================================================================
+\begin{frame}{Example: Zero and Negative Exponents}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Example 2}]
+\begin{itemize}
+  \item[(a)]
+  \[
+  \left(\frac{4}{7}\right)^{0} = 1
+  \]
+
+  \item[(b)]
+  \[
+  x^{-1} = \frac{1}{x^{1}} = \frac{1}{x}
+  \]
+
+  \item[(c)]
+  \[
+  (-2)^{-3}
+  = \frac{1}{(-2)^{3}}
+  = \frac{1}{-8}
+  = -\frac{1}{8}
+  \]
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.6em}
+\textbf{Key Idea:}  
+A zero exponent gives $1$, and a negative exponent represents a reciprocal.
+
+\end{frame}
+
+%======================================================================
+\begin{frame}{Rules for Working with Exponents}
+
+Familiarity with the following rules is essential for working with exponents and bases.
+
+\vspace{0.5em}
+In the rules below:
+\begin{itemize}
+  \item $a$ and $b$ are real numbers,
+  \item $m$ and $n$ are integers,
+  \item $a \neq 0$, $b \neq 0$ when division is involved.
+\end{itemize}
+
+\vspace{0.8em}
+These laws allow us to simplify expressions involving exponents efficiently.
+
+\end{frame}
+
+%======================================================================
+\begin{frame}{Laws of Exponents}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Laws of Exponents}]
+\[
+\begin{array}{lll}
+\textbf{Law} & \textbf{Example} & \textbf{Description} \\[0.4em]
+
+1.\; a^{m}a^{n} = a^{m+n}
+& 3^{2}\cdot3^{5}=3^{7}
+& \text{ \footnotesize Add exponents when multiplying.} \\[0.6em]
+2.\; \dfrac{a^{m}}{a^{n}} = a^{m-n}
+& \dfrac{3^{5}}{3^{2}}=3^{3}
+& \text{ \footnotesize Subtract exponents when dividing.} \\[0.8em]
+
+3.\; (a^{m})^{n} = a^{mn}
+& (3^{2})^{5}=3^{10}
+& \text{ \footnotesize Multiply exponents.} \\[0.8em]
+
+4.\; (ab)^{n} = a^{n}b^{n}
+& (3\cdot4)^{2}=3^{2}\cdot4^{2}
+& \text{ \footnotesize Raise each factor to the power.} \\[0.8em]
+
+5.\; \left(\dfrac{a}{b}\right)^{n} = \dfrac{a^{n}}{b^{n}}
+& \left(\dfrac{3}{4}\right)^{2}=\dfrac{3^{2}}{4^{2}}
+& \text{ \footnotesize Raise numerator and denominator.}
+\end{array}
+\]
+\end{tcolorbox}
+
+\end{frame}
+%============================================================
+\begin{frame}{Proof of Law 3: $(a^{m})^{n} = a^{mn}$}
+
+If $m$ and $n$ are positive integers, we have
+\[
+(a^{m})^{n}
+= (a \cdot a \cdot \ldots \cdot a)^{n},
+\]
+where there are $m$ factors of $a$.
+
+\vspace{0.5em}
+Raising this expression to the power $n$ gives
+\[
+(a \cdot a \cdot \ldots \cdot a)
+(a \cdot a \cdot \ldots \cdot a)
+\cdots
+(a \cdot a \cdot \ldots \cdot a),
+\]
+which consists of $n$ groups, each with $m$ factors.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Conclusion}]
+Altogether, there are $mn$ factors of $a$, so
+\[
+(a^{m})^{n} = a^{mn}.
+\]
+\end{tcolorbox}
+
+\vspace{0.4em}
+The cases for which $m \le 0$ or $n \le 0$ can be proved using the definition of negative exponents.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Proof of Law 4: $(ab)^{n} = a^{n}b^{n}$}
+
+If $n$ is a positive integer, then
+\[
+(ab)^{n} = (ab)(ab)\cdots(ab),
+\]
+which contains $n$ identical factors.
+
+\vspace{0.5em}
+Using the Commutative and Associative Properties, we regroup the factors:
+\[
+(ab)(ab)\cdots(ab)
+= (a \cdot a \cdot \ldots \cdot a)(b \cdot b \cdot \ldots \cdot b).
+\]
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Conclusion}]
+There are $n$ factors of $a$ and $n$ factors of $b$, so
+\[
+(ab)^{n} = a^{n}b^{n}.
+\]
+\end{tcolorbox}
+
+\vspace{0.4em}
+If $n \le 0$, this law can be proved using the definition of negative exponents.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Using Laws of Exponents}
+
+\begin{itemize}
+  \item[(a)]
+  \[
+  x^{4}x^{7} = x^{4+7} = x^{11}
+  \qquad \text{(Law 1: } a^{m}a^{n}=a^{m+n}\text{)}
+  \]
+
+  \item[(b)]
+  \[
+  y^{4}y^{-7} = y^{4-7} = y^{-3} = \frac{1}{y^{3}}
+  \qquad \text{(Law 1)}
+  \]
+
+  \item[(c)]
+  \[
+  \frac{c^{9}}{c^{5}} = c^{9-5} = c^{4}
+  \qquad \text{(Law 2: } \frac{a^{m}}{a^{n}}=a^{m-n}\text{)}
+  \]
+
+  \item[(d)]
+  \[
+  (b^{4})^{5} = b^{4\cdot 5} = b^{20}
+  \qquad \text{(Law 3: } (a^{m})^{n}=a^{mn}\text{)}
+  \]
+
+  \item[(e)]
+  \[
+  (3x)^{3} = 3^{3}x^{3} = 27x^{3}
+  \qquad \text{(Law 4: } (ab)^{n}=a^{n}b^{n}\text{)}
+  \]
+
+  \item[(f)]
+  \[
+  \left(\frac{x}{2}\right)^{5}
+  = \frac{x^{5}}{2^{5}}
+  = \frac{x^{5}}{32}
+  \qquad \text{(Law 5: } \left(\frac{a}{b}\right)^{n}=\frac{a^{n}}{b^{n}}\text{)}
+  \]
+\end{itemize}
+
+\end{frame}
+%============================================================
+\begin{frame}{Example: Simplifying Expressions with Exponents}
+
+\textbf{Simplify:}
+\begin{itemize}
+    \item \(
+(2a^{3}b^{2})(3ab^{4})^{3}
+\)
+    \item \(
+\left(\frac{x}{y}\right)^{3}
+\left(\frac{y^{2}x}{z}\right)^{4}
+\)
+\end{itemize}
+\end{frame}
+%============================================================
+\begin{frame}{Example: Simplifying Expressions with Exponents}
+
+\textbf{Simplify:}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Example 4(a)}]
+\[
+(2a^{3}b^{2})(3ab^{4})^{3}
+\]
+
+\[
+= (2a^{3}b^{2})\bigl[3^{3}a^{3}(b^{4})^{3}\bigr]
+\qquad \text{(Law 4 and Law 3)}
+\]
+
+\[
+= (2a^{3}b^{2})(27a^{3}b^{12})
+\]
+
+\[
+= (2)(27)a^{3}a^{3}b^{2}b^{12}
+\qquad \text{(Group like bases)}
+\]
+
+\[
+= 54a^{6}b^{14}
+\qquad \text{(Law 1)}
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Simplifying Expressions with Exponents}
+
+\textbf{Simplify:}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Example 4(b)}]
+\[
+\left(\frac{x}{y}\right)^{3}
+\left(\frac{y^{2}x}{z}\right)^{4}
+\]
+
+\[
+= \frac{x^{3}}{y^{3}} \cdot \frac{(y^{2})^{4}x^{4}}{z^{4}}
+\qquad \text{(Laws 5 and 4)}
+\]
+
+\[
+= \frac{x^{3}y^{8}x^{4}}{y^{3}z^{4}}
+\qquad \text{(Law 3)}
+\]
+
+\[
+= \frac{x^{7}y^{5}}{z^{4}}
+\qquad \text{(Laws 1 and 2)}
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Laws of Exponents: Negative Exponents}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Laws of Exponents}]
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Law} & \textbf{Example} & \textbf{Description} \\[0.6em]
+
+6.\;
+$\left(\dfrac{a}{b}\right)^{-n} = \left(\dfrac{b}{a}\right)^{n}$
+&
+$\left(\dfrac{3}{4}\right)^{-2} = \left(\dfrac{4}{3}\right)^{2}$
+&
+\parbox[c]{6cm}{\footnotesize
+Invert the fraction and change\\ the sign of the exponent.
+}
+\\[1.0em]
+
+7.\;
+$\dfrac{a^{-n}}{b^{-m}} = \dfrac{b^{m}}{a^{n}}$
+&
+$\dfrac{3^{-2}}{4^{-5}} = \dfrac{4^{5}}{3^{2}}$
+&
+\parbox[c]{6cm}{\footnotesize
+Move factors between \\ numerator and denominator.
+}
+\end{tabular}
+\end{center}
+
+\end{tcolorbox}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Proof of Law 7}
+
+Using the definition of negative exponents, we have
+\[
+\dfrac{a^{-n}}{b^{-m}}
+= \dfrac{\dfrac{1}{a^{n}}}{\dfrac{1}{b^{m}}}.
+\]
+
+\vspace{0.6em}
+Dividing by a fraction is equivalent to multiplying by its reciprocal:
+\[
+\dfrac{\dfrac{1}{a^{n}}}{\dfrac{1}{b^{m}}}
+= \dfrac{1}{a^{n}} \cdot \dfrac{b^{m}}{1}.
+\]
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Conclusion}]
+\[
+\dfrac{a^{-n}}{b^{-m}} = \dfrac{b^{m}}{a^{n}}.
+\]
+\end{tcolorbox}
+
+\end{frame}
+%============================================================
+\begin{frame}{Example 5: Simplifying with Negative Exponents}
+
+\textbf{Eliminate negative exponents and simplify each expression.}
+    \begin{enumerate}
+        \item \(
+\frac{6s t^{-4}}{2s^{-2} t^{2}}
+\)
+        \item \(
+\left(\frac{y}{3z^{3}}\right)^{-2}
+\)
+    \end{enumerate}
+\end{frame}
+
+%============================================================
+\begin{frame}{Example 5: Simplifying with Negative Exponents}
+
+\textbf{Eliminate negative exponents and simplify each expression.}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Example (1)}]
+\[
+\frac{6s t^{-4}}{2s^{-2} t^{2}}
+\]
+
+\vspace{0.4em}
+Using \textbf{Law 7}, move factors with negative exponents across the fraction:
+\[
+= \frac{6s s^{2}}{2 t^{2} t^{4}}
+\]
+
+\vspace{0.4em}
+Group like bases and simplify:
+\[
+= \frac{6s^{3}}{2t^{6}}
+= \frac{3s^{3}}{t^{6}}
+\qquad \text{(Law 1)}
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Simplifying with Negative Exponents}
+
+\textbf{Eliminate negative exponents and simplify each expression.}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Example (2)}]
+\[
+\left(\frac{y}{3z^{3}}\right)^{-2}
+\]
+
+\vspace{0.4em}
+Using \textbf{Law 6}, invert the fraction and change the sign of the exponent:
+\[
+= \left(\frac{3z^{3}}{y}\right)^{2}
+\]
+
+\vspace{0.4em}
+Apply the power to numerator and denominator:
+\[
+= \frac{9z^{6}}{y^{2}}
+\qquad \text{(Laws 4 and 5)}
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Scientific Notation}
+
+Scientists use exponential notation as a compact way to write very large
+and very small numbers, which are otherwise difficult to read and write.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Scientific Notation}]
+A positive number $x$ is written in \textbf{scientific notation} if it has the form
+\[
+x = a \times 10^{n},
+\]
+where
+\[
+1 \le a < 10 \quad \text{and} \quad n \text{ is an integer}.
+\]
+\end{tcolorbox}
+
+\vspace{0.5em}
+The number $a$ is called the \textbf{coefficient}, and $n$ is the \textbf{power of ten}.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Scientific Notation: Interpreting the Exponent}
+
+\textbf{Positive Exponent (Large Numbers)}
+
+\[
+4 \times 10^{13} = 40{,}000{,}000{,}000
+\]
+A positive exponent indicates that the decimal point is moved
+\textbf{13 places to the right}.
+
+\vspace{0.8em}
+\textbf{Negative Exponent (Small Numbers)}
+
+\[
+1.66 \times 10^{-24}
+= 0.00000000000000000000000166
+\]
+A negative exponent indicates that the decimal point is moved
+\textbf{24 places to the left}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Idea}]
+\begin{itemize}
+  \item Positive exponent $\rightarrow$ move the decimal point to the right.
+  \item Negative exponent $\rightarrow$ move the decimal point to the left.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Changing from Decimal to Scientific Notation}
+
+\textbf{Write each number in scientific notation.}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Example}]
+\begin{itemize}
+  \item[(a)]
+  \[
+  56{,}920 = 5.692 \times 10^{4}
+  \]
+  The decimal point is moved \textbf{4 places to the left}.
+
+  \vspace{0.6em}
+  \item[(b)]
+  \[
+  0.000093 = 9.3 \times 10^{-5}
+  \]
+  The decimal point is moved \textbf{5 places to the right}.
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{0.5em}
+\textbf{Reminder:}
+\begin{itemize}
+  \item Moving the decimal point to the left gives a \textbf{positive} exponent.
+  \item Moving the decimal point to the right gives a \textbf{negative} exponent.
+\end{itemize}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Calculating with Scientific Notation}
+
+\textbf{Example:}
+
+If
+\[
+a \approx 0.00046, \qquad
+b \approx 1.697 \times 10^{22}, \qquad
+c \approx 2.91 \times 10^{-18},
+\]
+use a calculator to approximate the quotient $\dfrac{ab}{c}$.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Solution}]
+We rewrite all numbers in scientific notation and apply the laws of exponents:
+\[
+\frac{ab}{c}
+\approx
+\frac{(4.6 \times 10^{-4})(1.697 \times 10^{22})}{2.91 \times 10^{-18}}.
+\]
+
+\[
+=
+\frac{(4.6)(1.697)}{2.91}
+\times 10^{-4+22+18}.
+\]
+
+\[
+\approx 2.7 \times 10^{36}.
+\]
+\end{tcolorbox}
+
+\vspace{0.4em}
+\textbf{Note:}  
+The answer is rounded to \textbf{two significant figures}, since the least accurate given value has two significant figures.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Radicals: Square Roots}
+
+To give meaning to powers with rational exponents, we first discuss radicals.
+
+\vspace{0.5em}
+The symbol $\sqrt{\ }$ means \textbf{the positive square root of}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Square Root}]
+\[
+\sqrt{a} = b \quad \text{means} \quad b^{2} = a \ \text{and} \ b \ge 0.
+\]
+\end{tcolorbox}
+
+\vspace{0.4em}
+Since $a = b^{2} \ge 0$, the expression $\sqrt{a}$ is defined only when $a \ge 0$.
+
+\[
+\sqrt{9} = 3
+\quad \text{because} \quad
+3^{2} = 9 \ \text{and} \ 3 \ge 0.
+\]
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Radicals: The $n$th Root}
+
+Square roots are special cases of $n$th roots.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definition of the $n$th Root}]
+If $n$ is a positive integer, the \textbf{principal $n$th root} of $a$ is defined by
+\[
+\sqrt[n]{a} = b \quad \text{means} \quad b^{n} = a.
+\]
+
+If $n$ is even, we must have $a \ge 0$ and $b \ge 0$.
+\end{tcolorbox}
+
+\vspace{0.5em}
+Examples:
+\[
+\sqrt[4]{81} = 3
+\quad \text{because} \quad
+3^{4} = 81,
+\]
+\[
+\sqrt[3]{-8} = -2
+\quad \text{because} \quad
+(-2)^{3} = -8.
+\]
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Radicals: Important Observations}
+
+The expressions
+\[
+\sqrt{-8}, \quad \sqrt[4]{-8}, \quad \sqrt[6]{-8}
+\]
+are \textbf{not defined}, because even powers of real numbers are always nonnegative.
+
+\vspace{0.6em}
+Notice the difference:
+\[
+\sqrt{4^{2}} = \sqrt{16} = 4,
+\qquad
+\sqrt{(-4)^{2}} = \sqrt{16} = 4 = |{-4}|.
+\]
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Result}]
+\[
+\sqrt{a^{2}} = |a|.
+\]
+\end{tcolorbox}
+
+\vspace{0.4em}
+This result holds for square roots and, more generally, for any even root.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Properties of the $n$th Roots}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Properties of $n$th Roots}]
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Property} & \textbf{Rule} & \textbf{Example} \\[0.6em]
+
+1. &
+$\sqrt[n]{ab} = \sqrt[n]{a}\sqrt[n]{b}$
+&$\sqrt[3]{-8\cdot 27}
+= \sqrt[3]{-8}\sqrt[3]{27}
+= -6$
+\\[0.9em]
+
+2. &
+$\sqrt[n]{\dfrac{a}{b}} = \dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$
+&
+$\sqrt[4]{\dfrac{16}{81}}
+= \dfrac{\sqrt[4]{16}}{\sqrt[4]{81}}
+= \dfrac{2}{3}$
+\\[1.0em]
+
+3. &
+$\sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}$
+&
+$\sqrt{\sqrt[3]{729}}
+= \sqrt[6]{729}
+= 3$
+\\[1.0em]
+
+4. &
+$\sqrt[n]{a^{n}} = a \quad \text{if $n$ is odd}$
+&
+$\sqrt[3]{(-5)^{3}} = -5,
+\quad
+\sqrt[5]{2^{5}} = 2$
+\\[1.0em]
+
+5. &
+$\sqrt[n]{a^{n}} = |a| \quad \text{if $n$ is even}$
+&
+$\sqrt[4]{(-3)^{4}} = |-3| = 3$
+\end{tabular}
+\end{center}
+
+\end{tcolorbox}
+
+
+\vspace{0.4em}
+\textbf{Note:}  
+In each property, we assume that all given roots exist.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Simplifying Expressions Involving $n$th Roots}
+    \textbf{Simplifying Expressions Involving $n$th Roots}
+    \begin{enumerate}
+        \item \(
+\sqrt[3]{x^{4}}
+\)
+        \item \(
+\sqrt[4]{81x^{8}y^{4}}
+\)
+    \end{enumerate}
+\end{frame}
+%============================================================
+\begin{frame}{Example: Simplifying Expressions Involving $n$th Roots}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Example (1)}]
+\[
+\sqrt[3]{x^{4}}
+\]
+
+Factor out the largest perfect cube:
+\[
+= \sqrt[3]{x^{3}x}
+\]
+
+Apply the product property of roots:
+\[
+= \sqrt[3]{x^{3}}\sqrt[3]{x}
+\qquad \text{(Property 1)}
+\]
+
+Since the index is odd:
+\[
+= x\sqrt[3]{x}
+\qquad \text{(Property 4)}
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Simplifying Expressions Involving $n$th Roots}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Example (2)}]
+\[
+\sqrt[4]{81x^{8}y^{4}}
+\]
+
+Rewrite each factor under the root:
+\[
+= \sqrt[4]{81}\sqrt[4]{x^{8}}\sqrt[4]{y^{4}}
+\qquad \text{(Property 1)}
+\]
+
+Simplify each term:
+\[
+= 3\sqrt[4]{(x^{2})^{4}}\,|y|
+\qquad \text{(Property 5)}
+\]
+
+Since $|x^{2}| = x^{2}$:
+\[
+= 3x^{2}|y|
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Combining Radicals}
+
+\begin{itemize}
+  \item[(a)]
+  \[
+  \sqrt{32} + \sqrt{200}
+  = \sqrt{16\cdot 2} + \sqrt{100\cdot 2}
+  \]
+  \[
+  = \sqrt{16}\sqrt{2} + \sqrt{100}\sqrt{2}
+  \qquad \text{(Property 1: } \sqrt{ab}=\sqrt{a}\sqrt{b}\text{)}
+  \]
+  \[
+  = 4\sqrt{2} + 10\sqrt{2}
+  = 14\sqrt{2}
+  \qquad \text{(Distributive Property)}
+  \]
+
+  \vspace{0.8em}
+  \item[(b)] If $b>0$, then
+  \[
+  \sqrt{25b} - \sqrt{b^{3}}
+  = \sqrt{25}\sqrt{b} - \sqrt{b^{2}}\sqrt{b}
+  \qquad \text{(Property 1)}
+  \]
+  \[
+  = 5\sqrt{b} - b\sqrt{b}
+  \qquad \text{(Property 5, } b>0\text{)}
+  \]
+  \[
+  = (5-b)\sqrt{b}
+  \qquad \text{(Distributive Property)}
+  \]
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Key Idea:}  
+Radicals can be combined \textbf{only after} they have the same radical part.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Rational Exponents}
+
+To define a \textbf{rational exponent} (or fractional exponent) such as $a^{1/3}$,
+we use radicals.
+
+\vspace{0.6em}
+To remain consistent with the Laws of Exponents, we require
+\[
+(a^{1/n})^{n} = a^{(1/n)n} = a^{1} = a.
+\]
+
+\vspace{0.6em}
+By the definition of the $n$th root, this leads to
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Relationship}]
+\[
+a^{1/n} = \sqrt[n]{a}.
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Definition of Rational Exponents}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definition of Rational Exponents}]
+For any rational exponent $\dfrac{m}{n}$ in lowest terms, where $m$ and $n$ are integers
+and $n>0$, we define
+\[
+a^{m/n} = \left(\sqrt[n]{a}\right)^{m}
+\quad \text{or equivalently} \quad
+a^{m/n} = \sqrt[n]{a^{m}}.
+\]
+
+\vspace{0.4em}
+If $n$ is even, we require that $a \ge 0$.
+\end{tcolorbox}
+
+\vspace{0.5em}
+With this definition, the \textbf{Laws of Exponents} also hold for rational exponents.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Using the Definition of Rational Exponents}
+
+\begin{itemize}
+  \item[(a)]
+  \[
+  4^{1/2} = \sqrt{4} = 2
+  \]
+
+  \vspace{0.2em}
+  \item[(b)]
+  \[
+  8^{2/3} = \left(\sqrt[3]{8}\right)^{2} = 2^{2} = 4
+  \qquad \textit{or} \qquad 8^{2/3} = \sqrt[3]{8^{2}} = \sqrt[3]{64} = 4\] 
+  
+  \vspace{0.2em}
+  \item[(c)]
+  \[
+  125^{-1/3}
+  = \frac{1}{125^{1/3}}
+  = \frac{1}{\sqrt[3]{125}}
+  = \frac{1}{5}
+  \]
+
+  \vspace{0.2em}
+  \item[(d)]
+  \[
+  \frac{1}{\sqrt[3]{x^{4}}}
+  = \frac{1}{x^{4/3}}
+  = x^{-4/3}
+  \]
+\end{itemize}
+
+\vspace{0.2em}
+\textbf{Key Idea:}  
+Rational exponents can be rewritten using radicals, and negative exponents represent reciprocals.
+
+\end{frame}
+
+%===========================================================
+\begin{frame}{Example: Writing Radicals as Rational Exponents}
+\begin{itemize}
+  \item[(a)]
+  \[
+  (2\sqrt{x})(3\sqrt[3]{x})
+  = (2x^{1/2})(3x^{1/3})
+  \qquad \text{(Definition of rational exponents)}
+  \]
+  \[
+  = 6x^{1/2+1/3}
+  = 6x^{5/6}
+  \qquad \text{(Law 1)}
+  \]
+
+  \vspace{0.6em}
+  \item[(b)]
+  \[
+  \sqrt{x\sqrt{x}}
+  = (x x^{1/2})^{1/2}
+  \qquad \text{(Definition of rational exponents)}
+  \]
+  \[
+  = (x^{3/2})^{1/2}
+  \qquad \text{(Law 1)}
+  \]
+  \[
+  = x^{3/4}
+  \qquad \text{(Law 3)}
+  \]
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Key Idea:}  
+Rewrite radicals as rational exponents first, then apply the Laws of Exponents.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Rationalizing the Denominator}
+
+It is often useful to eliminate radicals in a denominator by multiplying
+both the numerator and the denominator by an appropriate expression.
+This process is called \textbf{rationalizing the denominator}.
+
+\vspace{0.6em}
+If the denominator is of the form $\sqrt{a}$, we multiply by $\sqrt{a}$:
+\[
+\frac{1}{\sqrt{a}}
+= \frac{1}{\sqrt{a}} \cdot \frac{\sqrt{a}}{\sqrt{a}}
+= \frac{\sqrt{a}}{a}.
+\]
+This multiplication does not change the value of the expression, since we
+are multiplying by $1$.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{General Method}]
+If the denominator is of the form $\sqrt[n]{a^{m}}$ with $m<n$, then
+multiplying numerator and denominator by $\sqrt[n]{a^{\,n-m}}$ will
+rationalize the denominator (for $a>0$):
+\[
+\sqrt[n]{a^{m}}\,\sqrt[n]{a^{\,n-m}}
+= \sqrt[n]{a^{\,n}}
+= a.
+\]
+\end{tcolorbox}
+
+\vspace{0.4em}
+After rationalizing, the denominator contains \textbf{no radicals}.
+
+\end{frame}
+
+%============================================================
+\begin{frame}{Example: Rationalizing Denominators}
+
+\begin{itemize}
+  \item[(a)]
+  \[
+  \frac{2}{\sqrt{3}}
+  = \frac{2}{\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}}
+  = \frac{2\sqrt{3}}{3}
+  \]
+  (Multiplying by $1$)
+
+  \vspace{0.6em}
+  \item[(b)]
+  \[
+  \frac{1}{\sqrt[3]{x^{2}}}
+  = \frac{1}{\sqrt[3]{x^{2}}} \cdot \frac{\sqrt[3]{x}}{\sqrt[3]{x}}
+  = \frac{\sqrt[3]{x}}{\sqrt[3]{x^{3}}}
+  = \frac{\sqrt[3]{x}}{x}
+  \]
+
+  \vspace{0.6em}
+  \item[(c)]
+  \[
+  \sqrt[7]{\frac{1}{a^{2}}}
+  = \frac{1}{\sqrt[7]{a^{2}}}
+  = \frac{1}{\sqrt[7]{a^{2}}} \cdot \frac{\sqrt[7]{a^{5}}}{\sqrt[7]{a^{5}}}
+  = \frac{\sqrt[7]{a^{5}}}{\sqrt[7]{a^{7}}}
+  = \frac{\sqrt[7]{a^{5}}}{a}
+  \]
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Key Idea:}  
+Rationalize the denominator by multiplying by a form of $1$ so that the denominator contains no radicals.
+
+\end{frame}
+
+%============================================================
+%============================================================
+%============================================================
+%============================================================
+%============================================================
+%============================================================
+%============================================================
+
+
+\end{document}
