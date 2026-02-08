@@ -48,7 +48,7 @@ The number $f(c)$ is a
 </MathBox>
 
 <div class="flex justify-center mt-4">
-  <img src="/public/slides/Calculus_teaching_section_4/section4.1/CalculusT1.png" class="w-1/2" alt="Local and absolute extreme values" />
+  <img src="./section4.1/CalculusT1.png" class="w-1/2" alt="Local and absolute extreme values" />
 </div>
 
 ---
@@ -64,7 +64,7 @@ If $f$ is continuous on a closed interval $[a, b]$, then $f$ attains an absolute
 </MathBox>
 
 <figure class="flex flex-col items-center mt-4">
-  <img src="/public/slides/Calculus_teaching_section_4/section4.1/CalculusT2.png" class="w-4/5" alt="Extreme Value Theorem" />
+  <img src="./section4.1/CalculusT2.png" class="w-4/5" alt="Extreme Value Theorem" />
   <figcaption class="text-sm text-gray-500 mt-2">Functions continuous on a closed interval always attain extreme values.</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ Examples where the theorem conditions are not met.
 ::left::
 
 <figure class="flex flex-col items-center">
-  <img src="/public/slides/Calculus_teaching_section_4/section4.1/CalculusT3.png" class="w-3/4" alt="No maximum" />
+  <img src="./section4.1/CalculusT3.png" class="w-3/4" alt="No maximum" />
   <figcaption class="text-sm text-gray-500 mt-2 text-center">This function has minimum f(2)=0, but no maximum.</figcaption>
 </figure>
 
@@ -92,7 +92,7 @@ The function takes on values arbitrarily close to 3, but never actually attains 
 ::right::
 
 <figure class="flex flex-col items-center">
-  <img src="/public/slides/Calculus_teaching_section_4/section4.1/CalculusT5.png" class="w-3/4" alt="No extrema" />
+  <img src="./section4.1/CalculusT5.png" class="w-3/4" alt="No extrema" />
   <figcaption class="text-sm text-gray-500 mt-2 text-center">This continuous function g has no maximum or minimum.</figcaption>
 </figure>
 
@@ -177,7 +177,7 @@ If $f(x) = x^3$, then $f'(x) = 3x^2$, so $f'(0) = 0$. But $f$ has no maximum or 
 The fact that $f'(0) = 0$ simply means that the curve $y = x^3$ has a horizontal tangent at $(0, 0)$. Instead of having a maximum or minimum at $(0, 0)$, the curve crosses its horizontal tangent there.
 
 <figure class="flex flex-col items-center mt-4">
-  <img src="/public/slides/Calculus_teaching_section_4/section4.1/CalculusT6.png" class="w-48" alt="x cubed graph" />
+  <img src="./section4.1/CalculusT6.png" class="w-1/" alt="x cubed graph" />
   <figcaption class="text-sm text-gray-500 mt-2">If f(x) = x³, then f'(0)=0, but f has no maximum or minimum.</figcaption>
 </figure>
 
@@ -194,7 +194,7 @@ The function $f(x) = |x|$ has its (local and absolute) minimum value at $0$, but
 </Keynote>
 
 <figure class="flex flex-col items-center mt-4">
-  <img src="/public/slides/Calculus_teaching_section_4/section4.1/CalculusT7.png" class="w-48" alt="absolute value graph" />
+  <img src="./section4.1/CalculusT7.png" class="w-1/2" alt="absolute value graph" />
   <figcaption class="text-sm text-gray-500 mt-2">If f(x)=|x|, then f(0)=0 is a minimum value, but f'(0) does not exist.</figcaption>
 </figure>
 
@@ -243,7 +243,7 @@ layout: default
 
 <MathBox title="The Closed Interval Method">
 
-To find the *absolute* maximum and minimum values of a continuous function $f$ on a closed interval $[a, b]$:
+To find the _absolute_ maximum and minimum values of a continuous function $f$ on a closed interval $[a, b]$:
 
 1. Find the values of $f$ at the critical numbers of $f$ in $(a, b)$.
 2. Find the values of $f$ at the endpoints of the interval.
@@ -259,7 +259,7 @@ layout: default
 
 <Keynote title="EXAMPLE">
 
-**(a)** Use a calculator or computer to estimate the absolute minimum and maximum values of the function 
+**(a)** Use a calculator or computer to estimate the absolute minimum and maximum values of the function
 
 $$f(x) = x - 2 \sin x, \quad 0 \leq x \leq 2\pi$$
 
@@ -275,15 +275,15 @@ layout: default
 
 <Keynote title="SOLUTION">
 
-**(a)** The graph shows $f$ in the viewing rectangle $[0, 2\pi]$ by $[-1, 8]$. 
+**(a)** The graph shows $f$ in the viewing rectangle $[0, 2\pi]$ by $[-1, 8]$.
 
-- The absolute maximum value is about **6.97**, occurring when $x \approx 5.24$. 
+- The absolute maximum value is about **6.97**, occurring when $x \approx 5.24$.
 - The absolute minimum value is about **-0.68**, occurring when $x \approx 1.05$.
 
 </Keynote>
 
 <div class="flex justify-center mt-4">
-  <img src="/public/slides/Calculus_teaching_section_4/section4.1/CalculusT8.png" class="w-1/2" alt="Graph of f(x)" />
+  <img src="./section4.1/CalculusT8.png" class="w-1/2" alt="Graph of f(x)" />
 </div>
 
 It is possible to get more accurate numerical estimates, but for exact values, we must use calculus.
@@ -293,6 +293,8 @@ layout: default
 ---
 
 # Solution (Part b)
+
+<keynote>
 
 **(b)** The function $f(x) = x - 2 \sin x$ is continuous on $[0, 2\pi]$. Since
 
@@ -305,6 +307,7 @@ The values of $f$ at these critical numbers are:
 $$f\left( \frac{\pi}{3} \right) = \frac{\pi}{3} - 2 \sin \frac{\pi}{3} = \frac{\pi}{3} - \sqrt{3} \approx -0.684853$$
 
 $$f\left( \frac{5\pi}{3} \right) = \frac{5\pi}{3} - 2 \sin \frac{5\pi}{3} = \frac{5\pi}{3} + \sqrt{3} \approx 6.968039$$
+</Keynote>
 
 ---
 layout: default
