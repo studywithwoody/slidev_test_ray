@@ -1,0 +1,161 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+\title{Applications of Differentiation}
+\subtitle{section4.3: What Derivatives Tell Us about the Shape of a Graph}
+\author{Hsu Chun-Wei}
+\date{June 2025}
+
+\begin{document}
+
+\maketitle
+
+%=====================================================================
+\begin{frame}{Increasing/Decreasing Test}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Increasing/Decreasing Test}]
+\begin{enumerate}[(a)]
+  \item If $f'(x) > 0$ on an interval, then $f$ is increasing on that interval.
+  \item If $f'(x) < 0$ on an interval, then $f$ is decreasing on that interval.
+\end{enumerate}
+\end{tcolorbox}
+
+\textbf{\textcolor{red}{PROOF}} \quad (a) Let $x_1$ and $x_2$ be any two numbers in the interval with $x_1 < x_2$. we have to show that $f(x_1) < f(x_2)$.
+
+Because we are given that $f'(x) > 0$, we know that $f$ is differentiable on $[x_1, x_2]$. So, by the Mean Value Theorem, there is a number $c$ between $x_1$ and $x_2$ such that
+\[
+f(x_2) - f(x_1) = f'(c)(x_2 - x_1)
+\]
+
+Thus, the right side is positive, and so
+\[
+f(x_2) - f(x_1) > 0 \quad \text{or} \quad f(x_1) < f(x_2)
+\]
+
+This shows that $f$ is increasing. Part (b) is proved similarly.
+\end{frame}
+%=====================================================================
+\begin{frame}{The First Derivative Test}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{The First Derivative Test}]
+Suppose that $c$ is a critical number of a continuous function $f$.
+\begin{enumerate}[(a)]
+  \item If $f'$ changes from positive to negative at $c$, then $f$ has a local maximum at $c$.
+  \item If $f'$ changes from negative to positive at $c$, then $f$ has a local minimum at $c$.
+  \item If $f'$ is positive to the left and right of $c$, or negative to the left and right of $c$, then $f$ has no local maximum or minimum at $c$.
+\end{enumerate}
+\end{tcolorbox}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{figures/section4.3/CalculusT1.png}
+\end{figure}
+\end{frame}
+%=====================================================================
+\begin{frame}{Concavity Test}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definition}]
+If the graph of $f$ lies above all of its tangents on an interval $I$, then $f$ is called \textbf{concave upward} on $I$. If the graph of $f$ lies below all of its tangents on $I$, then $f$ is called \textbf{concave downward} on $I$.
+\end{tcolorbox}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/section4.3/CalculusT2.png}
+\end{figure}
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Concavity Test}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Concavity Test}]
+\begin{enumerate}[(a)]
+  \item If $f''(x) > 0$ on an interval $I$, then the graph of $f$ is concave upward on $I$.
+  \item If $f''(x) < 0$ on an interval $I$, then the graph of $f$ is concave downward on $I$.
+\end{enumerate}
+\end{tcolorbox}
+\end{frame}
+%=====================================================================
+\begin{frame}{Definition: Inflection Point}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definition}]
+A point $P$ on a curve $y = f(x)$ is called an \textbf{inflection point} if $f$ is continuous there and the curve changes from concave upward to concave downward or from concave downward to concave upward at $P$.
+\end{tcolorbox}
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Sketching a Function}
+\textbf{\textcolor{blue}{EXAMPLE}} \quad Sketch a possible graph of a function $f$ that satisfies the following conditions:
+\begin{itemize}
+  \item[(i)] $f'(x) > 0$ on $(-\infty, 1)$, \quad $f'(x) < 0$ on $(1, \infty)$
+  \item[(ii)] $f''(x) > 0$ on $(-\infty, -2)$ and $(2, \infty)$, \quad $f''(x) < 0$ on $(-2, 2)$
+  \item[(iii)] $\displaystyle \lim_{x \to -\infty} f(x) = -2$, \quad $\displaystyle \lim_{x \to \infty} f(x) = 0$
+\end{itemize}
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Example: Sketching a Function}
+\textbf{\textcolor{blue}{SOLUTION}} 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/section4.3/CalculusT3.png}
+\end{figure}
+\begin{itemize}
+    \item Condition (i) tells us that $f$ is increasing on $(-\infty, 1)$ and decreasing on $(1, \infty)$.
+    \item Condition (ii) says that $f$ is concave upward on $(-\infty, -2)$ and $(2, \infty)$, and concave downward on $(-2, 2)$. 
+    \item condition (iii) tells us that the graph of $f$ has two horizontal asymptotes: $y = -2$ (to the left) and $y = 0$ (to the right).
+\end{itemize}
+\end{frame}
+%=====================================================================
+\begin{frame}{The Second Derivative Test}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{The Second Derivative Test}]
+Suppose $f''$ is continuous near $c$.
+\begin{enumerate}[(a)]
+  \item If $f'(c) = 0$ and $f''(c) > 0$, then $f$ has a local minimum at $c$.
+  \item If $f'(c) = 0$ and $f''(c) < 0$, then $f$ has a local maximum at $c$.
+\end{enumerate}
+\end{tcolorbox}
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Sketching a Function}
+\textbf{\textcolor{blue}{EXAMPLE}} \quad Sketch the graph of the function $f(x) = x^{2/3}(6 - x)^{1/3}$.
+
+\vspace{0.5em}
+\textbf{\textcolor{blue}{SOLUTION}} \quad First note that the domain of $f$ is $\mathbb{R}$. Calculation of the first two derivatives gives:
+\[
+f'(x) = \frac{4 - x}{x^{1/3}(6 - x)^{2/3}}, \qquad f''(x) = \frac{-8}{x^{4/3}(6 - x)^{5/3}}
+\]
+
+Since $f'(x) = 0$ when $x = 4$ and $f'(x)$ does not exist when $x = 0$ or $x = 6$, the critical numbers are 0, 4, and 6.
+
+\vspace{1em}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Interval} & $4 - x$ & $x^{1/3}$ & $(6 - x)^{2/3}$ & $f'(x)$ & $f$ \\
+\hline
+$x < 0$ & $+$ & $-$ & $+$ & $-$ & decreasing on $(-\infty, 0)$ \\
+$0 < x < 4$ & $+$ & $+$ & $+$ & $+$ & increasing on $(0, 4)$ \\
+$4 < x < 6$ & $-$ & $+$ & $+$ & $-$ & decreasing on $(4, 6)$ \\
+$x > 6$ & $-$ & $+$ & $-$ & $-$ & decreasing on $(6, \infty)$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+%=====================================================================
+\begin{frame}{Example: Sketching a Function}
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/section4.3/CalculusT4.png}
+    \end{figure}
+\end{frame}
+%=====================================================================
+%=====================================================================
+
+\end{document}

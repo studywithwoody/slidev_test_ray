@@ -1,0 +1,178 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+\title{Applications of Differentiation}
+\subtitle{section4.7: Optimization Problems}
+\author{Hsu Chun-Wei}
+\date{June 2025}
+
+\begin{document}
+
+\maketitle
+%=====================================================================
+\begin{frame}{Steps in Solving Optimization Problems}
+
+\begin{tcolorbox}[colframe=purple!80!black, colback=white, title=\textbf{Optimization Problem Strategy}]
+\begin{enumerate}
+  \item \textbf{Understand the Problem} \\
+  Read carefully until the problem is clear. Ask:
+  \begin{itemize}
+    \item What is the unknown?
+    \item What are the given quantities and conditions?
+  \end{itemize}
+
+  \item \textbf{Draw a Diagram} \\
+  Visualize the problem by drawing and labeling given and required quantities.
+
+  \item \textbf{Introduce Notation} \\
+  Assign symbols to the quantity to be optimized (e.g., $Q$), and to other unknowns (e.g., $a$, $b$, $x$, $y$). Use suggestive symbols when possible (e.g., $A$ for area, $h$ for height).
+
+  \item \textbf{Express $Q$ in Terms of Other Variables} \\
+  Write $Q$ as a function of the other variables introduced.
+\end{enumerate}
+\end{tcolorbox}
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Steps in Solving Optimization Problems}
+
+\begin{tcolorbox}[colframe=purple!80!black, colback=white, title=\textbf{Optimization Problem Strategy}]
+\begin{enumerate}
+  \setcounter{enumi}{4}
+
+  \item \textbf{Reduce to One Variable} \\
+  Use constraints to eliminate extra variables and express $Q$ as $Q = f(x)$.
+  \begin{itemize}
+    \item Determine the domain of $f$ in the context of the problem.
+  \end{itemize}
+
+  \item \textbf{Optimize the Function} \\
+  Use calculus methods (from Sections 4.1 and 4.3) to find the absolute maximum or minimum of $f$.
+  \begin{itemize}
+    \item If $f$ is on a closed interval, use the Closed Interval Method (Section 4.1).
+  \end{itemize}
+\end{enumerate}
+\end{tcolorbox}
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Example 1: Optimization Problem}
+
+\textbf{Example 1.} Find the point on the parabola $y^2 = 2x$ that is closest to the point $(1, 4)$.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/section4.7/CalculusT1.png}
+\end{figure}
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Example 1: Optimization Problem}
+
+\textbf{Solution:}
+We previously obtained:
+\[
+d^2 = f(y) = \left( \frac{1}{2} y^2 - 1 \right)^2 + (y - 4)^2
+\]
+
+To minimize the distance, we minimize $d^2$. Differentiate:
+\[
+f'(y) = 2\left( \frac{1}{2} y^2 - 1 \right)\cdot y + 2(y - 4) = y^3 - 8
+\]
+
+Solve $f'(y) = 0$:
+\[
+y^3 - 8 = 0 \quad \Rightarrow \quad y = 2
+\]
+
+\textbf{Check for minimum:} \\
+Since $f'(y) < 0$ for $y < 2$ and $f'(y) > 0$ for $y > 2$, $y = 2$ gives a local (and absolute) minimum.
+
+\vspace{0.5em}
+\textbf{Find corresponding $x$:}
+\[
+x = \frac{1}{2} y^2 = \frac{1}{2} (2)^2 = 2
+\]
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example 2: Largest Rectangle Inscribed in a Semicircle}
+\textbf{Example 2.} Find the area of the largest rectangle that can be inscribed as a semicircle of radius r.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/section4.7/CalculusT2.png}
+\end{figure}
+\end{frame}
+%=====================================================================
+\begin{frame}{Example: Largest Rectangle Inscribed in a Semicircle}
+
+\textbf{Problem.} Find the area of the largest rectangle that can be inscribed in a semicircle of radius $r$.
+
+\vspace{0.5em}
+\textbf{Step 1: Understand the Problem} \\
+The rectangle is inscribed in the upper half of the circle $x^2 + y^2 = r^2$ with center at the origin. The rectangle has two vertices on the semicircle and two on the $x$-axis.
+
+\vspace{0.5em}
+\textbf{Step 2: Draw a Diagram} \\
+Let $(x, y)$ be the vertex in the first quadrant. Then the rectangle has width $2x$ and height $y$.
+
+\vspace{0.5em}
+\textbf{Step 3: Introduce Notation} \\
+Area of the rectangle:
+\[
+A = 2x \cdot y
+\]
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Largest Rectangle Inscribed in a Semicircle}
+
+\vspace{0.5em}
+\textbf{Step 4–5: Express $A$ as a Function of One Variable} \\
+From the circle equation, $x^2 + y^2 = r^2 \Rightarrow y = \sqrt{r^2 - x^2}$. So:
+\[
+A(x) = 2x \sqrt{r^2 - x^2}
+\]
+
+Domain: $0 \le x \le r$
+
+\vspace{0.5em}
+\textbf{Step 6: Maximize $A$} \\
+Differentiate:
+\[
+A'(x) = 2\sqrt{r^2 - x^2} + 2x \cdot \frac{-x}{\sqrt{r^2 - x^2}} = \frac{2(r^2 - 2x^2)}{\sqrt{r^2 - x^2}}
+\]
+
+Set $A'(x) = 0$:
+\[
+r^2 - 2x^2 = 0 \Rightarrow x = \frac{r}{\sqrt{2}}
+\]
+
+Substitute back:
+\[
+A = 2x \cdot \sqrt{r^2 - x^2}
+= 2 \cdot \frac{r}{\sqrt{2}} \cdot \sqrt{r^2 - \frac{r^2}{2}}
+= \frac{2r}{\sqrt{2}} \cdot \sqrt{\frac{r^2}{2}} = r^2
+\]
+\end{frame}
+
+%=====================================================================
+%=====================================================================
+%=====================================================================
+%=====================================================================
+
+\end{document}

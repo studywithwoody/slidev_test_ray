@@ -1,0 +1,369 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+\title{Applications of Differentiation}
+\subtitle{section4.4: Indeterminate Forms and l’Hospital’s Rule}
+\author{Hsu Chun-Wei}
+\date{June 2025}
+
+\begin{document}
+
+\maketitle
+
+%=====================================================================
+\begin{frame}{Indeterminate forms}
+    \begin{itemize}
+        \item indeterminate form of type $\frac{0}{0}$
+        \begin{equation}
+            \lim_{x \rightarrow a} \frac{f(x)}{g(x)}
+        \end{equation}
+        both $f(x) \rightarrow 0$ and $g(x) \rightarrow 0$ as $x \rightarrow a$ 
+        \item indeterminate form of type $\frac{\infty}{\infty}$
+        \begin{equation}
+            \lim_{x \rightarrow a} \frac{f(x)}{g(x)}
+        \end{equation}
+        both $f(x) \rightarrow \pm \infty$ and $g(x) \rightarrow \pm \infty$ as $x \rightarrow a$ 
+    \end{itemize}
+\end{frame}
+%=====================================================================
+\begin{frame}{L'Hospital's Rule}
+
+Suppose $f$ and $g$ are differentiable and $g'(x) \ne 0$ on an open interval $I$ that contains $a$ (except possibly at $a$). Suppose that
+\[
+\lim_{x \to a} f(x) = 0 \quad \text{and} \quad \lim_{x \to a} g(x) = 0
+\]
+or that
+\[
+\lim_{x \to a} f(x) = \pm \infty \quad \text{and} \quad \lim_{x \to a} g(x) = \pm \infty
+\]
+(In other words, we have an indeterminate form of type $\frac{0}{0}$ or $\frac{\infty}{\infty}$.) Then
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{L'Hospital's Rule}]
+\[
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
+\]
+\end{tcolorbox}
+
+if the limit on the right side exists (or is $\infty$ or $-\infty$).
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Intuition Behind L'Hospital's Rule}
+
+\begin{columns}[c]
+% create the column with the first image, that occupies
+% half of the slide
+        \begin{column}{.6\textwidth}
+The first graph shows two differentiable functions $f$ and $g$, each of which approaches 0 as $x \to a$. If we zoom in toward the point $(a, 0)$, the graphs start to look almost linear.
+
+If the functions \textit{were} linear, as in the second graph, then their ratio would be:
+\[
+\frac{m_1(x - a)}{m_2(x - a)} = \frac{m_1}{m_2}
+\]
+
+which is the ratio of their derivatives.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{This suggests:}]
+\[
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
+\]
+\end{tcolorbox}   
+        \end{column}
+    % create the column with the second image, that also
+    % occupies half of the slide
+        \begin{column}{.4\textwidth}
+        \begin{figure}
+            \label{slope1}
+            \centering
+            \includegraphics[width=0.9\textwidth]{figures/section4.4/CalculusT1.png}
+            \caption{$e^x$ with slope 1 at $(0,1)$}
+        \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+%=====================================================================
+
+
+\begin{frame}{Note on L'Hospital's Rule}
+
+\begin{tcolorbox}[colframe=green!60!black, colback=white, title=\textbf{Note: One-Sided and Infinite Limits}]
+L'Hospital's Rule is also valid for one-sided limits and for limits at infinity or negative infinity; that is, "$x \to a$" can be replaced by any of the symbols:
+\[
+x \to a^+, \quad x \to a^-, \quad x \to \infty, \quad \text{or} \quad x \to -\infty.
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: L'Hospital's Rule}
+
+\textbf{Example.} Calculate $\displaystyle \lim_{x \to \infty} \frac{e^x}{x^2}$.
+
+\vspace{0.5em}
+\textbf{Solution.} We have $\displaystyle \lim_{x \to \infty} e^x = \infty$ and $\displaystyle \lim_{x \to \infty} x^2 = \infty$, so the limit is an indeterminate form of type $\frac{\infty}{\infty}$, and L'Hospital's Rule gives:
+\[
+\lim_{x \to \infty} \frac{e^x}{x^2} = \lim_{x \to \infty} \frac{ \frac{d}{dx}(e^x) }{ \frac{d}{dx}(x^2) } = \lim_{x \to \infty} \frac{e^x}{2x}
+\]
+
+Since $e^x \to \infty$ and $2x \to \infty$ as $x \to \infty$, the limit on the right side is also indeterminate.
+
+\vspace{0.5em}
+A second application of L'Hospital's Rule gives:
+
+\[
+\lim_{x \to \infty} \frac{e^x}{x^2} = \lim_{x \to \infty} \frac{e^x}{2x} = \lim_{x \to \infty} \frac{e^x}{2} = \infty
+\]
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Example2: L'Hospital's Rule}
+
+\textbf{Example.} Find $\displaystyle \lim_{x \to 0} \frac{\tan x - x}{x^3}$.
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example2: L'Hospital's Rule}
+\textbf{Solution.} Noting that both $\tan x - x \to 0$ and $x^3 \to 0$ as $x \to 0$, we use L'Hospital's Rule:
+\[
+\lim_{x \to 0} \frac{\tan x - x}{x^3}
+= \lim_{x \to 0} \frac{\sec^2 x - 1}{3x^2}
+\]
+
+Since the limit on the right side is still of indeterminate form $\frac{0}{0}$, we apply L'Hospital's Rule again:
+\[
+\lim_{x \to 0} \frac{\sec^2 x - 1}{3x^2}
+= \lim_{x \to 0} \frac{2\sec^2 x \tan x}{6x}
+\]
+
+\vspace{0.5em}
+Because $\displaystyle \lim_{x \to 0} \sec^2 x = 1$, we simplify the calculation:
+\[
+\lim_{x \to 0} \frac{2\sec^2 x \tan x}{6x}
+= \frac{1}{3} \lim_{x \to 0} \sec^2 x \cdot \lim_{x \to 0} \frac{\tan x}{x}
+= \frac{1}{3} \cdot \lim_{x \to 0} \frac{\tan x}{x}
+\]
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Example2: L'Hospital's Rule}
+
+We can evaluate this last limit either by using L'Hospital's Rule a third time. Putting together all the steps, we get:
+\[
+\lim_{x \to 0} \frac{\tan x - x}{x^3}
+= \lim_{x \to 0} \frac{\sec^2 x - 1}{3x^2}
+= \lim_{x \to 0} \frac{2 \sec^2 x \tan x}{6x}
+\]
+
+\[
+= \frac{1}{3} \lim_{x \to 0} \sec^2 x \cdot \lim_{x \to 0} \frac{\tan x}{x}
+= \frac{1}{3} \cdot \lim_{x \to 0} \frac{\tan x}{x}
+= \frac{1}{3} \cdot 1
+= \frac{1}{3}
+\]
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Indeterminate Form of Type $0 \cdot \infty$}
+
+This kind of limit is called an \textbf{indeterminate form of type $0 \cdot \infty$}. We can deal with it by writing the product $fg$ as a quotient:
+\[
+fg = \frac{f}{1/g} \quad \text{or} \quad fg = \frac{g}{1/f}
+\]
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Strategy for Applying L'Hospital's Rule}]
+This converts the given limit into an indeterminate form of type $\frac{0}{0}$ or $\frac{\infty}{\infty}$ so that we can use L'Hospital's Rule.
+\end{tcolorbox}
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Indeterminate Form $0 \cdot \infty$}
+
+\textbf{Example.} Evaluate $\displaystyle \lim_{x \to 0^+} x \ln x$.
+
+\vspace{0.5em}
+\textbf{Solution.} The given limit is indeterminate because, as $x \to 0^+$, the first factor ($x$) approaches 0 while the second factor ($\ln x$) approaches $-\infty$.
+
+We rewrite the product as a quotient:
+\[
+x \ln x = \frac{\ln x}{1/x}
+\]
+
+Then apply L'Hospital's Rule:
+\[
+\lim_{x \to 0^+} \frac{\ln x}{1/x}
+= \lim_{x \to 0^+} \frac{1/x}{-1/x^2}
+= \lim_{x \to 0^+} (-x)
+= 0
+\]
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Indeterminate Differences (Type $\infty - \infty$)}
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white]
+If $\displaystyle \lim_{x \to a} f(x) = \infty$ and $\displaystyle \lim_{x \to a} g(x) = \infty$, then the limit
+\[
+\lim_{x \to a} \left[ f(x) - g(x) \right]
+\]
+is called an \textbf{indeterminate form of type $\infty - \infty$}.
+\end{tcolorbox}
+
+\vspace{0.5em}
+There is a contest between $f$ and $g$: will the result be $\infty$ (if $f$ wins), $-\infty$ (if $g$ wins), or a finite number? To resolve this form, we often try to convert the difference into a quotient — for example, by:
+\begin{itemize}
+  \item using a common denominator,
+  \item rationalization, or
+  \item factoring out a common factor
+\end{itemize}
+
+This way, we obtain an indeterminate form of type $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$ to which L'Hospital's Rule can be applied.
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Using a common denominator}
+
+\textbf{Example.} Compute 
+\[
+\lim_{x \to 1^+} \left( \frac{1}{\ln x} - \frac{1}{x - 1} \right)
+\]
+
+\vspace{0.5em}
+\textbf{Solution.} As $x \to 1^+$, both $\frac{1}{\ln x} \to \infty$ and $\frac{1}{x - 1} \to \infty$, so the limit is indeterminate of type $\infty - \infty$.
+
+We begin by rewriting the expression with a common denominator:
+\[
+\lim_{x \to 1^+} \left( \frac{1}{\ln x} - \frac{1}{x - 1} \right)
+= \lim_{x \to 1^+} \frac{x - 1 - \ln x}{(x - 1)\ln x}
+\]
+
+Both numerator and denominator approach 0, so we apply L'Hospital's Rule:
+\[
+\lim_{x \to 1^+} \frac{x - 1 - \ln x}{(x - 1)\ln x}
+= \lim_{x \to 1^+} \frac{1 - \frac{1}{x}}{(x - 1) \cdot \frac{1}{x} + \ln x}
+= \lim_{x \to 1^+} \frac{x - 1}{x \left( 1 + x \ln x \right)}
+\]
+\[
+=\lim_{x \to 1^+} \frac{x - 1}{x \left( 1 + x \ln x \right)}
+= \lim_{x \to 1^+} \frac{1}{1 + x \cdot \frac{1}{x} + \ln x}
+= \lim_{x \to 1^+} \frac{1}{2 + \ln x}
+= \frac{1}{2}
+\]
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: factoring out a common factor}
+
+\textbf{Example.} Calculate 
+\[
+\lim_{x \to \infty} (e^x - x)
+\]
+
+\vspace{0.5em}
+\textbf{Solution.} This is an indeterminate difference because both $e^x$ and $x$ approach infinity.
+
+We expect the limit to be $\infty$ since $e^x$ increases much faster than $x$. To confirm this, we factor out $x$:
+\[
+e^x - x = x \left( \frac{e^x}{x} - 1 \right)
+\]
+
+We observe that $\displaystyle \frac{e^x}{x} \to \infty$ as $x \to \infty$ by L'Hospital's Rule. Therefore, we now have a product of two large quantities:
+
+\[
+\lim_{x \to \infty} (e^x - x)
+= \lim_{x \to \infty} \left[ x \left( \frac{e^x}{x} - 1 \right) \right]
+= \infty
+\]
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Indeterminate Powers (Types $0^0$, $\infty^0$, $1^\infty$)}
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{Indeterminate Powers}]
+Several indeterminate forms arise from the limit
+\[
+\lim_{x \to a} \left[ f(x) \right]^{g(x)}
+\]
+\begin{enumerate}
+  \item $\displaystyle \lim_{x \to a} f(x) = 0$ and $\displaystyle \lim_{x \to a} g(x) = 0$ \hfill (type $0^0$)
+  \item $\displaystyle \lim_{x \to a} f(x) = \infty$ and $\displaystyle \lim_{x \to a} g(x) = 0$ \hfill (type $\infty^0$)
+  \item $\displaystyle \lim_{x \to a} f(x) = 1$ and $\displaystyle \lim_{x \to a} g(x) = \pm \infty$ \hfill (type $1^\infty$)
+\end{enumerate}
+\end{tcolorbox}
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Indeterminate Powers (Types $0^0$, $\infty^0$, $1^\infty$)}
+
+Each of these cases can be treated by taking the natural logarithm. Let 
+\[
+y = \left[ f(x) \right]^{g(x)} \quad \Rightarrow \quad \ln y = g(x) \ln f(x)
+\]
+
+Alternatively, we can express the function as an exponential:
+\[
+\left[ f(x) \right]^{g(x)} = e^{g(x) \ln f(x)}
+\]
+
+This transforms the limit into a product $g(x) \ln f(x)$, which is of the indeterminate form $0 \cdot \infty$ and can be evaluated accordingly.
+\end{frame}
+%=====================================================================
+\begin{frame}{Example: Indeterminate Form $1^\infty$}
+
+\textbf{Example.} Calculate
+\[
+\lim_{x \to 0^+} \left(1 + \sin 4x\right)^{\cot x}
+\]
+
+\vspace{0.5em}
+\textbf{Solution.} As $x \to 0^+$, we have $\sin 4x \to 0$ so $1 + \sin 4x \to 1$, and $\cot x \to \infty$.
+
+Thus, the expression is of the indeterminate form $1^\infty$.
+
+Let
+\[
+y = \left(1 + \sin 4x\right)^{\cot x}
+\quad \Rightarrow \quad
+\ln y = \cot x \cdot \ln(1 + \sin 4x)
+= \frac{\ln(1 + \sin 4x)}{\tan x}
+\]
+
+Now apply L'Hospital's Rule:
+\[
+\lim_{x \to 0^+} \ln y
+= \lim_{x \to 0^+} \frac{\ln(1 + \sin 4x)}{\tan x}
+= \lim_{x \to 0^+} \frac{4 \cos 4x}{(1 + \sin 4x)\sec^2 x}
+= 4
+\]
+
+So we have $\displaystyle \lim_{x \to 0^+} \ln y = 4$. Thus,
+\[
+\lim_{x \to 0^+} y = \lim_{x \to 0^+} e^{\ln y} = e^4
+\]
+
+\end{frame}
+
+%=====================================================================
+
+\end{document}

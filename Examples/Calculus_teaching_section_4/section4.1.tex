@@ -1,0 +1,251 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+\title{Applications of Differentiation}
+\subtitle{section4.1: Maximum and Minimum Values}
+\author{Hsu Chun-Wei}
+\date{June 2025}
+
+\begin{document}
+
+\maketitle
+
+%=====================================================================
+\begin{frame}{Absolute and Local Extreme Values}
+
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definition}]
+Let $c$ be a number in the domain $D$ of a function $f$. Then $f(c)$ is the
+\begin{itemize}
+  \item \textbf{absolute maximum} value of $f$ on $D$ if $f(c) \geq f(x)$ for all $x$ in $D$.
+  \item \textbf{absolute minimum} value of $f$ on $D$ if $f(c) \leq f(x)$ for all $x$ in $D$.
+\end{itemize}
+\end{tcolorbox}
+
+An absolute maximum or minimum is sometimes referred to as a \textbf{global maximum or minimum}. The maximum and minimum values of f are called the \textbf{extreme values} of f
+\end{frame}
+%=====================================================================
+\begin{frame}{Absolute and Local Extreme Values}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definition}]
+The number $f(c)$ is a
+\begin{itemize}
+  \item \textbf{local maximum} value of $f$ if $f(c) \geq f(x)$ when $x$ is near $c$.
+  \item \textbf{local minimum} value of $f$ if $f(c) \leq f(x)$ when $x$ is near $c$.
+\end{itemize}
+\end{tcolorbox}
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{figures/section4.1/CalculusT1.png}
+\end{center}
+\end{frame}
+%=====================================================================
+\begin{frame}{The Extreme Value Theorem}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{The Extreme Value Theorem}]
+If $f$ is continuous on a closed interval $[a, b]$, then $f$ attains an absolute maximum value $f(c)$ and an absolute minimum value $f(d)$ at some numbers $c$ and $d$ in $[a, b]$.
+\end{tcolorbox}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figures/section4.1/CalculusT2.png}
+    \caption{Functions continuous on a closed interval always attain extreme values.}
+    \label{Functions continuous on a closed interval always attain extreme values.}
+\end{figure}
+\end{frame}
+%=====================================================================
+\begin{frame}{The Extreme Value Theorem}
+\textcolor{blue}{Contradiction case}
+    \begin{columns}[c]
+% create the column with the first image, that occupies
+% half of the slide
+        \begin{column}{.5\textwidth}
+        \begin{figure}
+            \label{between 2 and 3}
+            \centering
+            \includegraphics[width=0.7\textwidth]{figures/section4.1/CalculusT4.png}
+            \caption{This function has a minimum value f(2)=0, but no maximum value.}
+        \end{figure}      
+        The function takes on values arbitrarily close to 3, but never actually attains the value 3.
+        \end{column}
+    % create the column with the second image, that also
+    % occupies half of the slide
+        \begin{column}{.5\textwidth}
+        \begin{figure}
+            \label{slope1}
+            \centering
+            \includegraphics[width=0.7\textwidth]{figures/section4.1/CalculusT5.png}
+            \caption{This continuous function g has no maximum or minimum.}
+        \end{figure}
+        The function g is continuous on the open interval (0, 2) and is able to take on arbitrarily large values.
+        \end{column}
+    \end{columns}
+\end{frame}
+%=====================================================================
+\begin{frame}{Fermat’s Theorem}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Fermat's Theorem}]
+If $f$ has a local maximum or minimum at $c$, and if $f'(c)$ exists, then $f'(c) = 0$.
+\end{tcolorbox}
+
+\textbf{\textcolor{red}{PROOF}} \quad Suppose, for the sake of definiteness, that $f$ has a local maximum at $c$. Then, according to Definition 2, $f(c) \geq f(x)$ if $x$ is sufficiently close to $c$. This implies that if $h$ is sufficiently close to $0$, with $h$ being positive or negative, then
+\[
+f(c) \geq f(c + h)
+\]
+and therefore
+\[
+f(c + h) - f(c) \leq 0
+\]
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Fermat’s Theorem}
+We can divide both sides of an inequality by a positive number. Thus, if $h > 0$ and $h$ is sufficiently small, we have
+\[
+\frac{f(c + h) - f(c)}{h} \leq 0
+\]
+
+Taking the right-hand limit of both sides of this inequality (using Theorem 2.3.2), we get
+\[
+\lim_{h \to 0^+} \frac{f(c + h) - f(c)}{h} \leq \lim_{h \to 0^+} 0 = 0
+\]
+
+But since $f'(c)$ exists, we have
+\[
+f'(c) = \lim_{h \to 0} \frac{f(c + h) - f(c)}{h} = \lim_{h \to 0^+} \frac{f(c + h) - f(c)}{h}
+\]
+and so we have shown that $f'(c) \leq 0$.
+\end{frame}
+%=====================================================================
+\begin{frame}{Fermat’s Theorem}
+If $h < 0$, then the direction of the inequality (5) is reversed when we divide by $h$:
+\[
+\frac{f(c + h) - f(c)}{h} \geq 0
+\]
+
+So, taking the left-hand limit, we have
+\[
+f'(c) = \lim_{h \to 0} \frac{f(c + h) - f(c)}{h} = \lim_{h \to 0^-} \frac{f(c + h) - f(c)}{h} \geq 0
+\]
+
+We have shown that $f'(c) \geq 0$ and also that $f'(c) \leq 0$. Since both of these inequalities must be true, the only possibility is that
+\[
+f'(c) = 0.
+\]
+\end{frame}
+%=====================================================================
+\begin{frame}{Example1: $f'(c)=0$ but is no maximum and minimum}
+\textbf{\textcolor{blue}{EXAMPLE 1}} \quad If $f(x) = x^3$, then $f'(x) = 3x^2$, so $f'(0) = 0$. But $f$ has no maximum or minimum at $0$. The fact that $f'(0) = 0$ simply means that the curve $y = x^3$ has a horizontal tangent at $(0, 0)$. Instead of having a maximum or minimum at $(0, 0)$, the curve crosses its horizontal tangent there.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.3\linewidth]{figures/section4.1/CalculusT6.png}
+    \caption{If $f(x) = x^3$, then $f'(0)=0$, but f has no maximum or minimum.}
+\end{figure}
+\end{frame}
+%=====================================================================
+\begin{frame}{Example2: Non-differentiable Minimum}
+\textbf{\textcolor{blue}{EXAMPLE 2}} \quad The function $f(x) = |x|$ has its (local and absolute) minimum value at $0$, but that value can’t be found by setting $f'(x) = 0$ because, as was shown in Example 2.8.5, $f'(0)$ does not exist.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.3\linewidth]{figures/section4.1/CalculusT7.png}
+    \caption{If $f(x)=|x|$, then $f'(0)=0$ is a minimum value, but $f'(0)$ does not exist.}
+\end{figure}
+\end{frame}
+%=====================================================================
+\begin{frame}{Caution When Using Fermat's Theorem}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{WARNING}]
+Examples 1 and 2 show that we must be careful when using Fermat’s Theorem.
+\begin{itemize}
+    \item Example 1 demonstrates that even when $f'(c) = 0$ there need not be a maximum or minimum at $c$.\\
+    $\Longrightarrow$ In other words, \textbf{the converse of Fermat’s Theorem} is false, in general.
+    \item Example 2 shows that there is an extreme value even when $f'(c)$ does not exist 
+\end{itemize} 
+\end{tcolorbox}
+\end{frame}
+%=====================================================================
+\begin{frame}{Definition: Critical Number}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definition}]
+A \textbf{critical number} of a function $f$ is a number $c$ in the domain of $f$ such that either $f'(c) = 0$ or $f'(c)$ does not exist.
+\end{tcolorbox}
+In terms of critical numbers, Fermat’s Theorem can be rephrased as follows
+\begin{tcolorbox}[colframe=red!80!black, colback=white,title=\textbf{Rephrased Fermat's Theorem}]
+If $f$ has a local maximum or minimum at $c$, then $c$ is a critical number of $f$.
+\end{tcolorbox}
+\end{frame}
+%=====================================================================
+\begin{frame}{The Closed Interval Method}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{The Closed Interval Method}]
+To find the \textit{absolute} maximum and minimum values of a continuous function $f$ on a closed interval $[a, b]$:
+\begin{enumerate}
+  \item Find the values of $f$ at the critical numbers of $f$ in $(a, b)$.
+  \item Find the values of $f$ at the endpoints of the interval.
+  \item The largest of the values from Steps 1 and 2 is the absolute maximum value;\\
+        the smallest of these values is the absolute minimum value.
+\end{enumerate}
+\end{tcolorbox}
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Finding absolute Extrema}
+\textbf{\textcolor{blue}{EXAMPLE}}
+\begin{enumerate}[(a)]
+  \item Use a calculator or computer to estimate the absolute minimum and maximum values of the function $f(x) = x - 2 \sin x$, $0 \leq x \leq 2\pi$.
+  \item Use calculus to find the exact minimum and maximum values.
+\end{enumerate}
+\end{frame}
+%=====================================================================
+\begin{frame}{Solution to Example}
+\textbf{\textcolor{blue}{SOLUTION}}
+
+\begin{enumerate}
+  \item[(a)] Figure shows a graph of $f$ in the viewing rectangle $[0, 2\pi]$ by $[-1, 8]$. The absolute maximum value is about 6.97, and it occurs when $x \approx 5.24$. Similarly, the absolute minimum value is about $-0.68$ and it occurs when $x \approx 1.05$. It is possible to get more accurate numerical estimates, but for exact values, we must use calculus.
+  \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.5\linewidth]{figures/section4.1/CalculusT8.png}
+  \end{figure}
+
+\end{enumerate}
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Solution}
+\begin{enumerate}[(a)]
+  \item[(b)] The function $f(x) = x - 2 \sin x$ is continuous on $[0, 2\pi]$. Since
+  \[
+  f'(x) = 1 - 2 \cos x,
+  \]
+  we have $f'(x) = 0$ when $\cos x = \frac{1}{2}$ and this occurs when $x = \frac{\pi}{3}$ or $x = \frac{5\pi}{3}$. The values of $f$ at these critical numbers are
+  \[
+  f\left( \frac{\pi}{3} \right) = \frac{\pi}{3} - 2 \sin \frac{\pi}{3} = \frac{\pi}{3} - \sqrt{3} \approx -0.684853,
+  \]
+  \[
+  f\left( \frac{5\pi}{3} \right) = \frac{5\pi}{3} - 2 \sin \frac{5\pi}{3} = \frac{5\pi}{3} + \sqrt{3} \approx 6.968039.
+  \]
+
+  The values of $f$ at the endpoints are
+  \[
+  f(0) = 0 \qquad \text{and} \qquad f(2\pi) = 2\pi \approx 6.28.
+  \]
+
+  Comparing these four numbers and using the Closed Interval Method, we see that the absolute minimum value and the absolute maximum value is:
+  \[
+  f\left( \frac{\pi}{3} \right) = \frac{\pi}{3} - \sqrt{3} 
+  \quad ; \quad
+  f\left( \frac{5\pi}{3} \right) = \frac{5\pi}{3} + \sqrt{3}.
+  \]
+\end{enumerate}
+\end{frame}
+%=====================================================================
+%=====================================================================
+
+\end{document}

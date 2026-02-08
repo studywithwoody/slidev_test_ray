@@ -1,0 +1,285 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+\title{Applications of Differentiation}
+\subtitle{section4.5: Summary of Curve Sketching}
+\author{Hsu Chun-Wei}
+\date{June 2025}
+
+\begin{document}
+
+\maketitle
+
+%=====================================================================
+\begin{frame}{Guidelines for Sketching a Curve}
+
+\textbf{A. Domain} \\
+Determine the domain $D$ of $f$.\\
+\hfill (i.e., the set of $x$-values for which $f(x)$ is defined.)
+
+\vspace{0.5em}
+\textbf{B. Intercepts} \\
+- The $y$-intercept is $f(0)$: where the curve crosses the $y$-axis. \\
+- To find $x$-intercepts, set $y = 0$ and solve for $x$.\\
+\hfill (Can skip if difficult.)
+
+\vspace{0.5em}
+\textbf{C. Symmetry}
+\begin{itemize}
+  \item[(i)] If $f(-x) = f(x)$ for all $x$ in $D$, then $f$ is an \textbf{even function}, symmetric about the $y$-axis.  
+  \hfill (e.g., $y = x^2,\ x^4,\ |x|,\ \cos x$)
+
+  \item[(ii)] If $f(-x) = -f(x)$ for all $x$ in $D$, then $f$ is an \textbf{odd function}, symmetric about the origin.  
+  \hfill (e.g., $y = x,\ x^3,\ \frac{1}{x},\ \sin x$)
+  \item[(iii)] If $f(x + p) = f(x)$ for all $x$ in $D$, where $p$ is a positive constant, then $f$ is a \textbf{periodic function}, and the smallest such $p$ is called the \textbf{period}.
+ 
+\end{itemize}
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Guidelines for Sketching a Curve}
+
+\textbf{D. Asymptotes}
+\begin{itemize}
+  \item[(i)] \textbf{Horizontal Asymptotes:} If $\displaystyle \lim_{x \to \infty} f(x) = L$ or $\displaystyle \lim_{x \to -\infty} f(x) = L$, then $y = L$ is a horizontal asymptote.
+  \item[(ii)] \textbf{Vertical Asymptotes:} If any of the following are true, then $x = a$ is a vertical asymptote:
+  \[
+  \lim_{x \to a^-} f(x) = \pm \infty, \quad
+  \lim_{x \to a^+} f(x) = \pm \infty
+  \]
+  \item[(iii)] \textbf{Slant Asymptotes:} Discussed later (if applicable).
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{E. Intervals of Increase or Decrease} \\
+Use the I/D Test: Find where $f'(x) > 0$ (increasing) and $f'(x) < 0$ (decreasing).
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Guidelines for Sketching a Curve}
+
+\textbf{F. Local Maximum or Minimum Values} \\
+Find critical points ($f'(c) = 0$ or undefined). Then:
+\begin{itemize}
+  \item Use First Derivative Test: sign change in $f'$ indicates local extrema.
+  \item Or use Second Derivative Test: if $f''(c) > 0$, minimum; if $f''(c) < 0$, maximum.
+\end{itemize}
+
+\vspace{0.5em}
+\textbf{G. Concavity and Points of Inflection} \\
+Use the Concavity Test: compute $f''(x)$.
+\begin{itemize}
+  \item $f''(x) > 0$: curve is concave up
+  \item $f''(x) < 0$: curve is concave down
+\end{itemize}
+Points where concavity changes are inflection points.
+
+\vspace{0.5em}
+\textbf{H. Sketch the Curve} \\
+Use information from A–G:
+\begin{itemize}
+  \item Plot intercepts, extrema, and inflection points
+  \item Draw asymptotes as dashed lines
+  \item Use concavity and monotonicity to complete the shape
+\end{itemize}
+\end{frame}
+%=====================================================================
+\begin{frame}{Example: Sketching the Curve $y = \frac{2x^2}{x^2 - 1}$}
+\textbf{Example.} Calculate
+Sketching the Curve $y = \frac{2x^2}{x^2 - 1}$
+\vspace{0.5em}
+
+\textbf{Solution.}
+\begin{itemize}
+\item[A.] \textbf{Domain} \\
+The domain is
+\[
+\{x \mid x^2 - 1 \ne 0\} = \{x \mid x \ne \pm 1\} = (-\infty, -1) \cup (-1, 1) \cup (1, \infty)
+\]
+\item[B.] \textbf{Intercepts} \\
+The $x$- and $y$-intercepts are both 0.
+
+\item[C.] \textbf{Symmetry} \\
+Since $f(-x) = f(x)$, the function is even. The curve is symmetric about the $y$-axis.
+
+\end{itemize}
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Sketching the Curve $y = \frac{2x^2}{x^2 - 1}$}
+
+\begin{itemize}
+\item[D. ]\textbf{Asymptotes}
+\begin{itemize}
+  \item Horizontal asymptote:
+  \[
+  \lim_{x \to \pm \infty} \frac{2x^2}{x^2 - 1}
+  = \lim_{x \to \pm \infty} \frac{2}{1 - \frac{1}{x^2}} = 2
+  \]
+  So $y = 2$ is a horizontal asymptote.
+  
+  \item Vertical asymptotes at $x = \pm 1$:
+  \[
+  \lim_{x \to 1^+} \frac{2x^2}{x^2 - 1} = \infty, \quad
+  \lim_{x \to 1^-} \frac{2x^2}{x^2 - 1} = -\infty
+  \]
+  \[
+  \lim_{x \to -1^+} \frac{2x^2}{x^2 - 1} = -\infty, \quad
+  \lim_{x \to -1^-} \frac{2x^2}{x^2 - 1} = \infty
+  \]
+  Therefore, $x = 1$ and $x = -1$ are vertical asymptotes.
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Example: Sketching the Curve $y = \frac{2x^2}{x^2 - 1}$}
+
+\begin{itemize}
+\item[E.]\textbf{Intervals of Increase or Decrease}
+
+We compute the derivative:
+\[
+f'(x) = \frac{(x^2 - 1)(4x) - 2x^2 \cdot 2x}{(x^2 - 1)^2}
+= \frac{-4x}{(x^2 - 1)^2}
+\]
+
+\begin{itemize}
+  \item $f'(x) > 0$ when $x < 0$ and $x \ne -1 \longleftrightarrow f$ is increasing on $(-\infty, -1)$ and $(-1, 0)$
+  \item $f'(x) < 0$ when $x > 0$ and $x \ne 1 \longleftrightarrow f$ is decreasing on $(0, 1)$ and $(1, \infty)$
+\end{itemize}
+
+\item[F.]\textbf{Local Maximum or Minimum Values}
+
+The only critical point is $x = 0$. Since $f'$ changes from positive to negative at $x = 0$, by the First Derivative Test, we conclude:
+\[
+f(0) = 0 \text{ is a local maximum.}
+\]
+\end{itemize}
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Example: Sketching the Curve $y = \frac{2x^2}{x^2 - 1}$}
+
+\begin{itemize}
+\item[G.] \textbf{Concavity and Points of Inflection}
+
+We compute the second derivative:
+\[
+f''(x) = \frac{(x^2 - 1)^2(-4) + 4x \cdot 2(x^2 - 1)2x}{(x^2 - 1)^4}
+= \frac{12x^2 + 4}{(x^2 - 1)^3}
+\]
+
+Since $12x^2 + 4 > 0$ for all $x$, the sign of $f''(x)$ depends on the denominator:
+
+\[
+f''(x) > 0 \quad \Leftrightarrow \quad |x| > 1 \quad \Rightarrow \text{concave up on } (-\infty, -1) \text{ and } (1, \infty)
+\]
+\[
+f''(x) < 0 \quad \Leftrightarrow \quad |x| < 1 \quad \Rightarrow \text{concave down on } (-1, 1)
+\]
+
+No inflection point exists because $x = \pm 1$ are not in the domain.
+
+\end{itemize}
+
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Sketching the Curve $y = \frac{2x^2}{x^2 - 1}$}
+\begin{itemize}
+\item[H.] \textbf{Sketch the Curve}
+
+Using the results from parts A ~ G, we complete the graph:
+\begin{itemize}
+  \item Horizontal asymptote at $y = 2$, vertical asymptotes at $x = \pm 1$
+  \item Local maximum at $(0, 0)$
+  \item Increasing/decreasing and concavity behavior shown as described
+\end{itemize}
+\end{itemize}
+\begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\linewidth]{figures/section4.5/CalculusT2.png}
+            \caption{Preliminary sketch}
+            \label{Preliminary sketch}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\linewidth]{figures/section4.5/CalculusT1.png}
+            \caption{Finished sketch}
+            \label{Finished sketch}
+        \end{figure}
+    \end{column}
+\end{columns}
+\end{frame}
+%=====================================================================
+\begin{frame}{Slant Asymptotes}
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{Slant Asymptotes}]
+Some curves have asymptotes that are \textit{oblique}, meaning neither horizontal nor vertical. If
+\[
+\lim_{x \to \infty} \left[ f(x) - (mx + b) \right] = 0
+\]
+where $m \ne 0$, then the line $y = mx + b$ is called a \textbf{slant asymptote}.
+\end{tcolorbox}
+
+This means the vertical distance between the curve $y = f(x)$ and the line $y = mx + b$ approaches 0 as $x \to \infty$ (or $x \to -\infty$).
+
+\vspace{0.5em}
+In rational functions, slant asymptotes occur when the degree of the numerator is one more than the degree of the denominator. In such cases, the slant asymptote can be found using polynomial long division.
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Slant Asymptote of $f(x) = \frac{x^3}{x^2 + 1}$}
+
+\textbf{Asymptotes}
+
+\begin{itemize}
+  \item The denominator $x^2 + 1$ is never 0, so there is \textbf{no vertical asymptote}.
+  \item As $x \to \pm \infty$, $f(x) \to \pm \infty$, so there is \textbf{no horizontal asymptote}.
+\end{itemize}
+
+\vspace{0.5em}
+But using long division:
+\[
+f(x) = \frac{x^3}{x^2 + 1} = x - \frac{x}{x^2 + 1}
+\]
+
+This suggests that $y = x$ is a candidate for a slant asymptote.
+
+\vspace{0.5em}
+To confirm:
+\[
+f(x) - x = -\frac{x}{x^2 + 1} = -\frac{1}{x} \cdot \frac{1}{1 + \frac{1}{x^2}} \to 0 \quad \text{as } x \to \pm \infty
+\]
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Conclusion}]
+The line $y = x$ is a slant asymptote of the curve.
+\end{tcolorbox}
+
+\end{frame}
+%=====================================================================
+%=====================================================================
+
+\end{document}

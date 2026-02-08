@@ -1,0 +1,169 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+\title{Applications of Differentiation}
+\subtitle{section4.2: The Mean Value Theorem}
+\author{Hsu Chun-Wei}
+\date{June 2025}
+
+\begin{document}
+
+\maketitle
+
+%=====================================================================
+\begin{frame}{Rolle's Theorem}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Rolle's Theorem}]
+Let $f$ be a function that satisfies the following three hypotheses:
+\begin{enumerate}
+  \item $f$ is continuous on the closed interval $[a, b]$.
+  \item $f$ is differentiable on the open interval $(a, b)$.
+  \item $f(a) = f(b)$
+\end{enumerate}
+Then there is a number $c$ in $(a, b)$ such that $f'(c) = 0$.
+\end{tcolorbox}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{figures/section4.2/CalculusT1.png}
+\end{figure}
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Mean Value Theorem}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{The Mean Value Theorem}]
+Let $f$ be a function that satisfies the following hypotheses:
+\begin{enumerate}
+  \item $f$ is continuous on the closed interval $[a, b]$.
+  \item $f$ is differentiable on the open interval $(a, b)$.
+\end{enumerate}
+Then there is a number $c$ in $(a, b)$ such that
+\[
+f'(c) = \frac{f(b) - f(a)}{b - a}
+\]
+\end{tcolorbox}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/section4.2/CalculusT2.png}
+\end{figure}
+\end{frame}
+%=====================================================================
+\begin{frame}{Proof of the Mean Value Theorem}
+\textbf{\textcolor{red}{PROOF}} \quad We apply Rolle’s Theorem to a new function $h$ defined as the difference between $f$ and the function whose graph is the secant line $AB$. Using Equation 3 and the point-slope equation of a line, we see that the equation of the line $AB$ can be written as
+\(
+y - f(a) = \frac{f(b) - f(a)}{b - a}(x - a)
+\)
+\begin{columns}[C]
+% create the column with the first image, that occupies
+% half of the slide
+    \begin{column}{.4\textwidth}
+    \begin{figure}
+        \label{between 2 and 3}
+        \centering
+        \includegraphics[width=\textwidth]{figures/section4.2/CalculusT3.png}
+    \end{figure}      
+    \end{column}
+% create the column with the second image, that also
+% occupies half of the slide
+    \begin{column}{.6\textwidth}
+    So, as shown in the Figure,
+    \[
+    h(x) = f(x) - f(a) - \frac{f(b) - f(a)}{b - a}(x - a)
+    \]
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Proof of the Mean Value Theorem}
+First, we must verify that $h$ satisfies the three hypotheses of Rolle’s Theorem.
+\begin{enumerate}
+  \item The function $h$ is continuous on $[a, b]$ because it is the sum of $f$ and a first-degree polynomial, both of which are continuous.
+  \item The function $h$ is differentiable on $(a, b)$ because both $f$ and the first-degree polynomial are differentiable. In fact, we can compute $h'$ directly from Equation 4:
+  \[
+  h'(x) = f'(x) - \frac{f(b) - f(a)}{b - a}
+  \]
+\end{enumerate}
+
+(Note that $f(a)$ and $[f(b) - f(a)] / (b - a)$ are constants.)
+\end{frame}
+%=====================================================================
+\begin{frame}{Proof of the Mean Value Theorem}
+
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item 
+  \[
+  h(a) = f(a) - f(a) - \frac{f(b) - f(a)}{b - a}(a - a) = 0
+  \]
+  \[
+  h(b) = f(b) - f(a) - \frac{f(b) - f(a)}{b - a}(b - a)
+  \]
+  \[
+  \phantom{h(b)} = f(b) - f(a) - [f(b) - f(a)] = 0
+  \]
+  Therefore $h(a) = h(b)$.
+\end{enumerate}
+
+Since $h$ satisfies all the hypotheses of Rolle’s Theorem, that theorem says there is a number $c$ in $(a, b)$ such that $h'(c) = 0$. Therefore
+\[
+0 = h'(c) = f'(c) - \frac{f(b) - f(a)}{b - a}
+\]
+and so
+\[
+f'(c) = \frac{f(b) - f(a)}{b - a}
+\]
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Theorem: Zero Derivative Implies Constant Function}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Theorem}]
+If $f'(x) = 0$ for all $x$ in an interval $(a, b)$, then $f$ is constant on $(a, b)$.
+\end{tcolorbox}
+
+\textbf{\textcolor{red}{PROOF}} \quad Let $x_1$ and $x_2$ be any two numbers in $(a, b)$ with $x_1 < x_2$. Since $f$ is differentiable on $(a, b)$, it must be differentiable on $(x_1, x_2)$ and continuous on $[x_1, x_2]$. By applying the Mean Value Theorem to $f$ on the interval $[x_1, x_2]$, we get a number $c$ such that $x_1 < c < x_2$ and
+
+\[
+f(x_2) - f(x_1) = f'(c)(x_2 - x_1)
+\]
+
+Since $f'(x) = 0$ for all $x$, we have $f'(c) = 0$, and so Equation 6 becomes
+\[
+f(x_2) - f(x_1) = 0 \quad \text{or} \quad f(x_2) = f(x_1)
+\]
+
+Therefore $f$ has the same value at \textit{any} two numbers $x_1$ and $x_2$ in $(a, b)$. This means that $f$ is constant on $(a, b)$.
+
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Corollary: Equal Derivatives Implies Constant Difference}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Corollary}]
+If $f'(x) = g'(x)$ for all $x$ in an interval $(a, b)$, then $f - g$ is constant on $(a, b)$; that is, $f(x) = g(x) + c$ where $c$ is a constant.
+\end{tcolorbox}
+
+\textbf{\textcolor{red}{PROOF}} \quad Let $F(x) = f(x) - g(x)$. Then
+\[
+F'(x) = f'(x) - g'(x) = 0
+\]
+for all $x$ in $(a, b)$. Thus, by the theorem above, $F$ is constant; that is, $f - g$ is constant.
+\end{frame}
+%=====================================================================
+%=====================================================================
+%=====================================================================
+%=====================================================================
+%=====================================================================
+
+\end{document}

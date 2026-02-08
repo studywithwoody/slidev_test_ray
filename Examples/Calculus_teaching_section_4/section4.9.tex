@@ -1,0 +1,123 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+\title{Applications of Differentiation}
+\subtitle{section4.9 : Antiderivatives}
+\author{Hsu Chun-Wei}
+\date{June 2025}
+
+\begin{document}
+
+\maketitle
+
+%=====================================================================
+\begin{frame}{Antiderivative}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definition}]
+A function $F$ is called an \textbf{antiderivative} of $f$ on an interval $I$ if
+\[
+F'(x) = f(x) \quad \text{for all } x \text{ in } I.
+\]
+\end{tcolorbox}
+
+If two functions have identical derivatives on an interval, then they must differ by a constant. Therefore, if $F$ and $G$ are both antiderivatives of $f$ on $I$, then they must differ by a constant:
+\[
+G(x) = F(x) + C
+\]
+where $C$ is a constant. 
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Antiderivative}
+
+\begin{columns}[c]
+    \begin{column}{0.6 \textwidth}
+        This leads to the following result:
+        \begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Theorem}]
+        If $F$ is an antiderivative of $f$ on an interval $I$, then the most general antiderivative of $f$ on $I$ is
+        \[
+        F(x) + C
+        \]
+        where $C$ is an arbitrary constant.
+        \end{tcolorbox}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.9\linewidth]{figures/section4.9/CalculusT1.png}
+            \caption{Members of the family of antiderivatives of $f(x) =x^2$}
+        \end{figure}
+    \end{column}
+\end{columns}
+
+\end{frame}
+%=====================================================================
+\begin{frame}{Antidifferentiation Formulas}
+
+
+\begin{center}
+
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|c|c||c|c|}
+\hline
+\textbf{Function} & \textbf{Particular Antiderivative} & \textbf{Function} & \textbf{Particular Antiderivative} \\
+\hline
+$cf(x)$ & $cF(x)$ & $\sin x$ & $-\cos x$ \\
+$f(x) + g(x)$ & $F(x) + G(x)$ & $\sec^2 x$ & $\tan x$ \\
+$x^n \ (n \ne -1)$ & $\dfrac{x^{n+1}}{n+1}$ & $\sec x \tan x$ & $\sec x$ \\
+$\dfrac{1}{x}$ & $\ln |x|$ & $\dfrac{1}{\sqrt{1 - x^2}}$ & $\sin^{-1}x$ \\
+$e^x$ & $e^x$ & $\dfrac{1}{1 + x^2}$ & $\tan^{-1}x$ \\
+$b^x$ & $\dfrac{b^x}{\ln b}$ & $\cosh x$ & $\sinh x$ \\
+$\cos x$ & $\sin x$ & $\sinh x$ & $\cosh x$ \\
+\hline
+\end{tabular}
+}
+
+\end{center}
+
+Try to check for these popular antidifferentiation Formulas
+\end{frame}
+
+%=====================================================================
+\begin{frame}{Example: Solve $f'(x) = e^x + \frac{20}{1 + x^2}$ with $f(0) = -2$}
+\textbf{Example:} Solve $f'(x) = e^x + \frac{20}{1 + x^2}$ with $f(0) = -2$
+
+\textbf{Solution:}
+\[
+f(x) = \int f'(x)\,dx = \int e^x\,dx + \int \frac{20}{1 + x^2}\,dx = e^x + 20\tan^{-1}x + C
+\]
+
+Using Initial Condition $f(0) = -2$ to solve for $C$:
+\[
+f(0) = e^0 + 20\tan^{-1}0 + C = 1 + 0 + C = -2 \Rightarrow C = -3
+\]
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Final Answer}]
+\[
+f(x) = e^x + 20\tan^{-1}x - 3
+\]
+\end{tcolorbox}
+
+\end{frame}
+
+%=====================================================================
+%=====================================================================
+%=====================================================================
+%=====================================================================
+%=====================================================================
+%=====================================================================
+%=====================================================================
+%=====================================================================
+
+\end{document}
