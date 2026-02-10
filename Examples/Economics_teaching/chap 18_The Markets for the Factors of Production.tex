@@ -1,0 +1,788 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% Customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+% 每章節開始時自動產生章節頁
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\title{Mankiw's Principles of Economics}
+\subtitle{chap 18: The Markets for the Factors of Production}
+\author{Hsu Chun-Wei}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+% 目錄頁
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+
+%==========================================================
+\section{18-1 The Demand for Labor}
+%==========================================================
+\begin{frame}{The Demand for Labor}
+
+Labor markets, like other markets in the economy, are governed by the forces of supply and demand. 
+The same basic tools used to analyze goods markets can also be applied to labor markets.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Idea: Labor as a Derived Demand}]
+Labor demand is a \textbf{derived demand}. Firms demand labor not for its own sake, but because labor is an input used to produce goods and services that consumers want.
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{The Demand for Labor}
+
+To understand the demand for labor, we must focus on firms:
+\begin{itemize}
+    \item Firms hire workers to produce goods for sale.
+    \item The demand for labor depends on the demand for the goods being produced.
+    \item Changes in product markets directly affect wages and employment.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Goods Market vs. Labor Market}]
+\begin{itemize}
+    \item In the goods market, supply and demand determine the \textbf{price of goods}.
+    \item In the labor market, supply and demand determine the \textbf{wage of workers}.
+    \item The wage is the price of labor.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Demand for Labor}
+    \begin{center}
+        \includegraphics[width=\textwidth]{pictures/chap18/T1.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{The Competitive Profit-Maximizing Firm}
+
+To understand labor demand, we examine how a typical firm decides how much labor to hire.
+Consider an apple producer that must choose how many apple pickers to employ.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Assumption 1: Competitive Markets}]
+The firm is \textbf{competitive} in both:
+\begin{itemize}
+    \item The output market (it sells apples)
+    \item The labor market (it hires apple pickers)
+\end{itemize}
+As a result, the firm is a \textbf{price taker}: it takes the price of apples and the wage as given.
+\end{tcolorbox}
+
+Because many firms sell apples and hire workers, a single firm cannot influence market prices.
+It must decide only how much output to produce and how many workers to hire.
+
+\end{frame}
+%==========================================================
+\begin{frame}{The Competitive Profit-Maximizing Firm}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Assumption 2: Profit Maximization}]
+The firm’s goal is to \textbf{maximize profit}:
+\[
+\text{Profit} = \text{Total Revenue} - \text{Total Cost}
+\]
+The firm does not care directly about output or employment, only about profit.
+\end{tcolorbox}
+
+The firm’s supply of goods and its demand for labor are both derived from this profit-maximizing objective.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Production Function}
+
+To decide how many workers to hire, a firm must understand how labor affects output.
+This relationship is described by the \textbf{production function}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Production Function}]
+A production function shows the relationship between:
+\begin{itemize}
+    \item \textbf{Inputs} (labor)
+    \item \textbf{Output} (apples)
+\end{itemize}
+All other inputs (land, capital, technology) are held constant.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Marginal Product of Labor}
+
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Marginal Product of Labor (MPL)}]
+\[
+\text{MPL} = \frac{\Delta Q}{\Delta L}
+\]
+MPL measures the additional output produced by hiring one more worker.
+\end{tcolorbox}
+
+As more workers are hired, the MPL eventually falls due to diminishing marginal returns.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{From Marginal Product to Hiring Decisions}
+
+The firm sells output in a competitive market, so the price of apples is constant.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Value of the Marginal Product of Labor}]
+\[
+\text{VMPL} = P \times \text{MPL}
+\]
+VMPL measures the additional revenue generated by hiring one more worker.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{From Marginal Product to Hiring Decisions}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Profit-Maximizing Rule}]
+\begin{itemize}
+    \item Hire another worker if $\text{VMPL} > W$
+    \item Stop hiring when $\text{VMPL} = W$
+    \item Do not hire if $\text{VMPL} < W$
+\end{itemize}
+\end{tcolorbox}
+
+\textbf{Key insight:}  
+The firm’s demand for labor is determined by comparing the value of what a worker produces to the wage.
+
+\end{frame}
+%==========================================================
+\begin{frame}{The Hiring Decisions}
+    \begin{center}
+        \includegraphics[width=\textwidth]{pictures/chap18/T2.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{The Production Function and Diminishing Marginal Product}
+
+Figure graphs the relationship between labor input and output.
+The number of workers is on the horizontal axis, and total output is on the vertical axis.
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{pictures/chap18/T3.png}
+\end{center}
+
+\end{frame}
+%==========================================================
+\begin{frame}{The Production Function and Diminishing Marginal Product}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Marginal Product of Labor (MPL)}]
+The marginal product of labor is the increase in output resulting from the hiring of one additional worker.
+\end{tcolorbox}
+
+As the number of workers increases, the marginal product of labor declines.
+This pattern reflects \textbf{diminishing marginal product}:
+early workers can perform the most productive tasks, while additional workers contribute less to total output.
+As a result, the production function becomes flatter as labor increases.
+
+\end{frame}
+%==========================================================
+\begin{frame}{The Value of the Marginal Product}
+
+A profit-maximizing firm is concerned not with output itself, but with the \textbf{revenue} generated by production.
+To decide how many workers to hire, the firm compares the benefit of an additional worker with the wage.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Value of the Marginal Product of Labor}]
+The value of the marginal product of labor (VMPL) equals:
+\[
+\text{VMPL} = P \times \text{MPL}
+\]
+where $P$ is the market price of output.
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{The Value of the Marginal Product}
+
+VMPL measures the additional \textbf{revenue} generated by hiring one more worker.
+Because output price is constant for a competitive firm and MPL diminishes as labor increases, VMPL also diminishes as more workers are hired.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Marginal Revenue Product}]
+Economists sometimes refer to VMPL as the \textbf{marginal revenue product} of labor:
+the extra revenue earned from employing one additional unit of labor.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{VMPL and the Demand for Labor}
+
+Suppose the firm faces a constant market wage.
+Hiring decisions depend on a comparison between the value of what a worker produces and the wage.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Profit-Maximizing Hiring Rule}]
+\begin{itemize}
+    \item Hire labor if $\text{VMPL} > W$
+    \item Stop hiring when $\text{VMPL} = W$
+    \item Do not hire if $\text{VMPL} < W$
+\end{itemize}
+\end{tcolorbox}
+\end{frame}
+
+%==========================================================
+\begin{frame}{VMPL and the Demand for Labor}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap18/T4.png}
+\end{center}
+\end{frame}
+
+%==========================================================
+\begin{frame}{VMPL and the Demand for Labor}
+
+Graphically, the firm hires workers up to the point where the VMPL curve intersects the market wage.
+Below this point, hiring increases profit; above it, hiring reduces profit.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Labor Demand Curve}]
+For a competitive, profit-maximizing firm, the \textbf{value-of-marginal-product curve is the labor-demand curve}.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{What Causes the Labor-Demand Curve to Shift?}
+
+We have learned that a firm’s labor-demand curve reflects the
+\textbf{value of the marginal product of labor (VMPL)}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Insight}]
+Any factor that changes the \textbf{value of the marginal product of labor}
+will shift the labor-demand curve.
+\end{tcolorbox}
+
+Recall:
+\[
+\text{VMPL} = P \times \text{MPL}
+\]
+
+Therefore, changes in either:
+\begin{itemize}
+    \item The price of output ($P$), or
+    \item The marginal product of labor (MPL)
+\end{itemize}
+will cause the labor-demand curve to shift.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Determinants of Labor Demand}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{1. Output Price}]
+An increase in the price of output raises VMPL and shifts labor demand to the right.
+A decrease in output price lowers VMPL and shifts labor demand to the left.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{2. Technological Change}]
+Technological progress usually increases MPL and labor demand
+(\textbf{labor-augmenting technology}).
+However, \textbf{labor-saving technology} can reduce MPL and shift labor demand left.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{3. Supply of Other Factors}]
+A change in the quantity of other inputs (such as capital or land)
+affects MPL and therefore labor demand.
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Input Demand and Output Supply}
+
+A competitive, profit-maximizing firm makes two key decisions:
+how much output to produce and how much labor to hire.
+These two decisions are closely linked.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Profit-Maximization Conditions}]
+\begin{itemize}
+    \item \textbf{Output decision:} Produce where $P = MC$
+    \item \textbf{Labor decision:} Hire labor where $P \times MPL = W$
+\end{itemize}
+\end{tcolorbox}
+
+From the labor-hiring rule:
+\[
+P \times MPL = W
+\]
+
+Dividing both sides by $MPL$, we obtain:
+\[
+P = \frac{W}{MPL}
+\]
+
+\end{frame}
+%==========================================================
+\begin{frame}{Input Demand and Output Supply}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Link Between Labor and Output}]
+The marginal cost of output is:
+\[
+MC = \frac{W}{MPL}
+\]
+Thus, the labor-hiring condition implies:
+\[
+P = MC
+\]
+\end{tcolorbox}
+
+\textbf{Conclusion:}  
+A firm that hires labor until the value of the marginal product equals the wage
+will also produce output up to the point where price equals marginal cost.
+
+\end{frame}
+%==========================================================
+\section{18-2 The Supply of Labor}
+%==========================================================
+\begin{frame}{The Supply of Labor}
+
+Having analyzed labor demand, we now turn to the other side of the labor market:
+\textbf{labor supply}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Focus of Labor Supply}]
+Labor supply reflects the decisions of individuals about:
+\begin{itemize}
+    \item How many hours to work
+    \item How much leisure to enjoy
+\end{itemize}
+given the wage they can earn.
+\end{tcolorbox}
+
+In this section, we discuss the labor-supply decision informally.
+A more formal model of household decision making is developed later.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Trade-off between Work and Leisure}
+
+For individuals, one of the most important trade-offs is between \textbf{work and leisure}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Opportunity Cost of Leisure}]
+The cost of an hour of leisure is the wage that could have been earned by working.
+An increase in the wage raises the opportunity cost of leisure.
+\end{tcolorbox}
+
+An upward-sloping labor-supply curve reflects this trade-off:
+as the wage increases, workers choose to supply more labor and enjoy less leisure.
+\end{frame}
+
+%==========================================================
+\begin{frame}{What Causes the Labor-Supply Curve to Shift?}
+
+The labor-supply curve shifts whenever people change the amount of labor
+they are willing to supply at a given wage.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Insight}]
+Any factor that affects individuals' preferences, opportunities, or ability to work
+can shift the labor-supply curve.
+\end{tcolorbox}
+
+It is important to distinguish:
+\begin{itemize}
+    \item \textbf{Movements along the curve}: caused by a change in the wage
+    \item \textbf{Shifts of the curve}: caused by factors other than the wage
+\end{itemize}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Determinants of Labor Supply}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{1. Changes in Tastes}]
+A change in attitudes toward work versus leisure
+can increase or decrease the supply of labor.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{2. Changes in Alternative Opportunities}]
+If wages rise in another labor market,
+workers may switch jobs, reducing labor supply in the original market.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{3. Immigration}]
+An inflow of workers into a country or region
+increases the supply of labor in that labor market.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\section{18-3 Equilibrium in the Labor Market}
+%==========================================================
+\begin{frame}{Equilibrium in the Labor Market}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap18/T5.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Equilibrium in the Labor Market}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Labor Market Equilibrium}]
+In equilibrium:
+\begin{itemize}
+    \item Firms hire labor until $\text{VMPL} = W$.
+    \item Workers supply labor based on the wage.
+    \item The wage that clears the market must equal the value of the marginal product of labor.
+\end{itemize}
+\end{tcolorbox}
+
+\textbf{Note:}  
+Any event that shifts labor supply or labor demand
+must change both the equilibrium wage and the value of the marginal product of labor by the same amount.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Shifts in Labor Supply}
+
+Suppose immigration increases the number of workers willing to work.
+The labor-supply curve shifts to the right from $S_1$ to $S_2$.
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap18/T6.png}
+\end{center}
+
+
+\end{frame}
+%==========================================================
+\begin{frame}{Shifts in Labor Supply}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Immediate Effect}]
+At the initial wage $W_1$, the quantity of labor supplied exceeds the quantity demanded,
+creating a surplus of labor.
+\end{tcolorbox}
+
+This surplus puts downward pressure on the wage.
+As the wage falls from $W_1$ to $W_2$, firms find it profitable to hire more workers.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{New Equilibrium}]
+\begin{itemize}
+    \item Wage falls
+    \item Employment rises
+    \item The value of the marginal product of labor falls
+\end{itemize}
+\end{tcolorbox}
+
+In equilibrium, the wage and the value of the marginal product of labor
+both adjust to the same lower level.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Shifts in Labor Demand}
+
+Suppose an increase in the popularity of apples raises the price of apples.
+This price increase does not change the marginal product of labor,
+but it raises the \textbf{value of the marginal product of labor}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Mechanism}]
+An increase in the output price increases VMPL at every level of employment,
+shifting the labor-demand curve to the right.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Shifts in Labor Demand}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap18/T7.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Shifts in Labor Demand}
+
+At the initial wage $W_1$, firms now find it profitable to hire more workers.
+As labor demand shifts from $D_1$ to $D_2$, the equilibrium wage rises from $W_1$ to $W_2$,
+and employment increases from $L_1$ to $L_2$.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{New Equilibrium}]
+\begin{itemize}
+    \item Wage rises
+    \item Employment rises
+    \item The value of the marginal product of labor rises
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Labor Demand and Industry Prosperity}
+
+Prosperity for firms in an industry is often linked to prosperity for workers.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Output Price and Wages}]
+When the price of output rises:
+\begin{itemize}
+    \item Firms earn higher profits
+    \item Labor demand increases
+    \item Workers earn higher wages
+\end{itemize}
+\end{tcolorbox}
+
+Conversely, when the price of output falls,
+labor demand decreases and wages decline.
+
+\textbf{Example:}  
+Workers in industries with volatile output prices, such as oil,
+often experience wages that fluctuate with world market prices.
+
+\end{frame}
+
+%==========================================================
+\section{18-4 The Other Factors of Production: Land and Capital}
+%==========================================================
+\begin{frame}{The Other Factors of Production: Land and Capital}
+
+So far, we have focused on labor as a factor of production.
+However, firms must also decide how much \textbf{land} and \textbf{capital} to use.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Factors of Production}]
+Economists classify inputs into three categories:
+\begin{itemize}
+    \item \textbf{Labor}: workers’ time and effort
+    \item \textbf{Land}: natural resources
+    \item \textbf{Capital}: equipment and structures used in production
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Other Factors of Production: Land and Capital}
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{What Is Capital?}]
+Capital is the stock of equipment and structures
+that are used to produce goods and services.
+It represents goods produced in the past and used in the present.
+\end{tcolorbox}
+
+For an apple-producing firm, capital includes ladders, trucks, storage buildings,
+and even the trees themselves.
+
+\textbf{Key idea:}  
+Firms choose the quantities of all inputs—labor, land, and capital—to maximize profit.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Equilibrium in the Markets for Land and Capital}
+
+To understand how much owners of land and capital earn,
+we must distinguish between two different prices.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Two Prices of a Factor of Production}]
+\begin{itemize}
+    \item \textbf{Purchase price}: the price paid to own a factor permanently
+    \item \textbf{Rental price}: the price paid to use a factor for a limited time
+\end{itemize}
+\end{tcolorbox}
+
+The wage is simply the rental price of labor.
+Similarly, land and capital also earn rental prices determined by supply and demand.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Equilibrium in the Markets for Land and Capital}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Factor Demand}]
+For labor, land, and capital, a competitive firm hires each input
+up to the point where:
+\[
+\text{Value of marginal product} = \text{Factor price}
+\]
+\end{tcolorbox}
+
+Thus, the demand curve for land or capital reflects the marginal productivity of that factor.
+\end{frame}
+
+%==========================================================
+\begin{frame}{Equilibrium in the Markets for Land and Capital}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap18/T8.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Factor Income and Asset Prices}
+
+As long as firms are competitive and profit-maximizing,
+each factor of production earns the value of its marginal contribution.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Distribution of Income}]
+\begin{itemize}
+    \item Workers earn wages equal to VMPL
+    \item Landowners earn rent equal to the value of land's marginal product
+    \item Owners of capital earn rental income equal to the value of capital's marginal product
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Factor Income and Asset Prices}
+
+The purchase price of land or capital depends on the income it can generate.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Link Between Rental and Purchase Prices}]
+A buyer is willing to pay more for an asset
+if it provides a valuable stream of future rental income.
+\end{tcolorbox}
+
+\textbf{Key insight:}  
+The equilibrium purchase price reflects both the current and expected future
+value of the marginal product.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{What Is Capital Income?}
+
+Labor income is straightforward: it is the wage workers earn from working.
+Capital income is less obvious.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Capital Income}]
+Capital income is the income earned from owning capital,
+the stock of equipment and structures used in production.
+It reflects the rent paid for the use of capital.
+\end{tcolorbox}
+
+In practice, capital income reaches households in several forms:
+\begin{itemize}
+    \item \textbf{Interest} paid to bondholders and bank depositors
+    \item \textbf{Dividends} paid to shareholders
+    \item \textbf{Retained earnings}, which increase the value of firms and their stock
+\end{itemize}
+
+Regardless of how capital income is paid,
+capital is ultimately compensated according to the
+\textbf{value of its marginal product}.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Linkages among the Factors of Production}
+
+We have seen that the price paid to any factor of production
+equals the \textbf{value of its marginal product}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Marginal Productivity and Factor Prices}]
+\begin{itemize}
+    \item Because of diminishing marginal product, an abundant factor has a low marginal product and a low price.
+    \item A scarce factor has a high marginal product and a high price.
+\end{itemize}
+\end{tcolorbox}
+
+However, factors of production are typically used together.
+As a result, the marginal product of one factor depends on the quantities of other factors available.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Insight}]
+An event that changes the supply of one factor
+will often affect the earnings of \textbf{all} factors of production.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{An Example: Changes in One Factor Affect Others}
+
+Suppose a hurricane destroys many of the ladders used to pick apples.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Effect on the Ladder Market}]
+With fewer ladders available:
+\begin{itemize}
+    \item The supply of ladders falls
+    \item The rental price of ladders rises
+\end{itemize}
+\end{tcolorbox}
+\end{frame}
+
+%==========================================================
+\begin{frame}{An Example: Changes in One Factor Affect Others}
+
+With fewer ladders to work with, apple pickers become less productive.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Effect on Labor}]
+\begin{itemize}
+    \item The marginal product of labor falls
+    \item Labor demand decreases
+    \item Wages fall
+\end{itemize}
+\end{tcolorbox}
+
+\textbf{lesson:}  
+Changes in the supply of one factor affect the value of the marginal product—and earnings—of other factors.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Economics of the Black Death}
+
+In 14th-century Europe, the Black Death wiped out about one-third of the population.
+This tragic event provides a natural experiment for testing the theory of factor markets.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Shock to Factor Supplies}]
+\begin{itemize}
+    \item Labor supply fell sharply
+    \item Land supply remained unchanged
+\end{itemize}
+\end{tcolorbox}
+
+With fewer workers available:
+\begin{itemize}
+    \item The marginal product of labor increased
+    \item Wages rose
+\end{itemize}
+
+Because land and labor are used together in production:
+\begin{itemize}
+    \item The marginal product of land fell
+    \item Rents declined
+\end{itemize}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Economics of the Black Death}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Historical Evidence}]
+During this period, wages approximately doubled,
+while rents fell by 50 percent or more.
+\end{tcolorbox}
+
+\textbf{Lesson:}  
+A change in the supply of one factor of production
+can raise the earnings of some factors while lowering the earnings of others.
+
+\end{frame}
+
+%==========================================================
+%==========================================================
+%==========================================================
+
+
+\end{document}

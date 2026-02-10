@@ -1,0 +1,471 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% Customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+% 每章節開始時自動產生章節頁
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\title{Mankiw's Principles of Economics}
+\subtitle{chap 25: Production and Growth}
+\author{Hsu Chun-Wei}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+% 目錄頁
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+%==========================================================
+\begin{frame}{Living Standards and Economic Growth}
+
+There is tremendous variation in the standard of living around the world.  
+Average income in rich countries can be more than ten times higher than in poor countries, and these income differences translate into large differences in quality of life.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Observation: Income and Quality of Life}]
+Higher income is associated with better nutrition, safer housing, improved healthcare, longer life expectancy, and greater access to goods such as cars, phones, and televisions.
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Living Standards and Economic Growth}
+
+Even within a single country, living standards change over time.  
+In the United States, real GDP per person has grown by about 2 percent per year over the past century.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Why Small Growth Rates Matter}]
+\begin{itemize}
+    \item A 2\% annual growth rate doubles income roughly every 35 years.
+    \item Long-run growth explains why each generation enjoys higher living standards than previous generations.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Divergent Growth Experiences and Key Questions}
+
+Economic growth rates vary substantially across countries.  
+Some East Asian economies have experienced rapid growth, while others have seen little or no improvement in income levels.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Contrasting Growth Experiences}]
+\begin{itemize}
+    \item Some economies grow at 7\% per year, doubling income every 10 years.
+    \item Rapid growth can transform a country from poor to rich within one generation.
+    \item In contrast, some countries have experienced stagnant or declining income levels.
+\end{itemize}
+\end{tcolorbox}
+\end{frame}
+
+%==========================================================
+\begin{frame}{Divergent Growth Experiences and Key Questions}
+
+These differences raise fundamental questions in macroeconomics:
+\begin{itemize}
+    \item Why do living standards differ so much across countries?
+    \item How can rich countries maintain high standards of living?
+    \item What policies can help poor countries achieve faster growth?
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Focus of This Chapter}]
+\begin{itemize}
+    \item Real GDP per person as a measure of economic prosperity
+    \item Productivity: output produced per hour of work
+    \item The relationship between productivity and economic policy
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\section{25-1 Economic Growth around the World}
+%==========================================================
+\begin{frame}{Economic Growth around the World}
+
+To study long-run economic growth, economists compare real GDP per person across countries and over long periods of time.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Real GDP per Person}]
+Real GDP per person measures average income and is a key indicator of a country’s standard of living.
+\end{tcolorbox}
+
+International data show enormous differences in living standards:
+\begin{itemize}
+    \item Average income in the United States is several times higher than in China.
+    \item Average income in the United States is more than ten times higher than in India.
+    \item The poorest countries today have income levels similar to rich countries many decades ago.
+\end{itemize}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Economic Growth around the World}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap 25/T1.png}
+\end{center}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Growth Rates and Long-Run Trends}
+
+The growth rate of real GDP per person measures how rapidly living standards improve over time.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Understanding Growth Rates}]
+\begin{itemize}
+    \item Growth rates represent long-run averages, not year-by-year changes.
+    \item Short-run fluctuations are ignored to reveal long-run trends.
+    \item Even small differences in growth rates lead to large income gaps over time.
+\end{itemize}
+\end{tcolorbox}
+
+For example:
+\begin{itemize}
+    \item A growth rate of about 1.8\% per year can raise income more than tenfold over a century.
+    \item Countries with growth above 2\% per year experience dramatic improvements in living standards.
+\end{itemize}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Changing Income Rankings across Countries}
+
+Countries are ranked very differently today than they were a century ago due to differences in growth rates.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Patterns from the Data}]
+\begin{itemize}
+    \item Some countries experienced rapid growth and moved from poor to rich.
+    \item Others grew slowly and fell behind in relative income rankings.
+    \item High income today does not guarantee high income forever.
+\end{itemize}
+\end{tcolorbox}
+
+These facts lead to fundamental macroeconomic questions:
+\begin{itemize}
+    \item Why do some countries grow faster than others?
+    \item Why do some nations catch up while others remain poor?
+\end{itemize}
+
+These questions motivate the study of long-run economic growth.
+
+\end{frame}
+
+%==========================================================
+\section{25-2 Productivity: Its Role and Determinants}
+%==========================================================
+\begin{frame}{Productivity and Living Standards}
+
+Why do living standards vary so much around the world?  
+In one word, the answer is \textbf{productivity}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Productivity}]
+Productivity is the quantity of goods and services produced from each unit of labor input.
+\end{tcolorbox}
+
+Countries with higher productivity:
+\begin{itemize}
+    \item Produce more goods and services.
+    \item Earn higher income.
+    \item Enjoy higher standards of living.
+\end{itemize}
+
+Understanding differences in productivity is key to understanding differences in income and economic growth.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Why Productivity Is So Important}
+
+To understand productivity, consider a simple economy based on \textit{Robinson Crusoe}.
+
+Crusoe lives alone and produces everything he consumes:
+\begin{itemize}
+    \item He catches fish.
+    \item He grows vegetables.
+    \item He makes clothing.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Insight from Crusoe’s Economy}]
+Crusoe’s standard of living depends entirely on his productivity.
+\end{tcolorbox}
+
+\begin{itemize}
+    \item Higher productivity means more goods or more leisure.
+    \item Better methods raise productivity and improve well-being.
+\end{itemize}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Productivity and Nations}
+
+What is true for Robinson Crusoe is also true for entire economies.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{GDP and Productivity}]
+\begin{itemize}
+    \item GDP measures total income and total output.
+    \item An economy’s income equals its production.
+    \item Higher productivity leads to higher GDP per person.
+\end{itemize}
+\end{tcolorbox}
+
+Countries with higher productivity:
+\begin{itemize}
+    \item Produce more goods and services per worker.
+    \item Enjoy higher living standards.
+    \item Experience faster long-run growth.
+\end{itemize}
+
+This reflects one of the \textit{Ten Principles of Economics}:  
+A country’s standard of living depends on its ability to produce goods and services.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{How Productivity Is Determined}
+
+Productivity depends on many factors, not only for Robinson Crusoe but also for modern economies.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Four Determinants of Productivity}]
+\begin{itemize}
+    \item Physical capital
+    \item Human capital
+    \item Natural resources
+    \item Technological knowledge
+\end{itemize}
+\end{tcolorbox}
+
+In Crusoe’s economy:
+\begin{itemize}
+    \item More fishing poles increase output.
+    \item Better skills improve efficiency.
+    \item Abundant fish raise potential production.
+    \item Better fishing techniques boost productivity.
+\end{itemize}
+
+Each of these factors has a direct counterpart in real-world economies.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Physical Capital per Worker}
+
+Workers are more productive when they have more and better tools to work with.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Physical Capital}]
+Physical capital is the stock of equipment and structures used to produce goods and services.
+\end{tcolorbox}
+
+Examples of physical capital:
+\begin{itemize}
+    \item Tools and machinery
+    \item Equipment and factories
+    \item Infrastructure such as roads and buildings
+\end{itemize}
+\end{frame}
+
+%==========================================================
+\begin{frame}{Physical Capital per Worker}
+
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Insight}]
+Physical capital is a produced factor of production:  
+it is itself the result of past production.
+\end{tcolorbox}
+
+An economy with more capital per worker can produce more output per worker and enjoy a higher standard of living.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Human Capital per Worker}
+
+A second determinant of productivity is human capital.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Human Capital}]
+Human capital is the knowledge and skills that workers acquire through education, training, and experience.
+\end{tcolorbox}
+
+Human capital includes:
+\begin{itemize}
+    \item Education in schools and universities
+    \item Job training and work experience
+    \item Skills developed over a lifetime
+\end{itemize}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Human Capital per Worker}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Insight}]
+Like physical capital, human capital is a produced factor of production.
+\end{tcolorbox}
+
+Investment in human capital raises productivity and improves a nation’s standard of living.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Natural Resources per Worker}
+
+A third determinant of productivity is natural resources.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Natural Resources}]
+Natural resources are inputs into production provided by nature, such as land, rivers, forests, and mineral deposits.
+\end{tcolorbox}
+
+Types of natural resources:
+\begin{itemize}
+    \item Renewable resources (e.g., forests)
+    \item Nonrenewable resources (e.g., oil)
+\end{itemize}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Natural Resources per Worker}
+
+Differences in natural resources help explain differences in living standards across countries.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Important Qualification}]
+Natural resources are not necessary for high productivity.  
+Countries can achieve high living standards through trade and other determinants of productivity.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Technological Knowledge}
+
+A fourth determinant of productivity is technological knowledge.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Technological Knowledge}]
+Technological knowledge is society’s understanding of the best ways to produce goods and services.
+\end{tcolorbox}
+
+Technological progress allows:
+\begin{itemize}
+    \item The same number of workers to produce more output.
+    \item Fewer workers to produce the same output.
+    \item Labor to shift from one sector to another.
+\end{itemize}
+
+For example, advances in farming technology allow a small share of the population to produce enough food for the entire economy, freeing labor for other goods and services.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Technology and Human Capital}
+
+Technological knowledge takes many forms.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Forms of Technological Knowledge}]
+\begin{itemize}
+    \item Common knowledge that spreads quickly.
+    \item Proprietary knowledge known only to its creator.
+    \item Temporarily protected knowledge through patents.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Technology and Human Capital}
+
+It is important to distinguish between technological knowledge and human capital.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Distinction}]
+\begin{itemize}
+    \item Technological knowledge is society’s understanding of how the world works.
+    \item Human capital is the resources devoted to transmitting this knowledge to workers.
+\end{itemize}
+\end{tcolorbox}
+
+Workers’ productivity depends on both.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Production Function}
+
+Economists use a production function to describe the relationship between inputs and output.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Production Function}]
+\[
+Y = A F(L, K, H, N)
+\]
+\end{tcolorbox}
+
+where:
+\begin{itemize}
+    \item $Y$ = output
+    \item $L$ = labor
+    \item $K$ = physical capital
+    \item $H$ = human capital
+    \item $N$ = natural resources
+    \item $A$ = level of technology
+\end{itemize}
+
+As technology improves, $A$ rises, allowing the economy to produce more output from the same inputs.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Constant Returns to Scale}
+
+Many production functions exhibit constant returns to scale.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Constant Returns to Scale}]
+If all inputs are multiplied by the same factor, output increases by the same factor.
+\[
+xY = A F(xL, xK, xH, xN)
+\]
+\end{tcolorbox}
+
+Dividing both sides by $L$ gives:
+\[
+\frac{Y}{L} = A F\left(1, \frac{K}{L}, \frac{H}{L}, \frac{N}{L}\right)
+\]
+\end{frame}
+
+%==========================================================
+\begin{frame}{Constant Returns to Scale}
+
+\[
+\frac{Y}{L} = A F\left(1, \frac{K}{L}, \frac{H}{L}, \frac{N}{L}\right)
+\]
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Insight}]
+Output per worker depends on:
+\begin{itemize}
+    \item Physical capital per worker $(K/L)$
+    \item Human capital per worker $(H/L)$
+    \item Natural resources per worker $(N/L)$
+    \item Technology $(A)$
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+%==========================================================
+
+\end{document}

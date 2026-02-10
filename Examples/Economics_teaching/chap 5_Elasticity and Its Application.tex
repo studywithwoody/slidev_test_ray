@@ -1,0 +1,607 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% Customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+% 每章節開始時自動產生章節頁
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\title{Mankiw's Principles of Economics}
+\subtitle{chap 5: Elasticity and Its Application}
+\author{Hsu Chun-Wei}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+% 目錄頁
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+%==========================================================
+\section{The Elasticity of Demand}
+%==========================================================
+\begin{frame}{The Elasticity of Demand}
+
+Economists use the concept of \textbf{elasticity} to measure how responsive quantity demanded or supplied is to changes in one of its determinants (such as price, income, or prices of related goods).
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Definitions}]
+\begin{itemize}
+    \item \textbf{Elasticity}: responsiveness of quantity demanded or supplied to changes in determinants.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{The Price Elasticity of Demand}]
+\begin{itemize}
+    \item Demand is \textbf{elastic} when quantity demanded responds substantially to price changes.
+    \item Demand is \textbf{inelastic} when quantity demanded responds only slightly.
+    \item The law of demand: a fall in price raises quantity demanded.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Determinants of the Price Elasticity of Demand}
+
+\textbf{Availability of Close Substitutes}
+
+Goods with more close substitutes have more elastic demand.
+\begin{itemize}
+    \item Consumers can easily switch when price rises.
+    \item Example: \textbf{butter vs. margarine} — high elasticity.
+    \item Example: \textbf{eggs} — fewer substitutes, therefore less elastic.
+\end{itemize}
+
+\vspace{1em}
+\textbf{Necessities vs. Luxuries}
+
+\begin{itemize}
+    \item Necessities → \textbf{inelastic demand}.
+    \item Luxuries → \textbf{elastic demand}.
+    \item Example: \textbf{doctor visits} are necessities; quantity demanded changes little with price.
+    \item Example: \textbf{sailboats} are luxuries; demand drops substantially when price rises.
+\end{itemize}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Determinants of the Price Elasticity of Demand}
+
+\textbf{Definition of the Market}
+
+Elasticity depends on how narrowly the market is defined.
+\begin{itemize}
+    \item Narrow markets → \textbf{more elastic}.
+    \item Broad markets → \textbf{more inelastic}.
+    \item Example: \textbf{food} (broad) → inelastic.
+    \item Example: \textbf{ice cream} (narrow) → elastic.
+    \item Example: \textbf{vanilla ice cream} (very narrow) → highly elastic.
+\end{itemize}
+
+\vspace{1em}
+
+\textbf{Time Horizon}
+
+Demand becomes more elastic over longer time horizons.
+\begin{itemize}
+    \item Short run: quantity demanded changes only slightly.
+    \item Long run: consumers adapt—buy efficient cars, relocate, use public transport.
+    \item Example: \textbf{gasoline} becomes more elastic over time.
+\end{itemize}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Computing the Price Elasticity of Demand}
+
+Economists measure the price elasticity of demand as the percentage change in quantity demanded divided by the percentage change in price:
+
+\[
+\text{Price Elasticity of Demand}
+= \frac{\%\ \text{change in quantity demanded}}{\%\ \text{change in price}}.
+\]
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Notes}]
+\begin{itemize}
+    \item Because price and quantity demanded move in opposite directions, calculated elasticity is often negative.
+    \item Economists typically drop the minus sign and use the \textbf{absolute value}.
+    \item A larger elasticity (in absolute value) means demand is more responsive to price changes.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Example}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Example}]
+A 10\% increase in the price of ice cream causes quantity demanded to fall by 20\%.  
+\[
+\text{Elasticity} = \frac{-20\%}{10\%} = -2.
+\]
+
+Using the absolute value convention: \(\,|\text{Elasticity}| = 2\).
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+%==========================================================
+\begin{frame}{The Midpoint Method: A Better Way to Compute Elasticity}
+
+When calculating elasticity between two points, the direction of movement creates different percentage changes.  
+Example:
+
+\begin{itemize}
+    \item Point A: Price = \$4,\; Quantity = 120
+    \item Point B: Price = \$6,\; Quantity = 80
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{The Problem}]
+\begin{itemize}
+    \item A → B: Price rises 50\%, Quantity falls 33\% \\
+    → Elasticity = 33/50 = 0.66
+    \item B → A: Price falls 33\%, Quantity rises 50\% \\
+    → Elasticity = 50/33 = 1.5
+\end{itemize}
+Percentage change depends on the chosen base \\
+→ inconsistent results.
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+
+\begin{frame}{Midpoint Method Formula}
+
+Using the midpoint method, changes are measured relative to averages:
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Midpoint Method Solution}]
+Use the midpoint (average) of initial and final values as the base for percentage changes.
+\[
+\text{Midpoint of price:}\; \frac{4+6}{2} = 5 \quad
+\text{Midpoint of quantity:}\; \frac{120+80}{2} = 100
+\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Midpoint Percentage Changes}]
+\begin{itemize}
+    \item Price change: \(\frac{6-4}{5} \times 100 = 40\%\)
+    \item Quantity change: \(\frac{80-120}{100} \times 100 = -40\%\)
+\end{itemize}
+Elasticity is the same in both directions: \(|\,-40\% / 40\%\,| = 1\).
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Midpoint Elasticity Formula}
+    
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Midpoint Elasticity Formula}]
+\[
+\text{Price Elasticity of Demand}
+= \frac{(Q_2 - Q_1) / \left[(Q_2 + Q_1)/2\right]}
+       {(P_2 - P_1) / \left[(P_2 + P_1)/2\right]}.
+\]
+\end{tcolorbox}
+
+This method ensures the same elasticity regardless of direction of movement.
+\end{frame}
+%==========================================================
+\begin{frame}{The Variety of Demand Curves}
+
+Economists classify demand curves based on their elasticity:
+\begin{itemize}
+    \item \textbf{Elastic} demand: elasticity $> 1$ (quantity changes more than price).
+    \item \textbf{Inelastic} demand: elasticity $< 1$ (quantity changes less than price).
+    \item \textbf{Unit elastic}: elasticity $= 1$.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Slope and Elasticity}]
+\begin{itemize}
+    \item Flatter demand curve → \textbf{more elastic}.
+    \item Steeper demand curve → \textbf{less elastic}.
+\end{itemize}
+Elasticity measures responsiveness to price changes, so curve shape visually reflects elasticity.
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Inelastic}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T2.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Unit elastic}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T3.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Elastic}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T4.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Extreme case}
+    \begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Extreme Cases}]
+\begin{itemize}
+    \item \textbf{Perfectly inelastic} demand: vertical curve (quantity fixed, elasticity = 0).
+    \item \textbf{Perfectly elastic} demand: horizontal curve (tiny price change → huge quantity change, elasticity = $\infty$).
+\end{itemize}
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+\begin{frame}{Perfectly inelastic}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T1.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Perfectly elastic}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T5.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Total Revenue and the Price Elasticity of Demand}
+
+Total revenue (TR) is the amount paid by buyers and received by sellers: \(\textbf{TR} = P \times Q\).
+Graphically, under a demand curve, the rectangle with height \(P\) and width \(Q\) has area \(P\times Q\) = total revenue.
+
+\begin{center}
+        \includegraphics[width=0.7\textwidth]{pictures/chap5/T6.png}
+    \end{center}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Rectangle under demand curve}
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Numerical Illustration}]
+If \(P=\$4\) and \(Q=100\), then \(\text{TR}=\$400\).  
+Moving along the demand curve from \(P=\$4, Q=100\) to \(P=\$5\):
+\begin{itemize}
+    \item \textbf{Inelastic} case: \(Q\) falls to \(90\) → \(\text{TR}=\$450\) (rises).
+    \item \textbf{Elastic} case: \(Q\) falls to \(70\) → \(\text{TR}=\$350\) (falls).
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Intuition via Areas}]
+Price increase adds revenue on units still sold (area A) but loses revenue on foregone units (area B).  \\
+If demand is \textbf{inelastic}, A $>$ B → TR rises.\\
+If demand is \textbf{elastic}, A $<$ B → TR falls.
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+\begin{frame}{Visualization}
+    \begin{center}
+        \includegraphics[width=\textwidth]{pictures/chap5/T7.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Price--TR Relationship: Summary Rules}
+
+\begin{itemize}
+    \item Use rectangles under the demand curve to visualize \(TR = P\times Q\).
+    \item Compare the gain from higher price (A) with the loss from lower quantity (B).
+    \item Elasticity governs which area dominates.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Rules Linking Price, Elasticity, and Total Revenue}]
+\begin{itemize}
+    \item If demand is \textbf{inelastic} \((|E_d|<1)\): price and total revenue move in the \textbf{same} direction.
+    \item If demand is \textbf{elastic} \((|E_d|>1)\): price and total revenue move in \textbf{opposite} directions.
+    \item If demand is \textbf{unit elastic} \((|E_d|=1)\): total revenue is \textbf{constant} as price changes.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Linear Demand Curve}
+A linear demand curve has a constant slope, but its \textbf{elasticity is not constant}.  
+Slope measures absolute changes (\(\Delta P / \Delta Q\)),  
+while elasticity measures \textbf{percentage} changes.
+
+The midpoint method is used to compute elasticities along the curve.  
+The table illustrates how elasticity changes from elastic → unit elastic → inelastic.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap5/T8.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Linear Demand Curve}
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Patterns from the Table}]
+\begin{itemize}
+    \item High price / low quantity → elasticity $>$ 1 → \textbf{elastic}.
+    \item Midpoint ($P=4$, $Q=6$) → elasticity = 1 → \textbf{unit elastic}.
+    \item Low price / high quantity → elasticity $<$ 1 → \textbf{inelastic}.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Total Revenue Pattern}]
+\begin{itemize}
+    \item When $P$ is low → demand is inelastic → raising price increases TR.
+    \item When $P$ is high → demand is elastic → raising price decreases TR.
+    \item At the midpoint → demand is unit elastic → TR is maximized.
+\end{itemize}
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+\begin{frame}{Elasticity along a Linear Demand Curve}
+
+% Optional linear demand curve figure
+\begin{center}
+\includegraphics[width=0.7\linewidth]{pictures/chap5/T9.png}
+\end{center}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Other Demand Elasticities: Income Elasticity of Demand}
+
+Economists use additional elasticities to describe buyer behavior.  
+The \textbf{income elasticity of demand} measures how quantity demanded changes as consumer income changes.
+
+\[
+\text{Income Elasticity of Demand}
+= \frac{\%\ \text{change in quantity demanded}}
+       {\%\ \text{change in income}}.
+\]
+
+% Optional image placement
+% \begin{center}
+% \includegraphics[width=0.75\linewidth]{path/to/income-elasticity-figure.png}
+% \end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Income Elasticity of Demand}
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Types of Goods by Income Elasticity}]
+\begin{itemize}
+    \item \textbf{Normal goods}: income ↑ → quantity demanded ↑ (positive income elasticity).
+    \item \textbf{Inferior goods}: income ↑ → quantity demanded ↓ (negative income elasticity).  
+          Example: bus rides.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Variation among Normal Goods}]
+\begin{itemize}
+    \item \textbf{Necessities} (food, clothing): small income elasticity.
+    \item \textbf{Luxuries} (caviar, diamonds): large income elasticity.
+\end{itemize}
+Consumers reduce luxury purchases more sharply when their incomes fall.
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+\begin{frame}{The Cross-Price Elasticity of Demand}
+
+The cross-price elasticity of demand measures how the quantity demanded of one good responds to a change in the price of another good.
+
+\[
+\text{Cross-Price Elasticity}
+= \frac{\%\ \text{change in quantity demanded of good 1}}
+       {\%\ \text{change in price of good 2}}.
+\]
+
+% Optional image
+% \begin{center}
+% \includegraphics[width=0.75\linewidth]{path/to/cross-price-elasticity-figure.png}
+% \end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Cross-Price Elasticity of Demand}
+    \begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Interpreting the Sign}]
+\begin{itemize}
+    \item \textbf{Positive elasticity} → goods are \textbf{substitutes}.  
+          Example: hamburgers and hot dogs.
+    \item \textbf{Negative elasticity} → goods are \textbf{complements}.  
+          Example: computers and software.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Economic Intuition}]
+
+\textbf{Substitutes}: 
+
+price of good 2 ↑  → demand for good 2 ↓→ demand for good 1 ↑.
+
+\textbf{Complements}: 
+
+price of good 2 ↑ → demand for good 2 ↑ → demand for good 1 ↓.
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+\section{The Elasticity of Supply}
+%==========================================================
+\begin{frame}{The Elasticity of Supply}
+
+When producers receive a higher price, they are willing to supply more of a good. 
+To move from qualitative to quantitative analysis, we use the concept of \textbf{elasticity of supply}.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Definition: Price Elasticity of Supply}]
+A measure of how much the quantity supplied responds to a change in the price of a good, computed as the percentage change in quantity supplied divided by the percentage change in price.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Elastic vs. Inelastic Supply}]
+\begin{itemize}
+    \item \textbf{Elastic supply}: Quantity supplied responds substantially to price changes.
+    \item \textbf{Inelastic supply}: Quantity supplied responds only slightly to price changes.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Price Elasticity of Supply and Its Determinants}
+
+A major determinant of the price elasticity of supply is the \textbf{flexibility of sellers}.
+Some goods, such as beachfront land, have very inelastic supply because increasing production is nearly impossible. 
+By contrast, manufactured goods often have elastic supply because producers can adjust factory use in response to prices.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Determinant: Time Horizon}]
+\begin{itemize}
+    \item \textbf{Short run}: Firms cannot easily change factory size; supply is inelastic.
+    \item \textbf{Long run}: Firms can build or close factories; new firms can enter; supply becomes more elastic.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Computing the Price Elasticity of Supply}
+
+Economists compute the \textbf{price elasticity of supply} as the percentage change in quantity supplied divided by the percentage change in price.
+
+\[
+\text{Price elasticity of supply}
+= 
+\frac{\text{Percentage change in quantity supplied}}
+{\text{Percentage change in price}}
+\]
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Example}
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Example: Milk Supply}]
+When the price of milk increases from \$2.85 to \$3.15 per gallon, dairy farmers increase production from 9,000 to 11,000 gallons per month.
+Using the midpoint method:
+\begin{itemize}
+    \item Percentage change in price: 
+    \[
+    \frac{3.15 - 2.85}{3.00} \times 100 = 10\%
+    \]
+    \item Percentage change in quantity supplied:
+    \[
+    \frac{11,000 - 9,000}{10,000} \times 100 = 20\%
+    \]
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Example}
+
+Therefore, Price elasticity of supply can be computed as:
+\[
+\text{Price elasticity of supply}
+=
+\frac{20\%}{10\%}
+= 2
+\]
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Interpretation}]
+An elasticity of 2 means the quantity supplied responds proportionately twice as much as the price.
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+\begin{frame}{The Variety of Supply Curves}
+
+Because the price elasticity of supply measures how responsive quantity supplied is to price, it is reflected in the shape of the supply curve.
+
+\begin{itemize}
+    \item \textbf{Elastic} supply: elasticity $> 1$ (quantity changes more than price).
+    \item \textbf{Inelastic} supply: elasticity $< 1$ (quantity changes less than price).
+    \item \textbf{Unit elastic}: elasticity $= 1$.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Slope and Elasticity}]
+\begin{itemize}
+    \item Flatter supply curve → \textbf{more elastic}.
+    \item Steeper supply curve → \textbf{less elastic}.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{perfectly inelastic supply}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T10.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Inelastic supply}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T11.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Unit elastic supply}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T12.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Elastic supply}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T13.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Perfectly elastic supply}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap5/T14.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{How the Price Elasticity of Supply Can Vary}
+
+\textbf{Supply Elasticity Varies Across Markets}\\
+In some industries, elasticity is not constant along the supply curve.Firms may face unused capacity when output is low (making supply elastic), but once full capacity is reached, increasing output requires building new plants, making supply less elastic.
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{pictures/chap5/T15.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{How the Price Elasticity of Supply Can Vary}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Low Output Region: Highly Elastic Supply}]
+When the price rises from \$3 to \$4 (a 29\% increase), quantity supplied rises from 100 to 200 (a 67\% increase). \\ 
+\textbf{Elasticity $> 1$}: Quantity supplied responds proportionately more than price.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{High Output Region: Inelastic Supply}]
+When the price rises from \$12 to \$15 (a 22\% increase), quantity supplied rises only from 500 to 525 (a 5\% increase).  \\
+\textbf{Elasticity $< 1$}: Quantity supplied responds proportionately less than price.
+\end{tcolorbox}
+
+These examples show that supply elasticity decreases as firms approach production capacity.
+
+\end{frame}
+
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+
+
+\end{document}

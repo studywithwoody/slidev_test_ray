@@ -1,0 +1,901 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% Customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+% 每章節開始時自動產生章節頁
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\title{Mankiw's Principles of Economics}
+\subtitle{chap 21: The Theory of Consumer Choice}
+\author{Hsu Chun-Wei}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+% 目錄頁
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+
+%==========================================================
+\section{21-1 The Budget Constraint: What the Consumer Can Afford}
+%==========================================================
+\begin{frame}{The Budget Constraint: What the Consumer Can Afford}
+
+Most consumers would like to consume more goods than they actually do.
+Their choices are limited by income.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Budget Constraint}]
+A budget constraint shows the combinations of goods
+that a consumer can afford given:
+\begin{itemize}
+    \item Income
+    \item Prices of goods
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Budget Constraint: What the Consumer Can Afford}
+
+To simplify the analysis, consider a consumer who buys only two goods:
+\textbf{pizza} and \textbf{Pepsi}.
+
+Suppose:
+\begin{itemize}
+    \item Income = \$1{,}000
+    \item Price of pizza = \$10
+    \item Price of Pepsi = \$2
+\end{itemize}
+
+All consumption bundles that cost exactly \$1{,}000 lie on the budget constraint.
+
+\end{frame}
+%==========================================================
+\begin{frame}{The Budget Constraint: What the Consumer Can Afford}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap21/T1.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Slope of the Budget Constraint}
+
+The budget constraint shows the trade-off the consumer faces
+between two goods.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Slope of the Budget Constraint}]
+The slope of the budget constraint equals the
+\textbf{relative price of the two goods}.
+\end{tcolorbox}
+
+In this example:
+\[
+\text{Slope} = \frac{\text{Price of pizza}}{\text{Price of Pepsi}} = \frac{10}{2} = 5
+\]
+
+This means that the opportunity cost of one pizza
+is \textbf{5 liters of Pepsi}.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Slope of the Budget Constraint}
+
+\begin{center}
+    \includegraphics[width=0.4\textwidth]{pictures/chap21/T2.png}
+\end{center}
+The slope of the budget constraint measures
+how much of one good the consumer must give up
+to obtain one more unit of the other good.
+
+\end{frame}
+
+%==========================================================
+\section{21-2 Preferences: What the Consumer Wants}
+%==========================================================
+\begin{frame}{Preferences: What the Consumer Wants}
+
+The budget constraint shows what a consumer \textbf{can afford}.
+However, consumer choice also depends on what the consumer \textbf{wants}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Preferences}]
+A consumer’s preferences describe how she ranks different
+consumption bundles of goods.
+\end{tcolorbox}
+
+To analyze preferences, we again simplify the problem by assuming
+that the consumer chooses between only two goods:
+\textbf{pizza} and \textbf{Pepsi}.
+
+\vspace{0.5em}
+
+Preferences, together with the budget constraint,
+determine the consumer’s optimal choice.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Representing Preferences with Indifference Curves}
+
+We represent a consumer’s preferences using \textbf{indifference curves}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Indifference Curve}]
+An indifference curve shows all combinations of goods
+that make the consumer equally satisfied.
+\end{tcolorbox}
+
+Along a given indifference curve, the consumer is willing to trade
+one good for the other while remaining equally happy.
+\end{frame}
+
+%==========================================================
+\begin{frame}{Representing Preferences with Indifference Curves}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap21/T3.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Representing Preferences with Indifference Curves}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Marginal Rate of Substitution (MRS)}]
+The slope of an indifference curve equals the \textbf{marginal rate of substitution (MRS)}:
+the rate at which the consumer is willing to give up one good
+to obtain more of the other.
+\end{tcolorbox}
+
+Because indifference curves are bowed inward,
+the marginal rate of substitution diminishes as consumption changes.
+
+Higher indifference curves represent higher levels of satisfaction
+and are preferred to lower ones.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Four Properties of Indifference Curves}
+
+Because indifference curves represent consumer preferences,
+they share several common properties.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Property 1: Higher Is Better}]
+Higher indifference curves are preferred to lower ones.
+Consumers prefer more of both goods to less.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Property 2: Downward Sloping}]
+Indifference curves slope downward.
+If the consumer gives up some of one good,
+she must receive more of the other to remain equally satisfied.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Four Properties of Indifference Curves}
+
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Property 3: Do Not Cross}]
+Indifference curves cannot cross,
+because crossing would violate the assumption
+that consumers prefer more of both goods to less.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Why Indifference Curves Cannot Cross}]
+If two indifference curves crossed,
+the consumer would be indifferent between two bundles
+even though one bundle has more of both goods.
+This contradicts the assumption that more is preferred to less.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Four Properties of Indifference Curves}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap21/T4.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Four Properties of Indifference Curves}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Property 4: Bowed Inward}]
+Indifference curves are bowed inward,
+reflecting a diminishing marginal rate of substitution (MRS).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Why Indifference Curves Are Bowed Inward}]
+The slope of an indifference curve is the marginal rate of substitution (MRS).
+Because consumers are more willing to give up a good
+when they have a lot of it and less willing when they have little,
+the MRS diminishes as consumption changes.
+\end{tcolorbox}
+
+\textbf{Key insight:}  
+The shape of indifference curves reflects consumers’
+willingness to substitute one good for another.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Four Properties of Indifference Curves}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap21/T5.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Two Extreme Examples: Perfect Substitutes}
+
+When two goods are easy to substitute for each other,
+the consumer is willing to trade them at a constant rate.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Perfect Substitutes}]
+Two goods are perfect substitutes if the consumer
+is always willing to trade one good for the other
+at a fixed rate.
+\end{tcolorbox}
+
+\textbf{Example:} Nickels and dimes.  
+The consumer cares only about total monetary value.
+
+\begin{itemize}
+    \item The marginal rate of substitution (MRS) is constant.
+    \item Indifference curves are straight lines.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Insight}]
+A constant MRS implies straight-line indifference curves.
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Two Extreme Examples: Perfect Substitutes}
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{pictures/chap21/T6.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Two Extreme Examples: Perfect Complements}
+
+When two goods are useful only when consumed together,
+the consumer values them in fixed proportions.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Perfect Complements}]
+Two goods are perfect complements if the consumer
+wants to consume them in fixed ratios.
+\end{tcolorbox}
+
+\textbf{Example:} Left shoes and right shoes.
+
+\begin{itemize}
+    \item Extra units of one good have no value without the other.
+    \item Indifference curves are right angles.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Insight}]
+Right-angle indifference curves reflect zero substitutability.
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Two Extreme Examples: Perfect Complements}
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{pictures/chap21/T7.png}
+\end{center}
+\end{frame}
+%==========================================================
+\section{21-3 Optimization: What the Consumer Chooses}
+%==========================================================
+\begin{frame}{Optimization: What the Consumer Chooses}
+
+Consumer choice combines two elements:
+\begin{itemize}
+    \item The \textbf{budget constraint} (what the consumer can afford)
+    \item The \textbf{indifference curves} (what the consumer wants)
+\end{itemize}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Consumer's Goal}]
+The consumer chooses the combination of goods
+that lies on the \textbf{highest possible indifference curve}
+while remaining on or below the budget constraint.
+\end{tcolorbox}
+
+The optimal choice is the point where the consumer achieves
+the greatest satisfaction given her limited income.
+
+\end{frame}
+%==========================================================
+\begin{frame}{Optimization: What the Consumer Chooses}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap21/T8.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{The Consumer's Optimal Choice}
+
+At the optimal consumption bundle,
+the budget constraint is tangent to an indifference curve.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Tangency Condition}]
+At the optimum:
+\[
+\text{MRS} = \frac{P_{\text{pizza}}}{P_{\text{Pepsi}}}
+\]
+\end{tcolorbox}
+
+This condition means:
+\begin{itemize}
+    \item The rate at which the consumer is willing to trade goods
+    \item Equals the rate at which the market allows goods to be traded
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Insight}]
+If MRS were greater or smaller than the relative price,
+the consumer could rearrange consumption to reach a higher indifference curve.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{MRS and Relative Prices}
+
+The relative price measures the rate at which the \textbf{market}
+is willing to trade one good for another.
+
+\vspace{0.5em}
+
+The marginal rate of substitution measures the rate at which the \textbf{consumer}
+is willing to trade one good for another.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Interpretation}]
+At the consumer’s optimum, the consumer’s valuation of the two goods
+equals the market’s valuation.
+\end{tcolorbox}
+
+As a result, market prices reflect the value that consumers place on goods.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Utility: An Alternative Way to Describe Preferences}
+
+So far, we have described consumer preferences using \textbf{indifference curves}.
+Another common approach is to use the concept of \textbf{utility}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Utility}]
+Utility is an abstract measure of the satisfaction or happiness
+that a consumer receives from a bundle of goods.
+Bundles on higher indifference curves provide higher utility.
+\end{tcolorbox}
+
+The \textbf{marginal utility} of a good is the increase in utility
+from consuming one additional unit of that good.
+Most goods exhibit \textbf{diminishing marginal utility}.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Utility: An Alternative Way to Describe Preferences}
+
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Utility-Based Optimization}]
+At the consumer’s optimum:
+\[
+\text{MRS} = \frac{MU_x}{MU_y} = \frac{P_x}{P_y}
+\]
+which can be rewritten as:
+\[
+\frac{MU_x}{P_x} = \frac{MU_y}{P_y}
+\]
+\end{tcolorbox}
+
+\textbf{Interpretation:}  
+The consumer allocates spending so that the marginal utility per dollar
+is equalized across goods.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{How Changes in Income Affect Consumer Choice}
+
+When a consumer’s income changes, the budget constraint changes.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Income Increase}]
+An increase in income shifts the budget constraint outward.
+Because prices do not change, the slope of the budget constraint remains the same.
+\end{tcolorbox}
+
+As income rises:
+\begin{itemize}
+    \item The consumer can afford more of both goods.
+    \item The optimal choice moves to a higher indifference curve.
+\end{itemize}
+
+The change in consumption depends on whether the goods are
+\textbf{normal goods} or \textbf{inferior goods}.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Normal Goods}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Normal Good}]
+A good is a normal good if the consumer buys more of it
+when income increases.
+\end{tcolorbox}
+
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{pictures/chap21/T9.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Inferior Goods}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Inferior Good}]
+A good is an inferior good if the consumer buys less of it
+when income increases.
+\end{tcolorbox}
+
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{pictures/chap21/T10.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Normal Goods and Inferior Goods}
+
+\begin{itemize}
+    \item Most goods are normal goods.
+    \item Some goods (e.g.\ bus rides) can be inferior goods.
+\end{itemize}
+
+\textbf{Key point:}  
+Income changes affect consumption by shifting the budget constraint,
+while preferences remain unchanged.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{How Changes in Prices Affect Consumer Choice}
+
+A change in the price of a good alters the consumer’s budget constraint.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Price Decrease}]
+A fall in the price of a good rotates the budget constraint outward.
+The intercept on the axis of the cheaper good moves outward,
+while the other intercept remains unchanged.
+\end{tcolorbox}
+
+Because prices change:
+\begin{itemize}
+    \item The budget constraint becomes flatter or steeper.
+    \item The relative price of the two goods changes.
+\end{itemize}
+
+As a result, the consumer’s optimal choice moves to a new point
+on a different indifference curve.
+
+\end{frame}
+%==========================================================
+
+\begin{frame}{Substitution Effect and Income Effect}
+
+A change in price affects consumption through two channels.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Substitution Effect}]
+When the price of a good falls, the consumer substitutes toward
+the cheaper good and away from the relatively more expensive good.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Income Effect}]
+A price decrease increases the consumer’s real income,
+allowing her to buy more or less of a good depending on
+whether it is normal or inferior.
+\end{tcolorbox}
+
+\textbf{Key result:}
+\begin{itemize}
+    \item Substitution effect always increases consumption of the cheaper good.
+    \item Income effect depends on whether the good is normal or inferior.
+\end{itemize}
+
+\end{frame}
+%==========================================================
+%==========================================================
+\begin{frame}{Total Effect of a Price Decrease}
+
+Consider a fall in the price of Pepsi.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Pepsi (the cheaper good)}]
+\begin{itemize}
+    \item Income effect: buy more Pepsi.
+    \item Substitution effect: buy more Pepsi.
+    \item Total effect: Pepsi consumption increases.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Pizza (the other good)}]
+\begin{itemize}
+    \item Income effect: buy more pizza (normal good).
+    \item Substitution effect: buy less pizza.
+    \item Total effect: ambiguous.
+\end{itemize}
+\end{tcolorbox}
+
+\textbf{Conclusion:}  
+The total effect of a price change depends on how
+income and substitution effects interact.
+
+\end{frame}
+%==========================================================
+\begin{frame}{Summary}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap21/T12.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Decomposing a Price Change}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap21/T11.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Decomposing a Price Change}
+
+A change in the price of a good can be decomposed
+into a substitution effect and an income effect.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Substitution Effect}]
+The substitution effect is the change in consumption
+that results from a change in relative prices,
+holding utility constant.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Income Effect}]
+The income effect is the change in consumption
+that results from moving to a higher or lower indifference curve,
+holding relative prices constant.
+\end{tcolorbox}
+
+\begin{itemize}
+    \item Movement from point A to point B shows the substitution effect.
+    \item Movement from point B to point C shows the income effect.
+\end{itemize}
+
+\textbf{Point B is hypothetical}:  
+The consumer never actually chooses it,
+but it helps isolate the two effects.
+
+\end{frame}
+%==========================================================
+\begin{frame}{Deriving the Demand Curve}
+
+A demand curve shows the quantity demanded of a good
+at each possible price.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Idea}]
+A consumer’s demand curve summarizes
+the optimal choices that result from
+\begin{itemize}
+    \item the budget constraint, and
+    \item the consumer’s preferences.
+\end{itemize}
+\end{tcolorbox}
+
+When the price of a good changes:
+\begin{itemize}
+    \item the budget constraint changes,
+    \item the consumer chooses a new optimal bundle,
+    \item the quantity demanded changes.
+\end{itemize}
+
+Plotting the optimal quantity demanded at each price
+traces out the demand curve.
+
+\end{frame}
+%==========================================================
+\begin{frame}{Deriving the Demand Curve}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap21/T13.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{An Example: The Demand Curve for Pepsi}
+
+Suppose the price of Pepsi falls from \$2 to \$1 per liter.
+
+\begin{itemize}
+    \item The budget constraint rotates outward.
+    \item Due to substitution and income effects,
+          the consumer buys more Pepsi.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{From Choice to Demand}]
+At a price of \$2, the consumer buys 250 liters of Pepsi.\\
+At a price of \$1, the consumer buys 750 liters of Pepsi.
+\end{tcolorbox}
+
+Each price–quantity pair represents one point on the demand curve.
+Connecting these points gives the consumer’s demand curve for Pepsi.
+
+\end{frame}
+%==========================================================
+\section{21-4 Two Applications}
+%==========================================================
+\begin{frame}{Do All Demand Curves Slope Downward?}
+
+Normally, when the price of a good rises,
+the quantity demanded falls.
+This regularity is known as the \textbf{law of demand}.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Why Demand Slopes Downward}]
+When price increases:
+\begin{itemize}
+    \item Substitution effect: consumers buy less of the good.
+    \item Income effect: consumers feel poorer.
+\end{itemize}
+\end{tcolorbox}
+
+For most goods, these two effects reinforce each other,
+leading to a downward-sloping demand curve.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Giffen Goods}
+
+In rare cases, demand curves can slope upward.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Giffen Good}]
+A Giffen good is an \textbf{inferior good}
+for which the \textbf{income effect dominates}
+the substitution effect.
+\end{tcolorbox}
+
+When the price of a Giffen good rises:
+\begin{itemize}
+    \item Substitution effect: buy less of the good.
+    \item Income effect: consumer becomes poorer and buys more of the inferior good.
+\end{itemize}
+
+If the income effect is strong enough,
+the consumer buys \textbf{more} of the good at a higher price.
+
+\end{frame}
+%==========================================================
+\begin{frame}{Giffen Goods}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap21/T14.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Case Study: The Search for Giffen Goods}
+
+Economists have long debated whether Giffen goods
+exist in the real world.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Historical Evidence}]
+Some historians suggest that potatoes were a Giffen good
+during the 19th-century Irish potato famine.
+As the price of potatoes rose, poor households reduced
+their consumption of meat and bought more potatoes,
+the staple food.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Modern Empirical Evidence}]
+Robert Jensen and Nolan Miller conducted a field experiment
+in rural China.
+They found strong evidence of Giffen behavior for rice
+among very poor households:
+lowering the price of rice reduced rice consumption,
+while raising the price increased it.
+\end{tcolorbox}
+
+\textbf{Conclusion:}  
+Giffen goods can exist, but they are extremely rare.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{How Do Wages Affect Labor Supply?}
+
+Individuals allocate their limited time between \textbf{leisure} and \textbf{work}. 
+Working provides income for \textbf{consumption}, while leisure provides direct satisfaction.
+The key trade-off is between \textbf{leisure and consumption}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Time Allocation Framework}]
+\begin{itemize}
+    \item Time is limited (e.g., 100 hours per week).
+    \item Each hour of work earns a wage and increases consumption.
+    \item Each hour of leisure reduces labor income.
+\end{itemize}
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+\begin{frame}{How Do Wages Affect Labor Supply?}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap21/T17.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{How Do Wages Affect Labor Supply?}
+
+The wage represents the \textbf{opportunity cost of leisure}.  
+A higher wage makes leisure more expensive in terms of forgone consumption.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Budget Constraint}]
+\begin{itemize}
+    \item Vertical intercept: maximum consumption (all time spent working).
+    \item Horizontal intercept: maximum leisure (no work, no consumption).
+    \item A higher wage rotates the budget constraint outward and makes it steeper.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+%==========================================================
+\begin{frame}{Wage Changes and Labor Supply}
+
+When the wage increases, two opposing forces affect labor supply.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Substitution Effect}]
+\begin{itemize}
+    \item Leisure becomes more expensive relative to consumption.
+    \item Individuals substitute away from leisure toward work.
+    \item Tends to increase hours of labor supplied.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Income Effect}]
+\begin{itemize}
+    \item Higher wages increase overall well-being.
+    \item If leisure is a normal good, individuals demand more leisure.
+    \item Tends to reduce hours of labor supplied.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Wage Changes and Labor Supply}
+
+If the substitution effect dominates, labor supply slopes upward.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap21/T15.png}
+\end{center}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Wage Changes and Labor Supply}
+If the income effect dominates, labor supply slopes backward.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap21/T16.png}
+\end{center}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Income Effects on Labor Supply: Historical Evidence}
+
+Over long periods of time, evidence suggests that labor supply may slope backward.
+Historically, as wages have risen, people have chosen to work fewer hours.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Historical Pattern}]
+\begin{itemize}
+    \item In the past, six-day workweeks were common.
+    \item Today, five-day workweeks are the norm.
+    \item Average real wages have increased over time.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Income Effects on Labor Supply: Historical Evidence}
+
+
+Advances in technology raise worker productivity, increasing the demand for labor.
+This raises equilibrium wages and the reward for working.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Economic Explanation}]
+\begin{itemize}
+    \item Higher wages increase income.
+    \item Workers become better off.
+    \item Many choose to enjoy more leisure rather than work more.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=green!70!black, colback=white, title=\textbf{Key Insight}]
+Over time, the \textbf{income effect of higher wages dominates the substitution effect}.
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Income Effect on Labor Supply: Lottery Evidence}
+
+Lottery winners provide a unique opportunity to isolate the income effect on labor supply.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Why Lottery Winners Matter}]
+\begin{itemize}
+    \item Income increases sharply.
+    \item Wages do not change.
+    \item The slope of the budget constraint remains the same.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Income Effect on Labor Supply: Lottery Evidence}
+
+
+Because wages are unchanged, there is \textbf{no substitution effect}.
+Any change in labor supply reflects only the income effect.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Empirical Findings}]
+\begin{itemize}
+    \item Winners of over \$50,000:
+          \begin{itemize}
+              \item About 25\% quit working within one year.
+              \item About 9\% reduce their working hours.
+          \end{itemize}
+    \item Winners of over \$1 million:
+          \begin{itemize}
+              \item Nearly 40\% stop working.
+          \end{itemize}
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=green!70!black, colback=white, title=\textbf{Conclusion}]
+Large income increases can substantially reduce labor supply.
+\end{tcolorbox}
+
+\end{frame}
+
+
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+
+\end{document}

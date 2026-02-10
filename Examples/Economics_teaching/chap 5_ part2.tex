@@ -1,0 +1,288 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% Customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+% 每章節開始時自動產生章節頁
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\title{Mankiw's Principles of Economics}
+\subtitle{chap 5: Elasticity and
+Its Application}
+\author{Hsu Chun-Wei}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+% 目錄頁
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+
+%==========================================================
+\section{The Applications of Supply, Demand,
+and Elasticity}
+%==========================================================
+\begin{frame}{Can Good News for Farming Be Bad News for Farmers?}
+
+Imagine a Kansas wheat farmer. A new hybrid of wheat is discovered that increases output per acre by 20\%. How does this affect farmers?
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Step 1: Which Curve Shifts?}]
+The new hybrid increases productivity, allowing farmers to produce more wheat at any price.  
+\textbf{The supply curve shifts to the right.}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Step 2: Direction of the Shift}]
+Supply increases from $S_1$ to $S_2$.  
+Quantity rises (100 → 110), and price falls (from \$3 → \$2).  
+Demand remains unchanged.
+\end{tcolorbox}
+
+This raises a key question:  
+\textbf{Does producing more wheat make farmers better off or worse off?}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Frame Title}
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{pictures/chap5/T16.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Why More Wheat Can Lower Farmers' Income}
+
+Farmers' total revenue equals \(\text{Price} \times \text{Quantity}\).  
+A technological improvement affects both components:
+
+\begin{itemize}
+    \item Quantity supplied increases (Q rises).
+    \item Market price of wheat falls (P falls).
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key: Demand for Wheat Is Inelastic}]
+Because basic food products have few substitutes, demand for wheat is inelastic.  
+Thus, when price falls, \textbf{total revenue falls}.
+\end{tcolorbox}
+
+Example from the text:
+\begin{itemize}
+    \item Price falls significantly, from \$300 to \$220.
+    \item Quantity sold rises only slightly.
+\end{itemize}
+
+\textbf{Result:} The new hybrid reduces total revenue for farmers.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Long-Run Impact on Farmers}
+
+If farmers are worse off, why do they use the new hybrid?  
+Because each farmer takes the price as given and benefits individually by producing more.  
+But when \textbf{all farmers adopt the new hybrid}, the increase in total supply drives the price downward, making all farmers worse off.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Historical Perspective}]
+Over the past two centuries, advances in farm technology greatly increased food output.  
+With inelastic food demand, higher supply led to falling farm revenues, pushing many workers out of farming.
+\end{tcolorbox}
+\end{frame}
+
+%==========================================================
+\begin{frame}{Policy Lessons}
+
+This also explains certain farm policies:
+\begin{itemize}
+    \item Governments sometimes pay farmers \textbf{not} to plant crops.
+    \item By reducing supply, prices rise and farm incomes increase.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Important Insight}]
+What is good for consumers (cheaper food) may not be good for farmers.  
+Improved technology benefits society but can hurt farmers.
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Why Did OPEC Fail to Keep the Price of Oil High?}
+
+In the 1970s, OPEC members attempted to raise the world price of oil by jointly reducing supply.  
+This policy initially succeeded: oil prices rose dramatically in both the early and late 1970s.
+
+However, OPEC struggled to maintain high prices. From 1982 to 1985, oil prices fell steadily, and by 1986 cooperation collapsed, causing a 45\% plunge in price. Prices later returned to 1970 levels and fluctuated widely in the 21st century due to changing global demand.
+
+\end{frame}
+%==========================================================
+\begin{frame}{Why Did OPEC Fail to Keep the Price of Oil High?}
+    \begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Short-Run Elasticities Explain Early Success}]
+In the short run:
+\begin{itemize}
+    \item Supply of oil is inelastic — extraction capacity cannot change quickly.
+    \item Demand for oil is inelastic — consumers cannot easily change consumption habits.
+\end{itemize}
+Because both curves are steep, a leftward shift in supply (from \(S_1\) to \(S_2\)) causes a \textbf{large increase in price}.  
+Thus OPEC earned higher revenues even while selling less oil.
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+\begin{frame}{Short Run vs. Long Run: Why OPEC Eventually Failed}
+    \begin{center}
+        \includegraphics[width=\textwidth]{pictures/chap5/T17.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Short Run vs. Long Run: Why OPEC Eventually Failed}
+
+The long run tells a different story. Over time:
+
+\begin{itemize}
+    \item Producers outside OPEC expand oil exploration and build new extraction capacity.
+    \item Consumers adopt conservation methods and more efficient technologies.
+\end{itemize}
+
+Thus, both long-run supply and demand become \textbf{more elastic}.  
+As panel (b) of Figure indicated, the same shift in supply from \(S_1\) to \(S_2\) leads to only a small increase in price.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Short Run vs. Long Run: Why OPEC Eventually Failed}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Insight: Cartel Power Weakens Over Time}]
+\begin{itemize}
+    \item In the short run: Inelastic curves → large price increases → high OPEC revenue.
+    \item In the long run: Elastic curves → small price increases → reduced profitability.
+\end{itemize}
+OPEC learned that raising prices is easier in the short run than in the long run.
+\end{tcolorbox}
+\end{frame}
+%==========================================================
+\begin{frame}{Does Drug Interdiction Increase or Decrease Drug-Related Crime?}
+
+Illegal drug use causes many social problems, including addiction and drug-related crime.  
+The U.S. government spends billions each year on drug interdiction to reduce the flow of illegal drugs.
+
+To analyze this policy, we consider:
+\begin{itemize}
+    \item whether the supply or demand curve shifts,
+    \item the direction of the shift,
+    \item the resulting changes in equilibrium price and quantity.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Effect of Drug Interdiction}]
+Interdiction targets \textbf{sellers}, not users.  
+By raising the cost of smuggling and reducing available supply, the supply curve shifts left from \(S_1\) to \(S_2\).
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Drug Interdiction}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+Equilibrium outcomes:
+\begin{itemize}
+    \item Price rises from \(P_1\) to \(P_2\),
+    \item Quantity falls from \(Q_1\) to \(Q_2\).
+\end{itemize}
+
+Thus, \textbf{drug use decreases}.
+
+\column{0.5\textwidth}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap5/t18.png}
+\end{center}
+
+\end{columns}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Why Drug Interdiction May Increase Crime}
+
+A key question: What happens to the \textbf{total amount of money drug users pay}?  
+This depends on the elasticity of demand for drugs.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Demand for Drugs Is Inelastic}]
+Because addiction makes consumers unresponsive to price changes, the demand curve is steep.  
+When price rises, total revenue \(P \times Q\) \textbf{increases}.
+\end{tcolorbox}
+
+Consequences:
+\begin{itemize}
+    \item Drug users now spend more to support their addiction.
+    \item Many addicts may resort to theft or violent crime to obtain money.
+\end{itemize}
+
+\textbf{Thus, drug interdiction may reduce drug use but increase drug-related crime.} Some analysts argue for an alternative approach: reducing the \textbf{demand} for drugs.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Demand Reduction Through Drug Education}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+Successful drug education shifts the demand curve left from \(D_1\) to \(D_2\).
+Results:
+\begin{itemize}
+    \item Equilibrium quantity falls from \(Q_1\) to \(Q_2\),
+    \item Price falls from \(P_1\) to \(P_2\),
+    \item Total revenue \(P \times Q\) also falls.
+\end{itemize}
+
+\column{0.5\textwidth}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap5/T19.png}
+\end{center}
+
+    
+\end{columns}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Demand Reduction Through Drug Education}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Policy Insight}]
+Unlike interdiction, demand reduction lowers both \textbf{drug use} and \textbf{drug-related crime}.
+\end{tcolorbox}
+
+Long-run considerations:
+\begin{itemize}
+    \item Demand may be more elastic over time.
+    \item Interdiction may increase crime in the short run but decrease it in the long run.
+\end{itemize}
+\end{frame}
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+\end{document}

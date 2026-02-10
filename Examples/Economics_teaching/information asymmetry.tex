@@ -1,0 +1,212 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% Customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+\title{Frontiers of microeconomics}
+\subtitle{section22.1: Asymmetric Information}
+\author{Hsu Chun-Wei}
+\date{2025}
+
+% 每章節開始時自動產生章節頁
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\maketitle
+
+% 目錄頁
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+%======================================================================
+\section{Moral hazard}
+%======================================================================
+\begin{frame}{Moral Hazard: Principal-Agent Problem}
+
+\textbf{Moral hazard} is a problem that arises when one person, called the \textbf{agent}, performs a task on behalf of another person, called the \textbf{principal}.
+
+\vspace{0.5em}
+If the principal cannot perfectly monitor the agent’s behavior, the agent may exert less effort than is optimal for the principal.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definition of Moral Hazard}]
+Moral hazard refers to the \textbf{risk}, or \textbf{"hazard"}, of inappropriate or otherwise \textbf{"immoral"} behavior by the agent due to asymmetric information.
+\end{tcolorbox}
+
+\vspace{0.5em}
+In such a situation, the principal tries various mechanisms to motivate the agent to act more responsibly.
+
+\end{frame}
+%======================================================================
+\begin{frame}{Moral Hazard in Employment Relationships}
+
+The employment relationship is a classic example of the principal-agent problem.
+
+\vspace{0.5em}
+\begin{itemize}
+    \item The \textbf{employer} is the \textbf{principal}.
+    \item The \textbf{worker} is the \textbf{agent}.
+    \item The \textbf{moral hazard} arises when workers, who are imperfectly monitored, are tempted to \textbf{shirk their responsibilities}.
+\end{itemize}
+
+Employers can respond to this problem in various ways:
+
+\begin{itemize}
+    \item \textbf{Better monitoring}: Use hidden cameras or other tools to observe workers’ behavior and catch irresponsible actions when supervisors are absent.
+    
+    \item \textbf{High wages}: Pay workers above market wage to reduce shirking. Losing a high-paying job discourages bad behavior.
+
+    \item \textbf{Delayed payment}: Postpone part of the salary (e.g., year-end bonuses). Workers who shirk risk losing future income.
+\end{itemize}
+
+
+\end{frame}
+%=====================================================================
+\section{Adverse Selection}
+%======================================================================
+\begin{frame}{Adverse Selection and the Lemons Problem}
+
+\textbf{Adverse selection} is a problem that occurs when one party in a transaction has more information than the other.
+
+\vspace{0.5em}
+In particular, sellers may know more about the quality of a good than buyers do. This can lead to the sale of low-quality goods, which is harmful to uninformed buyers.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Idea}]
+The "selection" of goods in the market is \textbf{adverse} from the buyer’s perspective due to hidden characteristics.
+\end{tcolorbox}
+
+\end{frame}
+
+%======================================================================
+\begin{frame}{Adverse Selection}
+
+\textbf{Used car markets} are a classic example of adverse selection.
+
+\vspace{0.5em}
+\begin{itemize}
+    \item Sellers know more about their car’s defects than buyers.
+    \item Owners of bad cars are more likely to sell them—buyers fear getting a \textbf{“lemon”}.
+    \item This fear reduces buyer trust and participation in the used car market.
+    \item Even slightly used cars may sell for much less than new ones, due to buyers’ suspicion.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{The adverse selection}]
+the tendency for the mix of unobserved attributes to become undesirable from the standpoint of an uninformed party
+\end{tcolorbox}
+
+\end{frame}
+%=====================================================================
+\section{Signaling}
+%======================================================================
+\begin{frame}{Signaling: A Response to Asymmetric Information}
+
+\textbf{Signaling} refers to actions taken by an informed party to credibly reveal private information to uninformed parties.
+
+\vspace{0.5em}
+\begin{itemize}
+    \item \textbf{Firms} may advertise to signal product quality to potential customers.
+    \item \textbf{Students} may earn college degrees to signal high ability to employers—even if the degree doesn’t increase productivity.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Purpose of Signaling}]
+To reduce the effects of asymmetric information by making hidden qualities observable.
+\end{tcolorbox}
+
+\end{frame}
+%=====================================================================
+\section{Screening}
+%======================================================================
+\begin{frame}{Screening: Inducing Information Revelation}
+
+\textbf{Screening} is when an \textit{uninformed party} takes action to induce the informed party to reveal private information.
+
+\vspace{0.5em}
+\begin{itemize}
+    \item \textbf{Contrast with signaling}: 
+    \begin{itemize}
+        \item \textbf{Signaling} — informed party reveals information.
+        \item \textbf{Screening} — uninformed party draws out information.
+    \end{itemize}
+
+    \item \textbf{Example}: A buyer asks for a used car to be inspected by a mechanic.
+    \begin{itemize}
+        \item If the seller refuses, it may signal the car is a lemon.
+        \item The buyer can then choose to walk away or offer a lower price.
+    \end{itemize}
+\end{itemize}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Idea}]
+Screening helps buyers protect themselves from hidden risks in the presence of asymmetric information.
+\end{tcolorbox}
+
+\end{frame}
+%======================================================================
+\section{Conclusion}
+%======================================================================
+\begin{frame}{Asymmetric Information and Public Policy (1/2)}
+
+\textbf{Asymmetric information} adds to the list of reasons why markets may fail.
+
+\vspace{0.5em}
+\begin{itemize}
+    \item Classical economics emphasizes the efficiency of markets (e.g., supply and demand, the invisible hand).
+    \item But market outcomes may be suboptimal due to:
+    \begin{itemize}
+        \item Externalities
+        \item Public goods
+        \item Imperfect competition
+        \item \textbf{Asymmetric information}
+    \end{itemize}
+
+    \item Hidden information can prevent efficient resource allocation:
+    \begin{itemize}
+        \item High-quality goods may not sell (e.g., used cars).
+        \item Healthy individuals may pay more for insurance due to pooling with hidden-risk individuals.
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+%======================================================================
+\begin{frame}{Asymmetric Information and Public Policy (2/2)}
+
+Government intervention may be helpful, but three issues complicate the case:
+
+\vspace{0.5em}
+\begin{enumerate}
+    \item \textbf{Private solutions exist}: Markets use \textbf{signaling} and \textbf{screening} to reduce information gaps.
+    
+    \item \textbf{Government lacks superior information}: Often, private individuals know more than regulators.
+
+    \item \textbf{Government is imperfect}: Intervention may lead to other inefficiencies or unintended consequences.
+\end{enumerate}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Conclusion}]
+Asymmetric information justifies potential policy action, but it must be weighed against the limits of government capability.
+\end{tcolorbox}
+
+\end{frame}
+
+%======================================================================
+%======================================================================
+%======================================================================
+%======================================================================
+%======================================================================
+\end{document}

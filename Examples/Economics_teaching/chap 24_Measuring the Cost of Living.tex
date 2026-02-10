@@ -1,0 +1,626 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% Customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+% 每章節開始時自動產生章節頁
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\title{Mankiw's Principles of Economics}
+\subtitle{chap 24: Measuring the Cost of Living}
+\author{Hsu Chun-Wei}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+% 目錄頁
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+
+%==========================================================
+\section{24-1 The Consumer Price Index}
+%==========================================================
+\begin{frame}{24-1 The Consumer Price Index (CPI)}
+
+The \textbf{Consumer Price Index (CPI)} measures the overall cost of the goods and services bought by a typical consumer.
+
+It is calculated and reported monthly by the \textbf{Bureau of Labor Statistics (BLS)} and is widely used to track changes in the cost of living.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Idea: What CPI Measures}]
+\begin{itemize}
+    \item CPI measures the cost of a fixed basket of goods and services.
+    \item It reflects how prices change over time for a typical consumer.
+    \item A rising CPI indicates inflation.
+\end{itemize}
+\end{tcolorbox}
+
+CPI is often compared with the \textbf{GDP deflator}, another measure of the overall price level, but CPI focuses specifically on consumer purchases.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{How the CPI Is Calculated}
+
+To understand how CPI is constructed, consider a simplified economy with only two goods: hot dogs and hamburgers.
+
+\begin{center}
+    \includegraphics[width=0.75\textwidth]{pictures/chap24/T1.png}
+\end{center}
+
+\end{frame}
+%==========================================================
+\begin{frame}{What Is in the CPI's Basket?}
+
+When constructing the CPI, the \textbf{Bureau of Labor Statistics (BLS)} includes the goods and services typically purchased by consumers.
+
+Each category is \textbf{weighted} according to how much consumers spend on it, which the BLS calls its \textbf{relative importance}.
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{Key Idea: CPI Basket}]
+\begin{itemize}
+    \item CPI is based on a basket of goods and services.
+    \item Categories are weighted by consumer spending.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{itemize}
+    \item A price increase in a high-weight category raises CPI more.
+    \item A price increase in a low-weight category has smaller impact.
+    \item CPI reflects \textbf{consumer spending patterns}, not importance to individuals.
+\end{itemize}
+
+\end{frame}
+%==========================================================
+\begin{frame}{What Is in the CPI's Basket?}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{pictures/chap24/T2.png}
+\end{center}
+
+\end{frame}
+%==========================================================
+\begin{frame}{How the CPI Is Calculated}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Five Steps to Calculate CPI}]
+\begin{enumerate}
+    \item \textbf{Fix the basket}: Determine the typical consumer's basket of goods.
+    \item \textbf{Find the prices}: Record prices of each good in different years.
+    \item \textbf{Compute the basket's cost}: Calculate total cost using the fixed basket.
+    \item \textbf{Choose a base year and compute CPI}:
+    \[
+    CPI = \frac{\text{Price of basket in current year}}{\text{Price of basket in base year}} \times 100
+    \]
+    \item \textbf{Compute the inflation rate}.
+\end{enumerate}
+\end{tcolorbox}
+
+The basket remains fixed so that CPI isolates price changes from quantity changes.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Base Year and Inflation Rate}
+
+The \textbf{base year} is the benchmark year against which other years are compared.
+The CPI is always \textbf{100 in the base year}.
+
+\begin{tcolorbox}[colframe=red!70!black, colback=white, title=\textbf{Inflation Rate Formula}]
+\[
+\text{Inflation Rate in Year 2}
+=
+\frac{CPI_{\text{Year 2}} - CPI_{\text{Year 1}}}{CPI_{\text{Year 1}}}
+\times 100
+\]
+\end{tcolorbox}
+
+\begin{itemize}
+    \item Inflation measures the percentage change in the CPI.
+    \item A higher inflation rate means prices are rising faster.
+\end{itemize}
+
+In real data, CPI is reported monthly and often appears in news reports.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{CPI and Other Price Indexes}
+
+In addition to CPI, the BLS also calculates other price indexes.
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{Producer Price Index (PPI)}]
+\begin{itemize}
+    \item PPI measures the cost of goods and services bought by firms.
+    \item Firms often pass higher costs to consumers.
+    \item Therefore, changes in PPI may help predict changes in CPI.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Problems in Measuring the Cost of Living}
+
+The goal of the CPI is to measure changes in the cost of living.
+However, CPI is an \textbf{imperfect measure} and tends to overstate inflation.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Problem 1: Substitution Bias}]
+\begin{itemize}
+    \item CPI uses a \textbf{fixed basket of goods}.
+    \item Consumers substitute toward relatively cheaper goods when prices change.
+    \item CPI ignores substitution and therefore \textbf{overstates the increase in the cost of living}.
+\end{itemize}
+\end{tcolorbox}
+
+\textbf{Example:}  
+If apples become more expensive and pears become cheaper, consumers buy fewer apples and more pears.  
+CPI assumes consumers keep buying the same basket, exaggerating inflation.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Problem 2: Introduction of New Goods}
+
+When new goods are introduced, consumers gain more choices and higher well-being.
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{New Goods Bias}]
+\begin{itemize}
+    \item New goods increase consumer choice and make each dollar more valuable.
+    \item CPI does not immediately reflect the benefits of new goods.
+    \item As a result, CPI \textbf{overstates the cost of living}.
+\end{itemize}
+\end{tcolorbox}
+
+\textbf{Example:}  
+The introduction of the iPod made it easier to listen to music.
+Consumers were better off even if prices did not fall, but CPI did not decrease.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Problem 3: Unmeasured Quality Change}
+
+Quality changes are difficult to measure accurately.
+
+\begin{tcolorbox}[colframe=red!70!black, colback=white, title=\textbf{Quality Change Bias}]
+\begin{itemize}
+    \item If quality improves while prices stay the same, CPI overstates inflation.
+    \item If quality deteriorates, CPI understates inflation.
+    \item BLS attempts to adjust for quality, but measurement is imperfect.
+\end{itemize}
+\end{tcolorbox}
+
+Despite improvements, many economists believe CPI still slightly overstates inflation.
+
+\begin{itemize}
+    \item CPI is used to adjust Social Security and government benefits.
+    \item Small measurement errors can have large policy effects.
+\end{itemize}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{GDP Deflator vs Consumer Price Index}
+
+Both the \textbf{GDP deflator} and the \textbf{Consumer Price Index (CPI)} measure changes in the overall price level.
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{Two Price Indexes}]
+\begin{itemize}
+    \item \textbf{GDP Deflator}:
+    \[
+    \frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100
+    \]
+    \item \textbf{CPI}: Measures the cost of a typical consumer’s basket of goods and services.
+\end{itemize}
+\end{tcolorbox}
+
+Usually, CPI inflation and GDP deflator inflation move together, but important differences can cause them to diverge.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Difference 1: What Goods Are Included?}
+
+The most important difference is \textbf{what each index measures}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Coverage Difference}]
+\begin{itemize}
+    \item \textbf{GDP Deflator}:
+    \begin{itemize}
+        \item Includes all goods and services \textbf{produced domestically}.
+        \item Excludes imports.
+    \end{itemize}
+    \item \textbf{CPI}:
+    \begin{itemize}
+        \item Includes goods and services \textbf{bought by consumers}.
+        \item Includes imports.
+    \end{itemize}
+\end{itemize}
+\end{tcolorbox}
+
+\textbf{Examples:}
+\begin{itemize}
+    \item A U.S.-made airplane sold to the military affects GDP deflator, not CPI.
+    \item An imported car bought by consumers affects CPI, not GDP deflator.
+\end{itemize}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Difference 2: Fixed vs Changing Basket}
+
+The second difference concerns how prices are weighted.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Basket Difference}]
+\begin{itemize}
+    \item \textbf{CPI}:
+    \begin{itemize}
+        \item Uses a \textbf{fixed basket} of goods and services.
+        \item Basket changes infrequently.
+    \end{itemize}
+    \item \textbf{GDP Deflator}:
+    \begin{itemize}
+        \item Uses a \textbf{changing basket}.
+        \item Reflects current production automatically.
+    \end{itemize}
+\end{itemize}
+\end{tcolorbox}
+
+When prices change unevenly, these different weighting methods can cause CPI and GDP deflator inflation to diverge.
+
+\end{frame}
+%==========================================================
+\begin{frame}{Historical Comparison of Inflation Measures}
+\begin{center}
+    \includegraphics[width=0.9\textwidth]{pictures/chap24/T3.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Historical Comparison of Inflation Measures}
+
+Historically, CPI and the GDP deflator usually tell a similar story.
+
+\begin{itemize}
+    \item 1970s: Both measures show high inflation.
+    \item Late 1970s–early 1980s: CPI rose faster due to sharp increases in oil prices.
+    \item 1980s–2000s: Both measures show relatively low inflation.
+\end{itemize}
+
+Divergence between CPI and GDP deflator is the exception, not the rule.
+
+\end{frame}
+%==========================================================
+\section{24-2 Correcting Economic Variables for the Effects of Inflation}
+%==========================================================
+\begin{frame}{Correcting Economic Variables for Inflation}
+
+The purpose of measuring the overall price level is to allow comparisons of dollar figures from different points in time.
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{Why Inflation Adjustment Matters}]
+\begin{itemize}
+    \item A dollar today does not have the same purchasing power as a dollar in the past.
+    \item Inflation distorts comparisons of income, prices, and output over time.
+    \item Price indexes allow us to make meaningful comparisons.
+\end{itemize}
+\end{tcolorbox}
+
+Once we know how price indexes are calculated, we can use them to compare past and present dollar values.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Using Price Indexes to Compare Dollar Values}
+
+Economists use price indexes, such as the CPI, to adjust nominal values for inflation.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Question}]
+\begin{itemize}
+    \item How do we convert a dollar figure from the past into today's dollars?
+    \item How do we compare real purchasing power across years?
+\end{itemize}
+\end{tcolorbox}
+
+In this section, we learn how to use price indexes to correct economic variables for the effects of inflation.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Dollar Figures from Different Times}
+
+A dollar in the past does not have the same purchasing power as a dollar today.
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{Key Question}]
+\begin{itemize}
+    \item Was Babe Ruth's salary of \$80,000 in 1931 high or low by today's standards?
+    \item To answer this, we must adjust for inflation.
+\end{itemize}
+\end{tcolorbox}
+
+To compare dollar amounts across time, we convert past dollars into today's dollars using a price index such as the CPI.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Converting Dollars across Time}
+
+The formula for converting a dollar figure from year $T$ into today's dollars is:
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Inflation Adjustment Formula}]
+\[
+\text{Amount in today's dollars}
+=
+\text{Amount in year } T \times
+\frac{\text{Price level today}}{\text{Price level in year } T}
+\]
+\end{tcolorbox}
+
+A price index such as the \textbf{Consumer Price Index (CPI)} measures the price level and determines the size of the inflation correction.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Example: Babe Ruth's Salary}
+
+Government statistics show:
+\begin{itemize}
+    \item CPI in 1931 = 15.2
+    \item CPI in 2012 = 229.5
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Calculation}]
+\[
+\text{Salary in 2012 dollars}
+=
+\$80{,}000 \times \frac{229.5}{15.2}
+=
+\$1{,}207{,}894
+\]
+\end{tcolorbox}
+
+Babe Ruth’s 1931 salary is equivalent to over \$1.2 million in 2012 dollars.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Another Example: President Hoover}
+
+President Hoover earned \$75,000 in 1931.
+
+\begin{tcolorbox}[colframe=red!70!black, colback=white, title=\textbf{Inflation-Adjusted Salary}]
+\[
+\$75{,}000 \times \frac{229.5}{15.2}
+=
+\$1{,}132{,}401
+\]
+\end{tcolorbox}
+
+In 2012 dollars, Hoover’s salary was well above President Obama’s \$400,000 salary.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Indexation}
+
+Price indexes are often used to correct for the effects of inflation automatically.
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{Definition: Indexation}]
+\begin{itemize}
+    \item A dollar amount is \textbf{indexed for inflation} if it is automatically adjusted for changes in the price level.
+    \item Indexation is typically written into laws or contracts.
+\end{itemize}
+\end{tcolorbox}
+
+Indexation allows dollar figures from different times to maintain their real purchasing power.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Indexation in Labor Contracts: COLA}
+
+Many long-term labor contracts include indexation of wages to inflation.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Cost-of-Living Allowance (COLA)}]
+\begin{itemize}
+    \item COLA automatically raises wages when the CPI rises.
+    \item It protects workers from losing purchasing power due to inflation.
+    \item Wages indexed to CPI rise with the cost of living.
+\end{itemize}
+\end{tcolorbox}
+
+COLA clauses are commonly used in contracts between firms and labor unions.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Indexation in Government Policy}
+
+Indexation is also widely used in government programs.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Examples of Indexation}]
+\begin{itemize}
+    \item \textbf{Social Security benefits} are adjusted annually for inflation.
+    \item \textbf{Income tax brackets} are indexed to inflation.
+\end{itemize}
+\end{tcolorbox}
+
+However, not all parts of the tax system are indexed for inflation, which can create distortions.
+These issues are discussed further when analyzing the costs of inflation.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Real and Nominal Interest Rates}
+
+Interest rates compare money at different points in time.
+Therefore, inflation must be taken into account.
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{Key Insight}]
+\begin{itemize}
+    \item Earning interest increases the number of dollars you have.
+    \item What matters is how much those dollars can buy.
+    \item Inflation changes the value of future dollars.
+\end{itemize}
+\end{tcolorbox}
+
+To understand gains from saving or costs of borrowing, we must correct interest rates for inflation.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Example: Sally Saver}
+
+Suppose Sally deposits \$1{,}000 in a bank account earning a \textbf{10\% nominal interest rate}.
+
+\begin{itemize}
+    \item After one year, she withdraws \$1{,}100.
+    \item Nominally, Sally has \$100 more than before.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Question}]
+Is Sally actually richer in terms of purchasing power?
+\end{tcolorbox}
+
+The answer depends on what happens to prices during the year.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Inflation and Purchasing Power}
+
+Assume Sally spends all her money on DVDs.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Outcomes under Different Price Changes}]
+\begin{itemize}
+    \item \textbf{0\% inflation}: Purchasing power rises by 10\%.
+    \item \textbf{6\% inflation}: Purchasing power rises by about 4\%.
+    \item \textbf{10\% inflation}: Purchasing power is unchanged.
+    \item \textbf{12\% inflation}: Purchasing power falls by about 2\%.
+    \item \textbf{Deflation}: Purchasing power rises more than the interest rate.
+\end{itemize}
+\end{tcolorbox}
+
+Higher inflation reduces the real gain from saving.
+If inflation exceeds the interest rate, purchasing power falls.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Nominal vs Real Interest Rates}
+
+Economists distinguish between two types of interest rates.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Definitions}]
+\begin{itemize}
+    \item \textbf{Nominal interest rate}: Measures the change in dollar amounts.
+    \item \textbf{Real interest rate}: Measures the change in purchasing power.
+\end{itemize}
+\end{tcolorbox}
+
+The relationship between nominal interest rate, inflation, and real interest rate is approximately:
+
+\[
+\text{Real interest rate}
+=
+\text{Nominal interest rate}
+-
+\text{Inflation rate}
+\]
+
+The real interest rate tells us how fast purchasing power rises over time.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Case Study: Interest Rates in the U.S. Economy}
+
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap24/T4.png}
+\end{center}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Case Study: Interest Rates in the U.S. Economy}
+
+This figure shows \textbf{nominal and real interest rates} in the U.S. economy since 1965.
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{How the Data Are Defined}]
+\begin{itemize}
+    \item Nominal interest rate: rate on three-month Treasury bills.
+    \item Inflation rate: percentage change in the CPI.
+    \item Real interest rate:
+    \[
+    \text{Real interest rate} = \text{Nominal interest rate} - \text{Inflation rate}
+    \]
+\end{itemize}
+\end{tcolorbox}
+
+In most years, the nominal interest rate exceeds the real interest rate because inflation is usually positive.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Key Patterns in Real and Nominal Interest Rates}
+
+Because inflation varies over time, real and nominal interest rates do not always move together.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Historical Insights}]
+\begin{itemize}
+    \item \textbf{1970s}:
+    \begin{itemize}
+        \item Nominal interest rates were high.
+        \item Inflation was even higher.
+        \item Real interest rates were low or negative.
+    \end{itemize}
+    \item \textbf{Late 1990s}:
+    \begin{itemize}
+        \item Nominal interest rates were lower.
+        \item Inflation was very low.
+        \item Real interest rates were relatively high.
+    \end{itemize}
+\end{itemize}
+\end{tcolorbox}
+
+\textbf{Deflation}: When prices fall, the real interest rate exceeds the nominal interest rate.
+
+\end{frame}
+%==========================================================
+\section{24-3 Conclusion}
+%==========================================================
+\begin{frame}{Conclusion: Key Takeaways}
+
+\begin{tcolorbox}[colframe=blue!80!black, colback=white, title=\textbf{What We Learned}]
+\begin{itemize}
+    \item Inflation reduces the purchasing power of money.
+    \item Price indexes measure changes in the overall price level.
+    \item CPI and the GDP deflator allow comparisons across time.
+    \item Economic variables must be corrected for inflation.
+\end{itemize}
+\end{tcolorbox}
+
+Price indexes help us better understand how the economy changes over time.
+
+\end{frame}
+
+%==========================================================
+%==========================================================
+
+\end{document}

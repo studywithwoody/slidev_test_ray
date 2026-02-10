@@ -1,0 +1,652 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox}
+\usepackage{lmodern}
+\usepackage{mathabx}
+
+\usetheme{Madrid} % 可選其他主題：e.g., Warsaw, Berkeley, etc.
+\usecolortheme{default}
+\setbeamertemplate{caption}[numbered]% Number float-like environments
+% Customize the caption
+\setbeamerfont{caption}{size=\footnotesize}
+% \setbeamercolor{caption}{fg=blue}
+% \setbeamercolor{caption name}{fg=red}
+
+% 每章節開始時自動產生章節頁
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\title{Mankiw's Principles of Economics}
+\subtitle{chap 6: Supply, Demand, and Government Policies}
+\author{Hsu Chun-Wei}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+% 目錄頁
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+
+%==========================================================
+\section{Controls on Prices}
+%==========================================================
+\begin{frame}{Price Controls: The Ice Cream Market Example}
+
+Consider a competitive market for ice cream with no government regulation.
+In equilibrium, the price adjusts to balance supply and demand, so the quantity buyers want to purchase equals the quantity sellers want to sell.
+Suppose the equilibrium price is \(\$3\) per cone.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Equilibrium Outcome}]
+At the equilibrium price, the market clears:
+\begin{itemize}
+    \item Buyers purchase exactly what sellers produce.
+    \item No shortages or surpluses exist.
+\end{itemize}
+\end{tcolorbox}
+
+Some groups are dissatisfied with this outcome.
+Ice-cream consumers argue that \(\$3\) is too high, while ice-cream producers argue that \(\$3\) is too low and reduces their income.
+Both groups lobby the government to intervene by controlling prices.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Price Controls}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Price Controls}]
+\begin{itemize}
+    \item \textbf{Price Ceiling}: a legal maximum price, imposed to help buyers.
+    \item \textbf{Price Floor}: a legal minimum price, imposed to help sellers.
+\end{itemize}
+\end{tcolorbox}
+
+These policies prevent prices from adjusting freely and lead to different market outcomes.
+\end{frame}
+%==========================================================
+\begin{frame}{How Price Ceilings Affect Market Outcomes}
+
+When the government imposes a \textbf{price ceiling}, two outcomes are possible,
+depending on whether the ceiling is above or below the equilibrium price.
+
+\begin{columns}
+
+\column{0.5\textwidth}
+\textbf{Case 1: Price Ceiling Is Not Binding}
+\begin{itemize}
+    \item Example: Price ceiling = \$4, equilibrium price = \$3.
+    \item The market price is below the ceiling.
+    \item The ceiling has \textbf{no effect} on price or quantity.
+    \item The market reaches equilibrium normally.
+\end{itemize}
+
+\column{0.5\textwidth}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap 6/T1.png}
+\end{center}
+
+\end{columns}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{How Price Ceilings Affect Market Outcomes}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+\textbf{Case 2: Price Ceiling Is Binding}
+\begin{itemize}
+    \item Example:
+    Price ceiling = \$2, equilibrium price = \$3.
+    \item The ceiling is a \textbf{binding constraint}.
+    \item The market price cannot rise to equilibrium.
+    \item Quantity demanded exceeds quantity supplied.
+\end{itemize}
+
+\column{0.5\textwidth}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap 6/T2.png}
+\end{center}
+\end{columns}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Shortages and Rationing under a Binding Price Ceiling}
+
+When a binding price ceiling is imposed, the market price equals the ceiling.
+At this lower price, quantity demanded exceeds quantity supplied.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Market Outcome}]
+\begin{itemize}
+    \item Quantity demanded: 125 cones
+    \item Quantity supplied: 75 cones
+    \item \textbf{Shortage: 50 cones}
+\end{itemize}
+\end{tcolorbox}
+
+Because prices can no longer ration goods, other rationing mechanisms emerge.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Shortages and Rationing under a Binding Price Ceiling}
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Rationing Mechanisms}]
+\begin{itemize}
+    \item Long waiting lines
+    \item First-come, first-served
+    \item Seller favoritism or discrimination
+\end{itemize}
+\end{tcolorbox}
+
+These outcomes are often inefficient and potentially unfair.
+In contrast, free markets ration goods efficiently through prices.
+\end{frame}
+%==========================================================
+\begin{frame}{Case Study: Lines at the Gas Pump}
+
+In 1973, the Organization of Petroleum Exporting Countries (OPEC) raised the price of crude oil.
+Because crude oil is a key input in gasoline production, higher oil prices increased production costs and reduced the supply of gasoline.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Initial Situation}]
+\begin{itemize}
+    \item Before the oil price increase, the equilibrium price of gasoline was below the price ceiling.
+    \item The price ceiling was \textbf{not binding}.
+    \item The gasoline market functioned normally.
+\end{itemize}
+\end{tcolorbox}
+Many people blamed OPEC for the long lines at gas stations.
+However, economists argue that government price controls played a central role.
+\end{frame}
+
+%==========================================================
+\begin{frame}{Case Study: Lines at the Gas Pump}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Key Question}]
+If oil prices rose, why didn’t gasoline prices adjust to clear the market?
+\end{tcolorbox}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap 6/T3.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Price Ceilings, Supply Shocks, and Shortages}
+
+When the price of crude oil increased, the supply of gasoline shifted left from \(S_1\) to \(S_2\).
+
+\textbf{What Went Wrong?}
+\begin{itemize}
+    \item In an unregulated market, the price would rise from \(P_1\) to \(P_2\).
+    \item The price ceiling prevented the price from increasing.
+    \item The price ceiling became \textbf{binding}.
+\end{itemize}
+
+At the regulated price:
+\begin{itemize}
+    \item Quantity demanded = \(Q_D\)
+    \item Quantity supplied = \(Q_S\)
+    \item \textbf{Shortage = \(Q_D - Q_S\)}
+\end{itemize}
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Lesson from the Gasoline Market}]
+When the government imposes a binding price ceiling during a negative supply shock,
+severe shortages and long waiting lines can result.
+\end{tcolorbox}
+\end{frame}
+
+%==========================================================
+\begin{frame}{How Price Floors Affect Market Outcomes}
+
+A \textbf{price floor} is a legal minimum price set by the government.
+Like price ceilings, price floors attempt to control market outcomes.
+\begin{columns}
+
+\column{0.55\textwidth}
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Case1:Non-Binding Price Floor}]
+\begin{itemize}
+    \item Example:\\
+    Price floor = \$2,\\
+    equilibrium price = \$3.
+    \item The equilibrium price is above the floor.
+    \item The price floor has \textbf{no effect}.
+    \item The market reaches equilibrium naturally.
+\end{itemize}
+\end{tcolorbox}
+
+\column{0.45\textwidth}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap 6/T4.png}
+\end{center}
+\end{columns}
+
+\end{frame}
+%==========================================================
+\begin{frame}{How Price Floors Affect Market Outcomes}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Case2: Binding Price Floor}]
+\begin{itemize}
+    \item Example:\\
+    Price floor = \$4,\\
+    equilibrium price = \$3.
+    \item The floor is a \textbf{binding constraint}.
+    \item The market price cannot fall to equilibrium.
+    \item Quantity supplied exceeds quantity demanded.
+\end{itemize}
+\end{tcolorbox}
+
+\column{0.5\textwidth}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap 6/T5.png}
+\end{center}
+\end{columns}
+\end{frame}
+
+%==========================================================
+\begin{frame}{Surpluses under a Binding Price Floor}
+
+When a binding price floor is imposed, the market price equals the floor.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Market Outcome}]
+\begin{itemize}
+    \item Quantity supplied: 120 cones
+    \item Quantity demanded: 80 cones
+    \item \textbf{Surplus: 40 cones}
+\end{itemize}
+\end{tcolorbox}
+
+At the price floor, some sellers are unable to sell their goods.
+As a result, alternative rationing mechanisms emerge.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Rationing under a Price Floor}]
+\begin{itemize}
+    \item Sellers compete for buyers
+    \item Favoritism or personal connections may matter
+    \item Goods may not go to buyers who value them most
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{The Minimum Wage}
+
+The \textbf{minimum wage} is a legal minimum price for labor.
+It is an important example of a \textbf{price floor}.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Definition and Purpose}]
+\begin{itemize}
+    \item Minimum-wage laws set the lowest wage employers may legally pay.
+    \item First introduced in the United States in 1938.
+    \item Intended to ensure workers a minimally adequate standard of living.
+\end{itemize}
+\end{tcolorbox}
+
+In the labor market:
+\begin{itemize}
+    \item Workers determine the supply of labor.
+    \item Firms determine the demand for labor.
+    \item Without intervention, wages adjust to balance supply and demand.
+\end{itemize}
+
+\end{frame}
+%==========================================================
+\begin{frame}{The Minimum Wage}
+\begin{center}
+    \includegraphics[width=\textwidth]{pictures/chap 6/T6.png}
+\end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Minimum Wage and Unemployment}
+
+If the minimum wage is set \textbf{above} the equilibrium wage,
+it becomes a \textbf{binding price floor}.
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Market Outcome}]
+\begin{itemize}
+    \item Wage cannot fall to equilibrium.
+    \item Quantity of labor supplied exceeds quantity demanded.
+    \item The result is \textbf{unemployment}.
+\end{itemize}
+\end{tcolorbox}
+
+The minimum wage:
+\begin{itemize}
+    \item Raises incomes for workers who keep their jobs.
+    \item Reduces job opportunities for some workers.
+\end{itemize}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Evidence and Debate over the Minimum Wage}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Who Is Most Affected?}]
+The minimum wage is most likely to be binding for:
+\begin{itemize}
+    \item Low-skilled workers
+    \item Inexperienced workers
+    \item Teenagers
+\end{itemize}
+\end{tcolorbox}
+
+Studies of the teenage labor market find that:
+\begin{itemize}
+    \item A 10\% increase in the minimum wage
+    \item Reduces teenage employment by about 1--3\%.
+\end{itemize}
+\end{frame}
+
+%==========================================================
+\begin{frame}{Evidence and Debate over the Minimum Wage}
+    \begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Why the Effect Is Limited}]
+\begin{itemize}
+    \item Not all workers earn the minimum wage.
+    \item Enforcement is imperfect.
+    \item Some wages are already above the minimum.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{The Ongoing Debate}]
+\begin{itemize}
+    \item \textbf{Supporters}: Raise incomes of the working poor.
+    \item \textbf{Opponents}: Cause unemployment and are poorly targeted.
+\end{itemize}
+\end{tcolorbox}
+
+Economists remain divided on whether the benefits outweigh the costs.
+
+\end{frame}
+%==========================================================
+\section{Taxes}
+%==========================================================
+\begin{frame}{How Taxes on Sellers Affect Market Outcomes}
+
+Suppose the government levies a \(\$0.50\) tax on sellers of ice-cream cones.
+To analyze the effect, we follow three steps.
+
+\textbf{Step 1: Which Curve Is Affected?}
+\begin{itemize}
+    \item The tax is levied on sellers, not buyers.
+    \item Quantity demanded at each price is unchanged.
+    \item The \textbf{demand curve does not shift}.
+    \item The tax makes selling ice cream less profitable.
+\end{itemize}
+
+\textbf{Step 2: Direction and Size of the Shift}
+\begin{itemize}
+    \item The tax raises the cost of producing and selling ice cream.
+    \item Quantity supplied falls at every price.
+    \item The \textbf{supply curve shifts left (upward)}.
+    \item The shift is exactly equal to the size of the tax (\(\$0.50\)).
+\end{itemize}
+
+\end{frame}
+%==========================================================
+\begin{frame}{How Taxes on Sellers Affect Market Outcomes}
+    \begin{center}
+        \includegraphics[width=0.85\textwidth]{pictures/chap 6/T7.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Taxes on Sellers: New Equilibrium and Incidence}
+
+After the supply curve shifts, the market reaches a new equilibrium.
+
+\textbf{Step 3: New Equilibrium}
+\begin{itemize}
+    \item Price paid by buyers rises from \$3.00 to \$3.30.
+    \item Quantity sold falls from 100 to 90 cones.
+    \item The size of the market shrinks.
+\end{itemize}
+
+Although sellers send the entire tax to the government,
+buyers and sellers share the burden.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Tax Incidence}]
+\begin{itemize}
+    \item Buyers pay \$0.30 more per cone.
+    \item Sellers receive \$2.80 after tax (\$3.30 -\$0.50).
+    \item Both buyers and sellers are worse off.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{itemize}
+    \item Taxes discourage market activity.
+    \item Taxes reduce the quantity traded.
+\end{itemize}
+\end{frame}
+%==========================================================
+\begin{frame}{How Taxes on Buyers Affect Market Outcomes}
+
+Suppose the government levies a \(\$0.50\) tax on buyers of ice-cream cones.
+To analyze the effect, we again follow three steps.
+
+\textbf{Step 1: Which Curve Is Affected?}
+\begin{itemize}
+    \item The tax is levied on buyers, not sellers.
+    \item Sellers face the same incentives at any given price.
+    \item The \textbf{supply curve does not change}.
+    \item Buyers must now pay a tax in addition to the market price.
+\end{itemize}
+
+\textbf{Step 2: Direction and Size of the Shift}
+\begin{itemize}
+    \item The tax makes buying ice cream less attractive.
+    \item Quantity demanded falls at every price.
+    \item The \textbf{demand curve shifts left (downward)}.
+    \item The shift equals the size of the tax (\(\$0.50\)).
+\end{itemize}
+
+\end{frame}
+%==========================================================
+\begin{frame}{How Taxes on Buyers Affect Market Outcomes}
+    \begin{center}
+        \includegraphics[width=0.85\textwidth]{pictures/chap 6/T8.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Taxes on Buyers: New Equilibrium and Implications}
+
+After the demand curve shifts, the market reaches a new equilibrium.
+
+\textbf{Step 3: New Equilibrium}
+\begin{itemize}
+    \item Market price falls from \$3.00 to \$2.80.
+    \item Quantity sold falls from 100 to 90 cones.
+    \item The size of the market shrinks.
+\end{itemize}
+
+Although sellers receive a lower market price,
+buyers pay a higher \textbf{effective price}.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Tax Incidence}]
+\begin{itemize}
+    \item Sellers receive \$2.80 per cone.
+    \item Buyers pay \$3.30 including the tax.
+    \item Buyers and sellers share the burden of the tax.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Can Congress Distribute the Burden of a Payroll Tax?}
+
+A \textbf{payroll tax} is a tax on wages paid to workers.
+An important example in the United States is the \textbf{FICA tax},
+which funds Social Security and Medicare.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Facts}]
+\begin{itemize}
+    \item Payroll taxes are levied on labor income.
+    \item In 2013, the total FICA tax was 15.3\% of earnings.
+    \item By law, half is paid by firms and half by workers.
+\end{itemize}
+\end{tcolorbox}
+
+This legal division raises an important question:
+Who actually bears the burden of the payroll tax?
+
+\end{frame}
+%==========================================================
+\begin{frame}{Payroll Tax}
+A payroll tax can be analyzed as a tax on labor,
+where the price is the wage.
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap 6/T9.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Payroll Taxes and Tax Incidence}
+
+\begin{itemize}
+    \item The tax creates a \textbf{wedge} between:
+    \begin{itemize}
+        \item the wage firms pay, and
+        \item the wage workers receive.
+    \end{itemize}
+    \item Wages paid by firms rise.
+    \item Wages received by workers fall.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Key Lesson of Tax Incidence}]
+\begin{itemize}
+    \item Workers and firms share the burden of the tax.
+    \item The division of the burden does \textbf{not} depend on how the law assigns the tax.
+    \item The same outcome would occur if the tax were levied entirely on workers or firms.
+\end{itemize}
+\end{tcolorbox}
+
+Lawmakers cannot easily dictate who bears the burden of a tax; market forces determine tax incidence.
+
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Elasticity and Tax Incidence}
+
+When a tax is imposed, buyers and sellers share the burden.
+The key question is how that burden is divided.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{What Determines Tax Incidence?}]
+\begin{itemize}
+    \item The division of the tax burden does \textbf{not} depend on
+    whether the tax is levied on buyers or sellers.
+    \item It depends on the \textbf{relative elasticity} of supply and demand.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Two Key Cases}]
+\begin{itemize}
+    \item Elastic supply, inelastic demand  
+    \(\rightarrow\) Buyers bear most of the tax.
+    \item Inelastic supply, elastic demand  
+    \(\rightarrow\) Sellers bear most of the tax.
+\end{itemize}
+\end{tcolorbox}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Elastic supply, inelastic demand}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap 6/T10.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Inelastic supply, elastic demand}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{pictures/chap 6/T11.png}
+    \end{center}
+\end{frame}
+%==========================================================
+\begin{frame}{Who Bears More of the Tax Burden?}
+
+The two panels lead to a general lesson.
+
+\vspace{0.5em}
+\textbf{A tax burden falls more heavily on the side of the market that is less elastic.}
+\vspace{0.5em}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Economic Intuition}]
+\begin{itemize}
+    \item Elasticity measures how easily buyers or sellers can leave the market.
+    \item The side with fewer alternatives is less willing to leave.
+    \item That side must bear more of the tax burden.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{itemize}
+    \item In labor markets, labor supply is often less elastic than labor demand.
+    \item As a result, workers tend to bear most of the burden of payroll taxes.
+\end{itemize}
+
+\end{frame}
+%==========================================================
+\begin{frame}{Case Study: Who Pays the Luxury Tax?}
+
+In 1990, Congress adopted a luxury tax on items such as yachts,
+private airplanes, jewelry, and expensive cars.
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Policy Goal}]
+\begin{itemize}
+    \item Raise revenue from those who could most easily afford to pay.
+    \item Tax goods primarily consumed by the rich.
+    \item Make the tax system more progressive.
+\end{itemize}
+\end{tcolorbox}
+
+At first glance, taxing luxury goods seemed like a logical way
+to tax wealthy consumers.
+
+However, once supply and demand responded,
+the outcome was very different from what lawmakers intended.
+
+\end{frame}
+
+%==========================================================
+\begin{frame}{Elasticity Explains the Outcome of the Luxury Tax}
+
+\begin{tcolorbox}[colframe=red!80!black, colback=white, title=\textbf{Market Elasticities}]
+\begin{itemize}
+    \item Demand for yachts is \textbf{elastic}.
+    \item Wealthy buyers have many good alternatives.
+    \item Supply of yachts is relatively \textbf{inelastic} in the short run.
+    \item Yacht builders and workers have fewer alternatives.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colframe=blue!70!black, colback=white, title=\textbf{Tax Incidence Result}]
+\begin{itemize}
+    \item Most of the tax burden falls on producers.
+    \item Firms receive a much lower price.
+    \item Workers in luxury industries suffer income losses.
+\end{itemize}
+\end{tcolorbox}
+
+As a result, the burden of the luxury tax fell more on workers
+than on wealthy consumers.
+Congress repealed most of the luxury tax in 1993.
+
+\end{frame}
+
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+%==========================================================
+\end{document}
